@@ -483,12 +483,31 @@ header{
   background:#8e44ad;
 }
 
+
+.version-label{
+  position:absolute;
+  top:6px;
+  right:10px;
+  font-size:11px;
+  font-weight:600;
+  color:rgba(255,255,255,.65);
+  letter-spacing:.3px;
+  pointer-events:none;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
+  <div class="version-label">v1.12</div>
   <div class="topbar">
     <button class="level-btn active" data-level="GCSE">GCSE</button>
     <button class="level-btn" data-level="A-Level Maths">A-Level Maths</button>
@@ -544,8 +563,6 @@ header{
   </div>
 
   <div class="footer">
-    PY Worksheets updates automatically from your Google Sheet.
-    &nbsp;•&nbsp;
     <a href="https://paypal.me/pybacup/5GBP" target="_blank" rel="noopener noreferrer">Buy me a beer 🍺</a>
   </div>
 
