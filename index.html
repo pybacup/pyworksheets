@@ -493,7 +493,7 @@ header{
     <button class="level-btn active" data-level="GCSE">GCSE</button>
     <button class="level-btn" data-level="A-Level Maths">A-Level Maths</button>
     <button class="level-btn" data-level="A-Level Further Maths">A-Level Further Maths</button>
-    <a class="beer-btn" href="https://paypal.me/pybacup" target="_blank" rel="noopener noreferrer">🍺 Buy me a beer</a>
+    <a class="beer-btn" href="https://paypal.me/pybacup/5GBP" target="_blank" rel="noopener noreferrer">🍺 Buy me a beer</a>
   </div>
 </header>
 
@@ -546,7 +546,7 @@ header{
   <div class="footer">
     PY Worksheets updates automatically from your Google Sheet.
     &nbsp;•&nbsp;
-    <a href="https://paypal.me/pybacup" target="_blank" rel="noopener noreferrer">Support PY Maths 🍺</a>
+    <a href="https://paypal.me/pybacup/5GBP" target="_blank" rel="noopener noreferrer">Buy me a beer 🍺</a>
   </div>
 
 </main>
@@ -678,7 +678,7 @@ google.visualization.Query.setResponse = function(response){
       resourceName: valueAt(row,"Resource Name"),
       worksheetLink: valueAt(row,"Worksheet Link"),
       answersLink: valueAt(row,"Answers Link"),
-      examplesLink: valueAt(row,"Examples Link"),
+      examplesLink: valueAt(row,"Example Link") || valueAt(row,"Examples Link"),
       grade: valueAt(row,"Grade"),
       keywords: valueAt(row,"Keywords"),
       visible: valueAt(row,"Visible")
