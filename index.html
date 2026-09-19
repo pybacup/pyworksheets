@@ -541,13 +541,41 @@ header{
   font-weight:700;
 }
 
+
+/* GCSE six-area navigation */
+.section-btn[data-section="Number"]{border-color:#e83e5b;color:#c92544}
+.section-btn[data-section="Algebra"]{border-color:#1684d5;color:#0b6fb8}
+.section-btn[data-section="Ratio, Proportion and Rates of Change"]{border-color:#9b59b6;color:#7d3f98}
+.section-btn[data-section="Geometry and Measures"]{border-color:#38a65a;color:#287f43}
+.section-btn[data-section="Probability"]{border-color:#e58b21;color:#b96b06}
+.section-btn[data-section="Statistics"]{border-color:#0f9f9a;color:#087873}
+
+.section-btn[data-section="Number"].active,
+.section-btn[data-section="Number"]:hover{background:#e83e5b;color:white}
+.section-btn[data-section="Algebra"].active,
+.section-btn[data-section="Algebra"]:hover{background:#1684d5;color:white}
+.section-btn[data-section="Ratio, Proportion and Rates of Change"].active,
+.section-btn[data-section="Ratio, Proportion and Rates of Change"]:hover{background:#9b59b6;color:white}
+.section-btn[data-section="Geometry and Measures"].active,
+.section-btn[data-section="Geometry and Measures"]:hover{background:#38a65a;color:white}
+.section-btn[data-section="Probability"].active,
+.section-btn[data-section="Probability"]:hover{background:#e58b21;color:white}
+.section-btn[data-section="Statistics"].active,
+.section-btn[data-section="Statistics"]:hover{background:#0f9f9a;color:white}
+
+/* Allow long GCSE section names to wrap neatly rather than being cut off */
+.section-btn{
+  white-space:normal;
+  line-height:1.2;
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-  <div class="version-label">v1.14</div>
+  <div class="version-label">v1.15</div>
   <div class="topbar">
     <button class="level-btn active" data-level="GCSE">GCSE</button>
     <button class="level-btn" data-level="A-Level Maths">A-Level Maths</button>
@@ -620,9 +648,72 @@ let currentGrade = "All";
 let sheetLoaded = false;
 
 const SECTION_CONFIG = {
-  "GCSE": ["Number", "Algebra", "Shape", "Data"],
+  "GCSE": [
+    "Number",
+    "Algebra",
+    "Ratio, Proportion and Rates of Change",
+    "Geometry and Measures",
+    "Probability",
+    "Statistics"
+  ],
   "A-Level Maths": ["Pure", "Statistics", "Mechanics"],
   "A-Level Further Maths": ["Pure", "Numerical Methods"]
+};
+
+const TOPIC_ORDER = {
+  "Number": [
+    "Fractions, decimals and percentages",
+    "Negative numbers",
+    "Powers, roots and standard form",
+    "Factors, multiples, primes",
+    "Bounds and estimation"
+  ],
+  "Algebra": [
+    "Simplifying and expanding",
+    "Factorising",
+    "Solving equations and inequalities",
+    "Sequences",
+    "Graphs and functions",
+    "Quadratics",
+    "Simultaneous equations"
+  ],
+  "Ratio, Proportion and Rates of Change": [
+    "Ratio",
+    "Direct and inverse proportion",
+    "Percentage change",
+    "Compound interest",
+    "Speed, density and pressure",
+    "Growth and decay"
+  ],
+  "Geometry and Measures": [
+    "Angles",
+    "Properties of shapes",
+    "Area, perimeter and volume",
+    "Pythagoras",
+    "Trigonometry",
+    "Transformations",
+    "Bearings",
+    "Circles",
+    "Similarity and congruence",
+    "Vectors"
+  ],
+  "Probability": [
+    "Basic probability",
+    "Sample spaces",
+    "Tree diagrams",
+    "Venn diagrams",
+    "Conditional probability",
+    "Expected frequency"
+  ],
+  "Statistics": [
+    "Averages and range",
+    "Tables and charts",
+    "Scatter graphs",
+    "Cumulative frequency",
+    "Box plots",
+    "Histograms",
+    "Sampling"
+  ]
 };
 
 const body = document.getElementById("resourceBody");
@@ -650,6 +741,18 @@ function levelMatches(resourceLevel){
   }
 
   return r === current;
+}
+
+function sectionMatches(resourceSection, selectedSection){
+  if(selectedSection === "All") return true;
+
+  const aliases = {
+    "Geometry and Measures": ["Geometry and Measures", "Shape"],
+    "Statistics": ["Statistics", "Data"]
+  };
+
+  const allowed = aliases[selectedSection] || [selectedSection];
+  return allowed.some(section => clean(resourceSection) === clean(section));
 }
 
 function escapeHTML(str){
@@ -843,7 +946,7 @@ function buildSectionButtons(){
   mainSections.appendChild(allBtn);
 
   sections.forEach(section => {
-    const count = levelResources.filter(r => clean(r.section) === clean(section)).length;
+    const count = levelResources.filter(r => sectionMatches(r.section, section)).length;
 
     const btn = document.createElement("button");
     btn.className = "section-btn" + (clean(currentSection) === clean(section) ? " active" : "");
@@ -872,13 +975,11 @@ function buildTopicButtons(){
     return;
   }
 
-  // allResources is already sorted by the Order column, so topics appear
-  // in the order they first appear in your Google Sheet.
   const topics = [];
   const seen = new Set();
 
   allResources
-    .filter(r => levelMatches(r.level) && clean(r.section) === clean(currentSection))
+    .filter(r => levelMatches(r.level) && sectionMatches(r.section, currentSection))
     .forEach(r => {
       const topic = String(r.topic || "").trim();
       const key = clean(topic);
@@ -887,6 +988,19 @@ function buildTopicButtons(){
         topics.push(topic);
       }
     });
+
+  // Put the standard GCSE subtopics in the preferred order.
+  // Any extra topics added to Google Sheets still appear afterwards.
+  const preferred = TOPIC_ORDER[currentSection] || [];
+  topics.sort((a,b) => {
+    const ai = preferred.findIndex(x => clean(x) === clean(a));
+    const bi = preferred.findIndex(x => clean(x) === clean(b));
+
+    if(ai !== -1 && bi !== -1) return ai - bi;
+    if(ai !== -1) return -1;
+    if(bi !== -1) return 1;
+    return a.localeCompare(b);
+  });
 
   if(topics.length === 0){
     topicNav.classList.add("hidden");
@@ -898,7 +1012,7 @@ function buildTopicButtons(){
   topicNavLabel.textContent = currentSection + ":";
 
   const sectionResources = allResources.filter(
-    r => levelMatches(r.level) && clean(r.section) === clean(currentSection)
+    r => levelMatches(r.level) && sectionMatches(r.section, currentSection)
   );
 
   const allBtn = document.createElement("button");
@@ -932,9 +1046,7 @@ function render(){
   const rows = allResources.filter(r=>{
     const levelOK = levelMatches(r.level);
 
-    const sectionOK =
-      currentSection === "All" ||
-      clean(r.section) === clean(currentSection);
+    const sectionOK = sectionMatches(r.section, currentSection);
 
     const subcategoryOK =
       currentSection === "All" ||
