@@ -49,4 +49,25 @@ h2{font-size:29px;letter-spacing:-.7px;margin:0 0 12px;color:var(--deep)}
 .primary-link:hover{background:#066b91}
 .secondary-link{color:#087da8;font-size:14px;padding:12px 0;text-underline-offset:4px}
 @media(max-width:700px){.header-note{display:none}.version{margin-left:auto}.landing{padding:32px 20px}.destinations{grid-template-columns:1fr;gap:18px}.logo{width:240px}.intro{margin-bottom:28px}.destination{padding:24px}.card-top{margin-bottom:18px}.site-footer{flex-direction:column;text-align:center;gap:8px}.coming-soon{padding:32px 22px}.lead{font-size:16px}.desktop-break{display:none}}
+/* Keep the homepage comfortable in shorter desktop windows, including browser zoom. */
+@media(min-width:901px) and (max-height:850px){
+  .home-page .site-header{min-height:60px;padding-top:12px;padding-bottom:12px}
+  .home-page .landing{padding-top:16px;padding-bottom:16px}
+  .home-page .intro{margin-bottom:18px}
+  .home-page .intro .logo{width:clamp(240px,32vh,320px);margin-bottom:14px}
+  .home-page .eyebrow{margin-bottom:8px}
+  .home-page .lead{max-width:none;font-size:16px;line-height:1.45}
+  .home-page .desktop-break{display:none}
+  .home-page .destination{padding:18px}
+  .home-page .card-top{margin-bottom:10px}
+  .home-page .icon{width:36px;height:36px;border-radius:10px}
+  .home-page .icon svg{width:26px;height:26px}
+  .home-page h2{font-size:26px;margin-bottom:8px}
+  .home-page .destination p{font-size:15px;line-height:1.45;margin-bottom:12px}
+  .home-page .subjects{margin-bottom:12px}
+  .home-page .subjects>span{padding:5px 9px}
+  .home-page .card-action{padding-top:10px}
+  .home-page .closing-note{margin-top:12px}
+  .home-page .site-footer{padding-top:10px;padding-bottom:10px}
+}
 @media(prefers-reduced-motion:reduce){.destination{transition:none}.destination:hover{transform:none}}
