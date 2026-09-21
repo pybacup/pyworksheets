@@ -1,0 +1,52 @@
+:root{color-scheme:light;--blue:#0799c9;--deep:#073b73;--text:#12323f;--muted:#536b78;--line:#d6e7ee}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:radial-gradient(ellipse at 8% 20%,#e4f5fb,transparent 45%),radial-gradient(ellipse at 95% 60%,#fff3db,transparent 45%),#f7f9fb;min-height:100vh;display:flex;flex-direction:column}
+a{color:inherit}
+a:focus-visible{outline:3px solid #073b73;outline-offset:6px}
+.skip-link{position:absolute;top:-80px;left:16px;background:white;padding:12px;z-index:10}
+.skip-link:focus{top:12px}
+.site-header{display:flex;align-items:center;gap:24px;min-height:76px;padding:18px max(24px,calc((100vw - 1120px)/2));background:linear-gradient(100deg,#087aa5,#0799c9);color:white}
+.brand{text-decoration:none;font-size:26px;font-weight:800;white-space:nowrap;letter-spacing:-1px}
+.brand span{font-weight:400;letter-spacing:0}
+.header-note{margin-left:auto;font-size:13px;color:#edfaff}
+.version{font-size:11px;border-left:1px solid #ffffff60;padding-left:18px;color:#edfaff}
+.landing{width:min(1060px,100%);margin:auto;padding:44px 28px 32px}
+.intro{text-align:center;margin-bottom:34px}
+.logo{display:block;width:280px;max-width:75%;height:auto;margin:0 auto 24px;border-radius:12px}
+.intro .logo{width:clamp(280px,42vw,420px);max-width:100%;height:auto;margin-bottom:28px;border-radius:16px;box-shadow:0 6px 24px #073b730a}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:2px;color:#087da8;line-height:1.6;margin:0 0 14px}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.1;letter-spacing:-2px;color:var(--deep);margin:0 0 18px}
+h1 span{color:#087da8}
+.lead{font-size:18px;line-height:1.65;color:var(--muted);margin:0 auto;max-width:620px}
+.destinations{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.destination{border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:18px;background:#fff;box-shadow:0 8px 30px #073b7308;padding:28px;text-decoration:none;display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s,border-color .18s}
+.destination:hover{transform:translateY(-4px);box-shadow:0 16px 36px #073b7314;border-color:#0799c9}
+.destination.games{border-top-color:#e5a333}
+.destination.games:hover{border-color:#d19735}
+.card-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:24px}
+.icon{display:grid;place-items:center;background:#e7f6fc;color:#087da8;width:52px;height:52px;border-radius:14px}
+.icon svg{width:32px;height:32px;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.games .icon{background:#fff3d9;color:#956115}
+.tag{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--muted)}
+h2{font-size:29px;letter-spacing:-.7px;margin:0 0 12px;color:var(--deep)}
+.destination p{font-size:16px;line-height:1.65;color:var(--muted);margin:0 0 22px}
+.subjects{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto;margin-bottom:26px}
+.subjects>span{font-size:11px;padding:7px 9px;border-radius:6px;background:#eef7fb;color:#315b70;line-height:1.4}
+.subjects .soon{background:#fff5e2;color:#805513}
+.soon span{font-size:9px;margin-right:4px}
+.card-action{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #e5eef2;padding-top:20px;color:#087da8;font-weight:700;font-size:15px}
+.card-action>span{font-size:24px}
+.games .card-action{color:#805513}
+.closing-note{text-align:center;font-size:13px;color:var(--muted);line-height:1.6;margin:26px 0 0}
+.site-footer{border-top:1px solid var(--line);padding:22px max(24px,calc((100vw - 1120px)/2));display:flex;justify-content:space-between;gap:16px;font-size:12px;color:var(--muted);line-height:1.6}
+.site-footer a{color:#087da8;text-underline-offset:4px}
+.coming-soon{max-width:720px;margin:0 auto;text-align:center;background:white;border:1px solid var(--line);border-radius:20px;padding:42px 36px;box-shadow:0 8px 30px #073b7308}
+.coming-soon .icon{margin:0 auto 22px;background:#fff3d9;color:#956115;font-size:30px}
+.coming-soon h1{font-size:clamp(32px,5vw,46px)}
+.coming-soon .eyebrow{color:#805513}
+.actions{display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.primary-link{display:inline-block;padding:15px 23px;border-radius:9px;background:#087da8;color:white;font-size:15px;font-weight:700;text-decoration:none}
+.primary-link:hover{background:#066b91}
+.secondary-link{color:#087da8;font-size:14px;padding:12px 0;text-underline-offset:4px}
+@media(max-width:700px){.header-note{display:none}.version{margin-left:auto}.landing{padding:32px 20px}.destinations{grid-template-columns:1fr;gap:18px}.logo{width:240px}.intro{margin-bottom:28px}.destination{padding:24px}.card-top{margin-bottom:18px}.site-footer{flex-direction:column;text-align:center;gap:8px}.coming-soon{padding:32px 22px}.lead{font-size:16px}.desktop-break{display:none}}
+@media(prefers-reduced-motion:reduce){.destination{transition:none}.destination:hover{transform:none}}
