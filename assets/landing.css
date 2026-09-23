@@ -8,6 +8,11 @@ a:focus-visible{outline:3px solid #073b73;outline-offset:6px}
 .site-header{display:flex;align-items:center;gap:24px;min-height:76px;padding:18px max(24px,calc((100vw - 1120px)/2));background:linear-gradient(100deg,#087aa5,#0799c9);color:white}
 .brand{text-decoration:none;font-size:26px;font-weight:800;white-space:nowrap;letter-spacing:-1px}
 .brand span{font-weight:400;letter-spacing:0}
+.header-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 12px;border:1px solid #ffffff50;border-radius:8px;color:white;text-decoration:none;font-size:14px;white-space:nowrap}
+.header-link:hover{background:#ffffff18}
+.header-link:focus-visible{outline-color:white}
+.card-action .play-game-label{font-size:15px;background:#087da8;color:white;padding:10px 16px;border-radius:8px}
+@media(max-width:420px){.site-header:has(.header-link){gap:10px;padding-left:16px;padding-right:16px}.site-header:has(.header-link) .version{padding-left:10px}}
 .header-note{margin-left:auto;font-size:13px;color:#edfaff}
 .version{font-size:11px;border-left:1px solid #ffffff60;padding-left:18px;color:#edfaff}
 .landing{width:min(1060px,100%);margin:auto;padding:44px 28px 32px}
