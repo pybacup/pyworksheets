@@ -7,8 +7,10 @@
   <title>PY Games | Think. Play. Discover.</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/landing.css">
+  <link rel="stylesheet" href="assets/games-catalogue.css">
+  <script src="assets/games-catalogue.js" defer></script>
 </head>
-<body>
+<body class="games-page">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="PY Maths home">PY <span>Maths</span></a>
@@ -20,32 +22,43 @@
     <a href="index.html"><img class="logo" src="assets/py-maths-logo.png" width="1983" height="793" alt="PY Maths home"></a>
     <section class="intro" aria-labelledby="page-title">
       <p class="eyebrow">PY GAMES · THINK &amp; PLAY</p>
-      <h1 id="page-title">Put your maths<br><span>mind to work.</span></h1>
-      <p class="lead">A little challenge. A fresh connection. Explore maths through play, one good idea at a time.</p>
+      <h1 id="page-title">Find your next <span>challenge.</span></h1>
+      <p class="lead">Pick a topic, choose a game and put your maths skills to work.</p>
     </section>
-    <nav class="destinations" aria-label="Available games">
-      <a class="destination games" href="games/factor-frenzy.html">
+    <section class="catalogue-filters" id="catalogueFilters" aria-label="Filter games by topic" hidden>
+      <p class="filter-label">Browse by topic</p>
+      <div class="topic-filters" id="topicFilters"></div>
+    </section>
+    <p class="catalogue-status" id="catalogueStatus" role="status" aria-live="polite">3 games available</p>
+    <!-- Add a card with one or more space-separated topic IDs in data-topics. -->
+    <nav class="destinations" id="gameCatalogue" aria-label="Available games">
+      <a class="destination games" data-topics="number" href="games/factor-frenzy.html">
         <div class="card-top"><span class="icon" aria-hidden="true">✦</span><span class="tag">NUMBER &amp; REFLEXES</span></div>
         <h2>Factor Frenzy</h2>
         <p>Click the correct factors, multiples or prime numbers before they disappear. Build streaks and survive as the game gets faster.</p>
         <div class="subjects"><span>2 minutes</span><span>3 modes</span><span>3 lives</span></div>
         <span class="card-action"><span class="play-game-label">Play Game</span><span aria-hidden="true">↗</span></span>
       </a>
-      <a class="destination games" href="games/standard-form-rush.html">
+      <a class="destination games" data-topics="number" href="games/standard-form-rush.html">
         <div class="card-top"><span class="icon" aria-hidden="true">⚡</span><span class="tag">NUMBER &amp; SPEED</span></div>
         <h2>Standard Form Rush</h2>
         <p>Race against the clock converting numbers to and from standard form. Build streaks and score multipliers.</p>
         <div class="subjects"><span>2 minutes</span><span>3 modes</span><span>No login needed</span></div>
         <span class="card-action"><span class="play-game-label">Play Game</span><span aria-hidden="true">↗</span></span>
       </a>
-      <a class="destination games" href="standard-form-match.html">
+      <a class="destination games" data-topics="number" href="standard-form-match.html">
         <div class="card-top"><span class="icon" aria-hidden="true"><span>10<sup>n</sup></span></span><span class="tag">NUMBER &amp; MEMORY</span></div>
         <h2>Standard Form Match</h2>
         <p>Two ways to write a number. Can you connect them? Turn over the cards and find all eight matching pairs.</p>
         <div class="subjects"><span>8 pairs</span><span>3 difficulty levels</span><span>No login needed</span></div>
-        <span class="card-action">Play Standard Form Match <span aria-hidden="true">↗</span></span>
+        <span class="card-action"><span class="play-game-label">Play Game</span><span aria-hidden="true">↗</span></span>
       </a>
     </nav>
+    <div class="catalogue-empty" id="catalogueEmpty" hidden>
+      <h2>No games in this topic yet</h2>
+      <p>Try another topic or explore all the games available now.</p>
+      <button type="button" id="showAllGames">Show all games</button>
+    </div>
     <div class="actions"><a class="secondary-link" href="index.html">← Back to PY Maths</a><a class="secondary-link" href="worksheets.html">Explore worksheets →</a></div>
     <p class="closing-note">Pick a challenge, practise your skills and come back for more.</p>
   </main>
