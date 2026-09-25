@@ -1,0 +1,9 @@
+.card-front .card-value{font-size:clamp(23px,3vw,32px)}
+.fraction{display:inline-flex;flex-direction:column;align-items:stretch;text-align:center;vertical-align:middle;line-height:1.05;min-width:1.2em}
+.fraction .numerator{padding:0 .16em .1em;border-bottom:2px solid currentColor}
+.fraction .denominator{padding:.1em .16em 0}
+.instructions .fraction{display:inline-flex;font-size:18px;margin:0 5px}
+.memory-card .card-face{gap:7px}
+.ratio-game .card-back{background:linear-gradient(135deg,#8860c7,#6043a2);border-color:#6841b0;box-shadow:0 3px 0 #483477}
+.ratio-game .memory-card:nth-child(3n) .card-back{background:linear-gradient(135deg,#9873ce,#7050b0)}
+@media(max-width:640px){.card-front .card-value{font-size:26px}.game-heading h1{font-size:30px}}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find equivalent fraction pairs in this free maths memory game. Eight pairs, three difficulties and a new challenge every time.">
+  <title>Equivalent Fraction Match | PY Games</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/landing.css">
+  <link rel="stylesheet" href="../assets/standard-form-match.css">
+  <link rel="stylesheet" href="../assets/equivalent-match.css">
+  <script src="../assets/equivalent-match-core.js" defer></script>
+  <script src="../assets/equivalent-match.js" defer></script>
+</head>
+<body class="fraction-game" data-match-type="fraction">
+  <a class="skip-link" href="#main">Skip to game</a>
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="PY Maths home">PY <span>Maths</span></a>
+    <span class="header-note">Think. Remember. Connect.</span>
+    <span class="version">v1.20</span>
+  </header>
+  <main id="main" class="game-shell">
+    <nav class="game-nav" aria-label="Page navigation"><a href="../games.html">← PY Games</a><a href="../index.html">PY Maths home ↗</a></nav>
+    <div class="game-heading">
+      <div><p class="eyebrow">PY GAMES / NUMBER &amp; MEMORY</p><h1>Equivalent Fraction <span>Match</span></h1><p class="game-intro">Two ways to write it. One perfect pair.</p></div>
+      <a class="game-logo" href="../index.html"><img src="../assets/py-maths-logo.png" width="1983" height="793" alt="PY Maths home"></a>
+    </div>
+    <p class="instructions" id="instructions">Reveal two cards and find equivalent fractions. Match all 8 pairs. <span>For example: <strong><span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span> = <span class="fraction"><span class="numerator">8</span><span class="denominator">12</span></span></strong>.</span></p>
+    <section class="play-area" aria-label="Equivalent Fraction Match game">
+      <div class="game-controls">
+        <fieldset class="difficulty"><legend>Choose your challenge</legend><div class="difficulty-options">
+          <label><input type="radio" name="difficulty" value="easy" checked><span>Easy</span></label>
+          <label><input type="radio" name="difficulty" value="medium"><span>Medium</span></label>
+          <label><input type="radio" name="difficulty" value="hard"><span>Hard</span></label>
+        </div></fieldset>
+        <button class="new-game" id="newGame" type="button">↻ New Game</button>
+      </div>
+      <p class="difficulty-help" id="difficultyHelp">Small values with one card in simplest form. Changing level starts a new game.</p>
+      <div class="scoreboard" aria-label="Game statistics">
+        <div><span>Time</span><strong id="timer" aria-label="Elapsed time">0:00</strong></div>
+        <div><span>Moves</span><strong id="moves">0</strong></div>
+        <div><span>Pairs found</span><strong id="pairs">0 <small>/ 8</small></strong></div>
+        <div class="streak-stat"><span>Match streak</span><strong id="streak">0 <small>in a row</small></strong></div>
+      </div>
+      <p class="game-message" id="message" role="status" aria-live="polite" aria-atomic="true">Ready when you are. The timer starts with your first card.</p>
+      <div class="card-grid" id="board" role="group" aria-label="Sixteen matching cards" aria-describedby="instructions"></div>
+      <noscript><p>This game needs JavaScript enabled in your browser. No login or internet connection is needed once the page and its files are loaded.</p></noscript>
+      <section class="completion" id="completion" hidden tabindex="-1" aria-labelledby="completionTitle">
+        <p class="eyebrow">8 PAIRS. ALL CONNECTED.</p><h2 id="completionTitle">That's a match!</h2>
+        <p id="completionSummary"></p><p>Great focus. Ready for a fresh set?</p>
+        <button class="new-game" id="playAgain" type="button">Play Again ↗</button>
+      </section>
+    </section>
+    <p class="game-tip"><strong>A useful reminder:</strong> Multiply or divide the numerator and denominator by the same nonzero number to make an equivalent fraction.</p>
+  </main>
+  <footer class="site-footer"><span>PY Maths · Keep learning. Keep exploring.</span><a href="../games.html">More from PY Games →</a></footer>
+</body>
+</html>
