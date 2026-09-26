@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Catch equivalent fractions in Fraction Frenzy, a 60-second maths arcade game with three difficulties, changing targets and score combos.">
+<title>Fraction Frenzy | PY Games</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/fraction-frenzy.css">
+<script src="assets/fraction-frenzy-core.js" defer></script>
+<script src="assets/fraction-frenzy.js" defer></script>
+</head>
+<body>
+<main class="app">
+  <nav class="game-links" aria-label="Page navigation"><a class="back" href="games.html">← Back to PY Games</a><a class="back" href="index.html">PY Maths home ↗</a></nav>
+  <header><div class="brand"><a href="index.html"><img src="assets/py-maths-logo.png" width="1983" height="793" alt="PY Maths home"></a><div><h1>Fraction Frenzy</h1><p class="subtitle">Same value. Fast thinking.</p></div></div><div class="tools"><button class="tool" id="pause" type="button" aria-label="Pause game" disabled>Ⅱ</button><button class="tool" id="sound" type="button" aria-label="Turn sound on" aria-pressed="false">🔇</button></div></header>
+  <section class="hud" aria-label="Game statistics"><div class="stat"><span>Time</span><strong id="time">1:00</strong></div><div class="stat"><span>Score</span><strong id="score">0</strong></div><div class="stat"><span>Lives</span><strong id="lives" aria-label="3 lives">♥♥♥</strong></div><div class="stat"><span>Combo</span><strong id="combo">×1</strong></div><div class="stat"><span>Correct</span><strong id="correct">0</strong></div></section>
+  <div class="mission"><div><small id="levelLabel">PY Games / Starter</small><h2 id="instruction">TARGET <span id="targetFraction" aria-label="3 over 4"><span class="fraction" aria-hidden="true"><span class="numerator">3</span><span class="denominator">4</span></span></span></h2></div><div class="multiplier">Catch equivalents →</div></div>
+  <div class="track" aria-hidden="true"><div id="timeBar"></div></div>
+  <div class="arena" id="arena" role="group" aria-labelledby="instruction"><div class="arena-hint" id="hint">Recognise the value.<br>Catch the match.</div><div class="target-cue" id="targetCue" hidden><strong>NEW TARGET</strong><span id="cueFraction"></span><small>Fresh tiles incoming…</small></div></div>
+  <p class="feedback" id="feedback" role="status" aria-live="polite">Catch fractions equal to the target. Let the others pass.</p>
+  <p class="tips">2 correct → ×2 · 3 → ×3 · 4 → ×4 · 5 or more → ×5<br>Tap or click targets. Keyboard: Tab to a tile, then Enter or Space.</p>
+  <footer>PY Games · Fraction Frenzy · v1.21</footer>
+</main>
+<section class="overlay" id="startScreen" role="dialog" aria-modal="true" aria-labelledby="startTitle"><div class="modal">
+  <div class="game-links"><a class="back" href="games.html">← Back to PY Games</a><a class="back" href="index.html">Home ↗</a></div>
+  <div class="big-icon" aria-hidden="true">½</div><h2 id="startTitle">Fraction Frenzy</h2><p>60 seconds. Three lives. Tap fractions that equal the target as they travel across the screen.</p>
+  <fieldset class="modes"><legend>Choose your challenge</legend><div class="mode-options">
+    <label><input type="radio" name="level" value="starter" checked><span><strong>Starter</strong><small>Familiar fractions<br>×2, ×3, ×4</small></span></label>
+    <label><input type="radio" name="level" value="tricky"><span><strong>Tricky</strong><small>Larger multipliers<br>Closer distractors</small></span></label>
+    <label><input type="radio" name="level" value="expert"><span><strong>Expert</strong><small>Larger fractions<br>Less obvious factors</small></span></label>
+  </div></fieldset>
+  <p class="rules">Correct catch: 100 points × your combo (up to ×5).<br>Wrong catch or missed equivalent: −1 life and combo resets.<br>Non-equivalents can leave safely. The target changes every 15 seconds; old tiles clear without penalty.</p>
+  <button class="primary" id="start" type="button">Start the Frenzy</button><p>Sound is optional. Pause whenever you need.</p>
+  <noscript><p>Please enable JavaScript to play.</p></noscript>
+</div></section>
+<div class="overlay countdown" id="countdown" hidden role="status" aria-live="assertive">3</div>
+<section class="overlay" id="pauseScreen" hidden role="dialog" aria-modal="true" aria-labelledby="pauseTitle"><div class="modal"><h2 id="pauseTitle">Take a breather.</h2><p>Your timer and fractions are paused.</p><button class="primary" id="resume" type="button">Resume Game</button><div><a class="back" href="games.html">← Back to PY Games</a></div></div></section>
+<section class="overlay" id="endScreen" hidden role="dialog" aria-modal="true" aria-labelledby="endTitle"><div class="modal"><div class="big-icon" aria-hidden="true">✦</div><h2 id="endTitle">TIME!</h2><p id="achievement"></p>
+  <div class="results"><div class="result"><span>Final score</span><strong id="finalScore">0</strong></div><div class="result"><span>Correct answers</span><strong id="finalCorrect">0</strong></div><div class="result"><span>Incorrect answers</span><strong id="finalIncorrect">0</strong></div><div class="result"><span>Accuracy</span><strong id="accuracy">0%</strong></div><div class="result"><span>Best combo</span><strong id="finalBest">×1</strong></div></div>
+  <p id="summary"></p><p>Accuracy = correct clicks ÷ all clicks. Missed equivalents cost lives.</p><button class="primary" id="again" type="button">Play Again</button><div class="game-links"><a class="back" href="games.html">← Back to PY Games</a><a class="back" href="index.html">Home ↗</a></div>
+</div></section>
+</body>
+</html>
