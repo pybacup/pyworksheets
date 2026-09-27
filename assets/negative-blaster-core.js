@@ -10,6 +10,15 @@
     }
     return pool;
   }
+  function answerChoices(q,random=Math.random){
+    const magnitude=Math.abs(q.answer);
+    // Both signs of two magnitudes keep the sign rule central to every question.
+    const step=q.op==='×'?Math.abs(q.b):1;
+    const other=magnitude>step&&random()<.5?magnitude-step:magnitude+step;
+    const choices=[magnitude,-magnitude,other,-other];
+    for(let i=choices.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[choices[i],choices[j]]=[choices[j],choices[i]];}
+    return choices;
+  }
   const key=q=>`${q.a}|${q.op}|${q.b}`;
   class Session{
     constructor(level='easy',random=Math.random){this.random=random;this.restart(level);}
@@ -17,7 +26,7 @@
     nextQuestion(){
       let candidates=this.pool.filter(q=>!this.recent.includes(key(q)));
       if(this.level==='hard'&&this.random()<.75){const harder=candidates.filter(q=>q.hard);if(harder.length)candidates=harder;}
-      this.question=candidates[Math.floor(this.random()*candidates.length)];this.recent.push(key(this.question));if(this.recent.length>16)this.recent.shift();
+      this.question=candidates[Math.floor(this.random()*candidates.length)];this.choices=answerChoices(this.question,this.random);this.recent.push(key(this.question));if(this.recent.length>16)this.recent.shift();
     }
     submit(raw){
       if(this.state!=='math')return 'ignored';
@@ -68,6 +77,6 @@
     }
     cleanup(){this.enemies=[];this.shots=[];this.pops=[];}
   }
-  const api={LEVELS,questionPool,Session,Invaders,BONUS_SECONDS,key};
+  const api={LEVELS,questionPool,answerChoices,Session,Invaders,BONUS_SECONDS,key};
   if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.NegativeBlaster=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

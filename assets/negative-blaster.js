@@ -21,28 +21,26 @@
     const progress=session.state==='math'?session.correct%5:5;$('progress').textContent=progress+'/5';
     [...$('pips').children].forEach((p,i)=>p.classList.toggle('filled',i<progress));$('difficultyLabel').textContent=levels[session.level];
   }
-  function showQuestion(){const q=session.question;$('question').textContent=`${signed(q.a)} ${q.op} ${q.b<0?'('+signed(q.b)+')':q.b} = ?`;$('questionLabel').textContent='QUESTION '+(session.correct+1);$('answer').value='';totals();}
-  function flash(good){panel.classList.remove('correct-flash','wrong-flash');void panel.offsetWidth;panel.classList.add(good?'correct-flash':'wrong-flash');}
-  function submit(event){
-    event.preventDefault();if(session.state!=='math'||!$('setup').hidden)return;
-    const result=session.submit($('answer').value);if(result==='ignored')return;
-    if(result==='invalid'){$('feedback').className='feedback bad';$('feedback').textContent='Enter a whole integer, such as −12 or 24.';$('answer').focus();return;}
-    if(result==='wrong'){flash(false);beep(false);$('feedback').className='feedback bad';$('feedback').textContent='Not quite. Check the signs and try this question again.';$('answer').focus();$('answer').select();return;}
-    flash(true);beep(true);$('feedback').className='feedback good';$('feedback').textContent='Correct! Keep it going.';
-    if(result==='bonus'){totals();startCountdown();}else{showQuestion();$('answer').focus();}
-  }
-  $('answerForm').addEventListener('submit',submit);
-  $('keypad').addEventListener('click',event=>{
-    const button=event.target.closest('[data-key]');if(!button||session.state!=='math')return;
-    const key=button.dataset.key,input=$('answer'),value=input.value;
-    if(key==='sign')input.value=value.startsWith('-')?value.slice(1):'-'+value;
-    else if(key==='delete')input.value=value.slice(0,-1);
-    else{
-      // A selected wrong answer is replaced by the next keypad digit, just like typing.
-      if(input.selectionStart===0&&input.selectionEnd===value.length&&value)input.value=key;
-      else if(value.length<8)input.value=value+key;
+  function showQuestion(){
+    const q=session.question;
+    $('question').textContent=signed(q.a)+' '+q.op+' '+(q.b<0?'('+signed(q.b)+')':q.b)+' = ?';
+    $('questionLabel').textContent='QUESTION '+(session.correct+1);
+    $('choices').replaceChildren();
+    for(const value of session.choices){
+      const button=document.createElement('button');button.type='button';button.className='answer-choice';button.textContent=signed(value);
+      button.addEventListener('click',()=>choose(value,q));$('choices').append(button);
     }
-  });
+    totals();
+  }
+  function flash(good){panel.classList.remove('correct-flash','wrong-flash');void panel.offsetWidth;panel.classList.add(good?'correct-flash':'wrong-flash');}
+  function choose(value,question){
+    if(session.state!=='math'||!$('setup').hidden||session.question!==question)return;
+    const result=session.submit(value);
+    if(result==='wrong'){flash(false);beep(false);$('feedback').className='feedback bad';$('feedback').textContent='Not quite. Check the signs and try this question again.';return;}
+    if(result!=='correct'&&result!=='bonus')return;
+    flash(true);beep(true);$('feedback').className='feedback good';$('feedback').textContent='Correct! Keep it going.';
+    if(result==='bonus'){totals();startCountdown();}else{showQuestion();$('choices').focus();}
+  }
   function controlsEnabled(enabled){for(const id of ['left','fire','right'])$(id).disabled=!enabled;}
   function message(title,subtitle,number=''){$('stageMessage').hidden=false;$('stageTitle').textContent=title;$('stageSubtitle').textContent=subtitle;$('countdown').textContent=number;$('resume').hidden=true;}
   function dimensions(){const r=$('spaceStage').getBoundingClientRect();return {width:Math.max(260,r.width),height:Math.max(200,r.height)};}
@@ -81,10 +79,10 @@
     const earned=engine.score;cancelAnimationFrame(frame);frame=null;resetControls();engine.cleanup();engine=null;controlsEnabled(false);$('bonusTime').textContent='0';draw();
     message('BONUS COMPLETE','You scored '+earned.toLocaleString('en-GB')+' points!','');totals();later(returnToMath,2300);
   }
-  function returnToMath(){if(!session.resumeMath())return;cancelWork();modal(null);showQuestion();$('feedback').className='feedback good';$('feedback').textContent='Welcome back. Five more correct answers unlock another bonus.';$('answer').focus();}
+  function returnToMath(){if(!session.resumeMath())return;cancelWork();modal(null);showQuestion();$('feedback').className='feedback good';$('feedback').textContent='Welcome back. Five more correct answers unlock another bonus.';$('choices').focus();}
   function restart(){cancelWork();session.restart(session.level);totals();showQuestion();modal('setup');$('start').focus();}
   $('restart').addEventListener('click',restart);$('bonusRestart').addEventListener('click',restart);
-  $('start').addEventListener('click',()=>{cancelWork();session.restart(document.querySelector('input[name="level"]:checked').value);modal(null);showQuestion();$('feedback').className='feedback';$('feedback').textContent='Use your keyboard or the number pad below.';$('answer').focus();});
+  $('start').addEventListener('click',()=>{cancelWork();session.restart(document.querySelector('input[name="level"]:checked').value);modal(null);showQuestion();$('feedback').className='feedback';$('feedback').textContent='Choose the correct answer below.';$('choices').focus();});
   function toggleSound(){sound=!sound;for(const id of ['sound','bonusSound']){$(id).textContent=sound?'Sound on':'Sound off';$(id).setAttribute('aria-pressed',String(sound));}if(sound)beep(true);}
   $('sound').addEventListener('click',toggleSound);$('bonusSound').addEventListener('click',toggleSound);
   for(const action of ['left','right','fire']){

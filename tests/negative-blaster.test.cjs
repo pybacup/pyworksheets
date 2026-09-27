@@ -1,5 +1,5 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
-const {Session,Invaders,questionPool,key}=require('../assets/negative-blaster-core.js');
+const {Session,Invaders,questionPool,answerChoices,key}=require('../assets/negative-blaster-core.js');
 const rng=(seed=42)=>()=>((seed=(Math.imul(seed,1664525)+1013904223)>>>0)/4294967296);
 test('all generated facts have exact integer answers, valid ranges and all sign combinations',()=>{
   for(const [level,limit] of [['easy',5],['medium',8],['hard',12]]){
@@ -41,6 +41,7 @@ function harness(){
     constructor(){this.hidden=false;this.value='';this.children=[];this.style={};this.events={};this.dataset={};this.classList={add(){},remove(){},toggle(){}};}
     addEventListener(n,fn){(this.events[n]||=[]).push(fn);}
     fire(n,props={}){const e={target:this,preventDefault(){this.prevented=true;},...props};for(const f of this.events[n]||[])f(e);return e;}
+    replaceChildren(){this.children=[];}append(child){this.children.push(child);}
     focus(){document.activeElement=this;}select(){this.selectionStart=0;this.selectionEnd=this.value.length;}
     setAttribute(){}setPointerCapture(){}closest(){return null;}querySelectorAll(){return [];}
     getBoundingClientRect(){return {width:700,height:350};}
@@ -48,13 +49,13 @@ function harness(){
   }
   const el=n=>{if(!els.has(n))els.set(n,new Element());return els.get(n);};
   el('pips').children=Array.from({length:5},()=>new Element());el('level').value='medium';
-  const document={body:{style:{}},getElementById:el,querySelector:s=>el(s.startsWith('input')?'level':s),addEventListener:(n,f)=>(docEvents[n]||=[]).push(f)};
+  const document={createElement:()=>new Element(),body:{style:{}},getElementById:el,querySelector:s=>el(s.startsWith('input')?'level':s),addEventListener:(n,f)=>(docEvents[n]||=[]).push(f)};
   const window={NegativeBlaster:{Session,Invaders,BONUS_SECONDS:20},addEventListener:(n,f)=>(winEvents[n]||=[]).push(f)};
   const context={window,document,performance:{now:()=>now},setTimeout:(fn,ms)=>{timers.set(++id,{fn,at:now+ms});return id;},clearTimeout:id=>timers.delete(id),requestAnimationFrame:fn=>{frames.set(++id,fn);return id;},cancelAnimationFrame:id=>frames.delete(id)};
   let source=fs.readFileSync(path.join(__dirname,'../assets/negative-blaster.js'),'utf8');source=source.replace(/\}\)\(\);\s*$/, 'window.inspect=()=>({session,engine,paused,input:inputState()});})();');vm.runInNewContext(source,context);
   const advance=ms=>{const until=now+ms;while(true){const next=[...timers.entries()].filter(([,t])=>t.at<=until).sort((a,b)=>a[1].at-b[1].at)[0];if(!next)break;now=next[1].at;timers.delete(next[0]);next[1].fn();}now=until;};
   const frame=ms=>{now+=ms;const pending=[...frames.values()];frames.clear();pending.forEach(fn=>fn(now));};
-  const submit=()=>{el('answer').value=String(window.inspect().session.question.answer);el('answerForm').fire('submit');};
+  const submit=()=>{const answer=window.inspect().session.question.answer;el('choices').children.find(b=>Number(b.textContent.replace('−','-'))===answer).fire('click');};
   const event=(n,props={})=>{const e={preventDefault(){this.prevented=true;},...props};(docEvents[n]||[]).forEach(f=>f(e));return e;};
   return {el,advance,frame,submit,event,inspect:window.inspect,timers,frames,docEvents,winEvents};
 }
@@ -77,4 +78,16 @@ test('restart cancels countdowns and active rounds; blur pauses without burning 
   const h=harness();h.el('start').fire('click');for(let i=0;i<5;i++)h.submit();h.el('bonusRestart').fire('click');h.advance(5000);assert.equal(h.frames.size,0);assert.equal(h.inspect().session.correct,0);
   h.el('start').fire('click');for(let i=0;i<5;i++)h.submit();h.advance(3150);h.frame(1000);h.winEvents.blur[0]();const elapsed=h.inspect().engine.elapsed;assert.equal(h.inspect().paused,true);assert.equal(h.frames.size,0);h.advance(60000);h.el('resume').fire('click');h.frame(100);assert.ok(Math.abs(h.inspect().engine.elapsed-elapsed-.1)<1e-8);
   h.el('bonusRestart').fire('click');assert.equal(h.inspect().engine,null);assert.equal(h.frames.size,0);assert.equal(h.timers.size,0);
+});
+
+test('every question has four distinct integer options and exactly one correct answer',()=>{
+ for(const level of ['easy','medium','hard'])for(const q of questionPool(level))for(const random of [rng(),()=>0,()=>.999]){
+  const options=answerChoices(q,random);assert.equal(options.length,4);assert.equal(new Set(options).size,4);assert.equal(options.filter(n=>n===q.answer).length,1);assert.ok(options.every(Number.isInteger));assert.ok(options.includes(-q.answer));
+ }
+});
+test('wrong choices preserve the question and options; stale clicks cannot score twice',()=>{
+ const h=harness();h.el('start').fire('click');const q=h.inspect().session.question,buttons=[...h.el('choices').children];
+ const value=b=>Number(b.textContent.replace('−','-'));
+ buttons.find(b=>value(b)!==q.answer).fire('click');assert.equal(h.inspect().session.question,q);assert.deepEqual(h.el('choices').children,buttons);assert.equal(h.inspect().session.correct,0);
+ const correct=buttons.find(b=>value(b)===q.answer);correct.fire('click');assert.equal(h.inspect().session.correct,1);correct.fire('click');assert.equal(h.inspect().session.correct,1);assert.notEqual(h.inspect().session.question,q);
 });
