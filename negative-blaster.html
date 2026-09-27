@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Master multiplying and dividing negative numbers. Every five correct answers unlocks a 20-second Symbol Invaders arcade bonus in Negative Blaster.">
+<title>Negative Blaster | PY Games</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/landing.css"><link rel="stylesheet" href="assets/negative-blaster.css">
+<script src="assets/negative-blaster-core.js" defer></script><script src="assets/negative-blaster.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to game</a>
+<header class="site-header"><a class="brand" href="index.html">PY <span>Maths</span></a><span class="header-note">Think first. Blast next.</span><span class="version">v1.22</span></header>
+<main class="blaster-shell" id="main">
+  <nav class="page-nav" aria-label="Page navigation"><a href="games.html">← PY Games</a><a href="index.html">PY Maths home ↗</a></nav>
+  <div class="game-heading"><div><p class="eyebrow">NUMBER SKILLS / ARCADE REWARDS</p><h1>Negative <span>Blaster</span></h1><p>Five correct answers. Twenty seconds of symbol-blasting.</p></div><img src="assets/py-maths-logo.png" width="1983" height="793" alt="PY Maths"></div>
+  <div class="toolbar"><span id="difficultyLabel">Easy · multiplication up to 5 × 5</span><div><button class="small-button" id="restart" type="button">↻ New Game</button><button class="small-button" id="sound" type="button" aria-pressed="false">Sound off</button></div></div>
+  <section class="math-panel" aria-label="Negative number practice">
+    <div class="stats"><div><span>Correct</span><strong id="correct">0</strong></div><div><span>Bonus score</span><strong id="score">0</strong></div><div><span>Next bonus</span><strong id="progress">0/5</strong></div></div>
+    <div class="pips" id="pips" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <p class="question-label" id="questionLabel">QUESTION 1</p><div class="question" id="question" aria-live="polite">−4 × 3 = ?</div>
+    <form id="answerForm" novalidate><label class="sr-only" for="answer">Your integer answer</label><input id="answer" type="text" inputmode="numeric" autocomplete="off" spellcheck="false" maxlength="8" placeholder="Your answer" aria-describedby="feedback"><button class="submit-button" type="submit">Submit →</button></form>
+    <p id="feedback" class="feedback" role="status" aria-live="polite">Use your keyboard or the number pad below.</p>
+    <div class="keypad" id="keypad" role="group" aria-label="Answer number pad"><button type="button" data-key="1">1</button><button type="button" data-key="2">2</button><button type="button" data-key="3">3</button><button type="button" data-key="4">4</button><button type="button" data-key="5">5</button><button type="button" data-key="6">6</button><button type="button" data-key="7">7</button><button type="button" data-key="8">8</button><button type="button" data-key="9">9</button><button type="button" data-key="sign" aria-label="Toggle negative sign">+/−</button><button type="button" data-key="0">0</button><button type="button" data-key="delete" aria-label="Delete last digit">⌫</button></div>
+    <p class="math-tip">Same signs → positive. Different signs → negative.<br>No maths timer. Take your time and keep building your total.</p>
+  </section>
+  <noscript><p>Enable JavaScript to play Negative Blaster.</p></noscript>
+</main>
+<section class="overlay" id="setup" role="dialog" aria-modal="true" aria-labelledby="setupTitle"><div class="setup-card"><p class="eyebrow">PY GAMES</p><h2 id="setupTitle">Negative Blaster</h2><p>Multiply and divide signed integers. Every five correct answers unlocks Symbol Invaders, a 20-second arcade reward.</p><fieldset><legend>Choose your challenge</legend><div class="level-options"><label><input type="radio" name="level" value="easy" checked><span><strong>Easy</strong><small>Multiplication<br>Facts up to 5 × 5</small></span></label><label><input type="radio" name="level" value="medium"><span><strong>Medium</strong><small>Multiply &amp; divide<br>Facts up to 8 × 8</small></span></label><label><input type="radio" name="level" value="hard"><span><strong>Hard</strong><small>Multiply &amp; divide<br>Facts up to 12 × 12</small></span></label></div></fieldset><p>Wrong answer? Try the same question again.<br>Your correct total and bonus points last until you start a new game.</p><button class="submit-button" id="start" type="button">Start Game</button><div class="setup-links"><a href="games.html">← PY Games</a><a href="index.html">Home</a></div></div></section>
+<section class="overlay arcade" id="arcade" hidden role="dialog" aria-modal="true" aria-labelledby="arcadeTitle"><div class="arcade-panel">
+  <div class="arcade-header"><div><p>PY GAMES / REWARD ROUND</p><h2 id="arcadeTitle">Symbol Invaders</h2></div><div class="arcade-tools"><button id="bonusSound" type="button" aria-pressed="false">Sound off</button><button id="bonusRestart" type="button">New Game</button></div></div>
+  <div class="bonus-stats"><div>BONUS TIME <strong id="bonusTime">20</strong></div><div>BONUS SCORE <strong id="bonusScore">0</strong></div><div>TOTAL <strong id="bonusTotal">0</strong></div></div>
+  <div class="space-stage" id="spaceStage"><canvas id="space" aria-label="Symbol Invaders arena. Move left or right and fire to hit mathematical symbols."></canvas><div class="stage-message" id="stageMessage" role="status" aria-live="polite"><strong id="stageTitle">5 CORRECT!</strong><span id="stageSubtitle">BONUS ROUND!</span><b id="countdown">3</b><button id="resume" type="button" hidden>Resume</button></div></div>
+  <div class="touch-controls" aria-label="Ship controls"><button type="button" id="left" aria-label="Move left">◀ LEFT</button><button type="button" id="fire" aria-label="Fire">FIRE ✦</button><button type="button" id="right" aria-label="Move right">RIGHT ▶</button></div>
+  <p class="arcade-tip">← → or A / D to move · Space to fire · Hold the touch buttons<br>Symbols = 100 points · <span>Gold π = 250</span> · Escaping symbols never cost maths progress.</p>
+  <div class="arcade-links"><a href="games.html">← PY Games</a><a href="index.html">Home</a></div>
+</div></section>
+</body></html>
