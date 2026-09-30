@@ -1,0 +1,20 @@
+/* Deep teal and amber worksheet theme. Resource loading is unchanged. */
+
+:root{--blue:#115e59;--blue-dark:#134e4a;--blue-light:#e7f1ec;--line:#d6e2db;--text:#253b35;--bg:#f5f7f4;--accent:#d99a26;--soft:#f8efd9}
+
+
+body{background:var(--bg)}header{background:var(--blue-dark);box-shadow:0 2px 8px #00000012}
+.level-btn.active{border-bottom-color:var(--accent)}
+.hero{background:linear-gradient(120deg,var(--blue-light),white 60%,var(--soft));box-shadow:0 5px 20px #00000006;border:1px solid var(--line)}
+.hero h1{color:var(--blue-dark)}thead th{background:var(--blue-dark)}
+tbody tr:nth-child(even){background:var(--bg)}tbody tr:hover{background:var(--blue-light)}
+.table-card{border-color:var(--line);box-shadow:0 4px 18px #00000005}tbody td{border-right-color:var(--line);border-bottom-color:var(--line)}
+.section-nav .section-btn{background:white;border:1px solid var(--line);color:var(--blue-dark)}
+.section-nav .section-btn.active,.section-nav .section-btn:hover{background:var(--blue-dark);color:white;border-color:var(--blue-dark)}
+#topicNav[data-section]{background:var(--blue-light);border-left-color:var(--accent)}
+#topicNav[data-section] .subcategory-btn{border-color:var(--line);color:var(--blue-dark);background:white}
+#topicNav[data-section] .subcategory-btn.active,#topicNav[data-section] .subcategory-btn:hover{background:var(--blue-dark);color:white}
+.grade-btn{background:white;border:1px solid var(--line);color:var(--blue-dark)}.grade-btn.active{background:var(--blue-dark);color:white}
+.answer-link{background:var(--blue)}.grade-pill{border-color:var(--line);color:var(--text);background:var(--soft);border-radius:8px}
+
+.py-logo{box-shadow:none;border-radius:0}
