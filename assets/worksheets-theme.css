@@ -18,3 +18,5 @@ tbody tr:nth-child(even){background:var(--bg)}tbody tr:hover{background:var(--bl
 .answer-link{background:var(--blue)}.grade-pill{border-color:var(--line);color:var(--text);background:var(--soft);border-radius:8px}
 
 .py-logo{box-shadow:none;border-radius:0}
+
+.worksheet-site-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;padding:8px;background:#134e4a;color:white}.worksheet-site-nav a{padding:12px;text-decoration:none;font-weight:700}.worksheet-site-nav a[aria-current]{text-decoration:underline;text-underline-offset:6px}

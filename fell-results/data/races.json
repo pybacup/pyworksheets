@@ -1,0 +1,13 @@
+{
+  "races": [
+    {
+      "id": "pike-fell",
+      "name": "Pike Fell",
+      "full_name": "Thieveley Pike Fell Race, Cliviger, Lancashire",
+      "date_label": "26th September 2026",
+      "year": 2026,
+      "source": "https://www.ukresults.net/2026/pikefell.html",
+      "results_file": "data/results/pike-fell/2026.json"
+    }
+  ]
+}
