@@ -1,0 +1,3 @@
+
+# Local-only exam administration: never commit or deploy.
+/admin-tools/

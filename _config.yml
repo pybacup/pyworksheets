@@ -1,0 +1,4 @@
+
+# Defence in depth for GitHub Pages branch/Jekyll publishing.
+exclude:
+  - admin-tools
