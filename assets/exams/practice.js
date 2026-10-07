@@ -13,35 +13,44 @@ function series(e){const label=String(e.examSeries||e.series||e.session||'').tri
 function sourceLines(e){return [e.examBoard+' · '+e.qualification+' · '+e.paperCode,series(e)+' · Question '+e.question+' · '+e.marks+' marks'];}
 function filename(title){const clean=String(title).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,120).replace(/-$/,'');return 'PY-Maths-'+(clean||'Practice')+'.pdf';}
 function wrap(text,font,size,width){const lines=[];let line='';for(const word of String(text).replace(/[\r\n\t]+/g,' ').split(/\s+/)){const trial=line?line+' '+word:word;if(font.widthOfTextAtSize(trial,size)<=width){line=trial;continue;}if(line)lines.push(line);line='';for(const ch of word){if(font.widthOfTextAtSize(line+ch,size)>width&&line){lines.push(line);line='';}line+=ch;}}if(line)lines.push(line);return lines;}
-// The full original visible page is embedded as a vector form, including CropBox offsets.
-// Rotation is applied explicitly so portrait, landscape and rotated source PDFs fit safely.
+// Embed the full CropBox as vector content; never crop to make a question fit.
 async function build(questions,{title='Maths Practice',lib,load,onProgress=()=>{}}){
  if(!questions.length)throw Error('Select at least one question.');
+ const width=595.28,height=841.89,margin=32,gap=28,usable=width-2*margin;
  const out=await lib.PDFDocument.create(),font=await out.embedFont(lib.StandardFonts.Helvetica),bold=await out.embedFont(lib.StandardFonts.HelveticaBold);
- out.setTitle('PY Maths – '+title);out.setCreator('PY Maths');let first=true;
- for(let i=0;i<questions.length;i++){const q=questions[i];try{
- onProgress(i,questions.length,q);const data=await load(q),src=await lib.PDFDocument.load(data);if(!src.getPageCount())throw Error('PDF has no pages.');
- for(let n=0;n<src.getPageCount();n++){
- const original=src.getPage(n),box=original.getCropBox(),rotation=((original.getRotation().angle%360)+360)%360;
- if(![0,90,180,270].includes(rotation))throw Error('Unsupported page rotation.');
- const rotated=rotation===90||rotation===270,dw=rotated?box.height:box.width,dh=rotated?box.width:box.height;
- if(!(dw>0&&dh>0))throw Error('Invalid PDF page dimensions.');
- const width=Math.max(360,dw),height=Math.max(480,dh),margin=24;
- const titleLines=first?wrap('PY Maths – '+title,bold,13,width-2*margin):[];
- const headers=sourceLines(q).flatMap(line=>wrap(line,font,9,width-2*margin));
- if(src.getPageCount()>1)headers.push('Question page '+(n+1)+' of '+src.getPageCount());
- const top=margin+titleLines.length*17+(titleLines.length?10:0)+headers.length*13+16;
- if(top>height*.45)throw Error('Source metadata or title is too long to fit the header.');
- const page=out.addPage([width,height]);let y=height-margin;
- for(const text of titleLines){page.drawText(text,{x:margin,y:y-13,font:bold,size:13,color:lib.rgb(.075,.306,.29)});y-=17;}if(titleLines.length)y-=10;
- for(const text of headers){page.drawText(text,{x:margin,y:y-9,font,size:9,color:lib.rgb(.2,.25,.23)});y-=13;}
- page.drawLine({start:{x:margin,y:y-5},end:{x:width-margin,y:y-5},thickness:.6,color:lib.rgb(.72,.79,.75)});
- const embedded=await out.embedPage(original,{left:box.x,bottom:box.y,right:box.x+box.width,top:box.y+box.height});
- const scale=Math.min(1,(width-2*margin)/dw,(height-top-margin)/dh),w=box.width*scale,h=box.height*scale;
- let x=(width-dw*scale)/2,y0=height-top-dh*scale;
- if(rotation===90)y0+=w;else if(rotation===180){x+=w;y0+=h;}else if(rotation===270)x+=h;
- page.drawPage(embedded,{x,y:y0,width:w,height:h,rotate:lib.degrees(-rotation)});first=false;
+ out.setTitle('PY Maths – '+title);out.setCreator('PY Maths');
+ let page=null,cursor=0,hasContent=false;
+ function newPage(){
+  const first=out.getPageCount()===0;page=out.addPage([width,height]);cursor=height-margin;hasContent=false;
+  if(first){const lines=wrap('PY Maths – '+title,bold,12,usable);if(lines.length>8)throw Error('Practice title is too long.');for(const text of lines){page.drawText(text,{x:margin,y:cursor-12,font:bold,size:12,color:lib.rgb(.075,.306,.29)});cursor-=15;}cursor-=12;}
  }
+ for(let i=0;i<questions.length;i++){const q=questions[i];try{
+  onProgress(i,questions.length,q);const src=await lib.PDFDocument.load(await load(q));const count=src.getPageCount();if(!count)throw Error('PDF has no pages.');
+  for(let n=0;n<count;n++){
+   const original=src.getPage(n),box=original.getCropBox(),rotation=((original.getRotation().angle%360)+360)%360;
+   if(![0,90,180,270].includes(rotation))throw Error('Unsupported page rotation.');
+   const rotated=rotation===90||rotation===270,dw=rotated?box.height:box.width,dh=rotated?box.width:box.height;
+   if(!(dw>0&&dh>0))throw Error('Invalid PDF page dimensions.');
+   const label=sourceLines(q).join(' · ')+(count>1?' · Page '+(n+1)+' of '+count:'');
+   const headers=wrap(label,font,8,usable),headerHeight=headers.length*11+10;
+   if(headerHeight>150)throw Error('Source metadata is too long to fit the header.');
+   if(!page||(count>1&&hasContent))newPage();
+   // Fit width at most 100%. Never reduce further simply to fill leftover space.
+   let scale=Math.min(1,usable/dw),required=headerHeight+dh*scale;
+   if(hasContent&&required>cursor-margin)newPage();
+   // Exception: a source page taller than an entire usable sheet must fit A4.
+   // It gets the full sheet, retaining all content and its original proportions.
+   scale=Math.min(scale,(cursor-margin-headerHeight)/dh);
+   let y=cursor;
+   for(const text of headers){page.drawText(text,{x:margin,y:y-8,font,size:8,color:lib.rgb(.2,.25,.23)});y-=11;}
+   page.drawLine({start:{x:margin,y:y-3},end:{x:width-margin,y:y-3},thickness:.5,color:lib.rgb(.72,.79,.75)});
+   const embedded=await out.embedPage(original,{left:box.x,bottom:box.y,right:box.x+box.width,top:box.y+box.height});
+   const w=box.width*scale,h=box.height*scale,bottom=cursor-headerHeight-dh*scale;
+   let x=margin,y0=bottom;
+   if(rotation===90)y0+=w;else if(rotation===180){x+=w;y0+=h;}else if(rotation===270)x+=h;
+   page.drawPage(embedded,{x,y:y0,width:w,height:h,rotate:lib.degrees(-rotation)});
+   cursor=bottom-gap;hasContent=true;
+  }
  }catch(error){throw Error('Could not include '+q.examBoard+' '+q.paperCode+' · '+series(q)+' · Question '+q.question+': '+error.message);}}
  return out.save();
 }

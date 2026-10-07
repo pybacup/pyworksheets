@@ -4,7 +4,7 @@
 
 ## Practice papers
 
-Selections stay in the basket when filters change, until the page is refreshed or closed. Move up/down buttons determine export order. Each original PDF page is embedded as vector content beneath a mandatory source header, scaled proportionally to fit. Every question starts on a fresh page; there is no separate cover page. A failed download or invalid PDF aborts the whole export and keeps the basket intact.
+Selections stay in the basket when filters change, until the page is refreshed or closed. Move up/down buttons determine export order. Each original PDF page is embedded as vector content beneath a mandatory source header, scaled proportionally to fit. Questions flow vertically on A4 portrait sheets (595.28 × 841.89 pt), with 32 pt margins and 28 pt between questions. Single-page questions move intact to the next sheet if needed. Multi-page questions begin on a fresh sheet and retain each continuation page. Oversized source pages are scaled proportionally to fit a full sheet; other questions are never shrunk to fill leftover space. There is no separate cover page. A failed download or invalid PDF aborts the whole export and keeps the basket intact.
 
 Source labels use the index metadata. An optional `examSeries` field (for example `June`) supplies the series; `series` and `session` are also accepted. If none is supplied, only the recorded exam year is shown. The exporter never guesses a series.
 
