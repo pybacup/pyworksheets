@@ -12,7 +12,7 @@ function render(){
  const found=C.filter(entries,f).sort((a,b)=>b.examYear-a.examYear||String(a.question).localeCompare(String(b.question),undefined,{numeric:true}));
  $('status').textContent=found.length+' question'+(found.length===1?'':'s')+' found.';
  for(const e of found){
- const card=node('article',undefined,'question-card');card.append(node('h2','Question '+e.question),node('p',[e.examBoard,e.paperCode,P.series(e)].join(' · ')),node('p',e.topic+' · '+e.marks+' marks'),node('p',e.subtopics.join(', ')));
+ const card=node('article',undefined,'question-card');card.append(node('h2','Question '+e.question),node('p',[e.examBoard,e.paperCode,P.series(e)].join(' · ')),node('p',C.topics(e).join(', ')+' · '+e.marks+' marks'),node('p',e.subtopics.join(', ')));
  const a=node('a','Preview / Open Question ↗','primary-link');a.href=e.questionFile;a.target='_blank';a.rel='noopener noreferrer';
  const label=node('label',undefined,'select-question'),input=document.createElement('input');input.type='checkbox';input.checked=basket.has(e.id);input.disabled=busy;input.setAttribute('aria-label','Select '+e.examBoard+' '+e.paperCode+' '+P.series(e)+' question '+e.question);
  input.addEventListener('change',()=>{if(busy)return;if(input.checked)basket.add(e);else basket.remove(e.id);renderBasket();});label.append(input,node('span','Select Question'));card.append(a,label);$('questions').append(card);
@@ -24,7 +24,7 @@ function renderBasket(focus){
  $('basketEmpty').hidden=basket.items.length>0;$('createPractice').disabled=busy||!basket.items.length;$('clearAll').disabled=busy||!basket.items.length;
  if(focus){const candidates=[...$('selectedList').querySelectorAll('button')];const target=candidates.find(b=>b.dataset.id===focus.id&&b.dataset.action===focus.action&&!b.disabled)||candidates.find(b=>b.dataset.id===focus.id&&!b.disabled)||$('basketHeading');target.focus();}
 }
-function course(){const scoped=C.filter(entries,U.values());U.options('topic',C.unique(scoped.map(e=>e.topic)),'Choose a topic');U.options('examBoard',C.unique(scoped.map(e=>e.examBoard)));U.options('examYear',C.unique(scoped.map(e=>e.examYear)).reverse());U.options('subtopic',[]);$('minMarks').value=$('maxMarks').value='';render();}
+function course(){const scoped=C.filter(entries,U.values());U.options('topic',C.unique(scoped.flatMap(e=>C.topics(e))),'Choose a topic');U.options('examBoard',C.unique(scoped.map(e=>e.examBoard)));U.options('examYear',C.unique(scoped.map(e=>e.examYear)).reverse());U.options('subtopic',[]);$('minMarks').value=$('maxMarks').value='';render();}
 U.courses(course);for(const id of ids)$(id).addEventListener('input',()=>{if(id==='topic')U.options('subtopic',C.unique(C.filter(entries,{...U.values(),topic:$('topic').value}).flatMap(e=>e.subtopics)));render();});
 $('reset').addEventListener('click',()=>{for(const id of ids.filter(k=>k!=='topic'))$(id).value='';render();});
 $('clearAll').addEventListener('click',()=>{if(busy)return;basket.clear();renderBasket();render();});

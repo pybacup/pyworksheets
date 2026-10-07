@@ -8,7 +8,7 @@ Selections stay in the basket when filters change, until the page is refreshed o
 
 Source labels use the index metadata. An optional `examSeries` field (for example `June`) supplies the series; `series` and `session` are also accepted. If none is supplied, only the recorded exam year is shown. The exporter never guesses a series.
 
-The current checkout has an empty index and no question PDFs. Automated export checks use temporary synthetic fixtures, not production exam entries; verify real exam papers once they are available.
+The Year 1 Pure OCR Y410/01 batch contains 55 questions and six source papers from 2018–2023. Its fragment was merged by ID; singular subtopic metadata was also mapped to the subtopics array used by the browser. Topic options and filtering include both the primary topic and any additional topics tags. The index was empty before this import, so this checkout contained no Year 2 records to merge alongside it.
 
 Keep existing exam PDFs and index entries when adding prepared question packages. Merge new entries by ID into the latest index, check all PDF paths and metadata, then publish through your normal Git workflow. Do not replace a newer index with an older package snapshot.
 

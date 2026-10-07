@@ -1,1 +1,1445 @@
-[]
+[
+  {
+    "id": "ocr-y410-01-2018-q1",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2018,
+    "series": "May 2018",
+    "examDate": "2018-05-14",
+    "question": "1",
+    "marks": 4,
+    "topic": "Matrices",
+    "topics": [
+      "Matrices"
+    ],
+    "subtopic": "Matrix multiplication",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/matrices/ocr-y410-01-2018-q1.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2018.pdf",
+    "subtopics": [
+      "Matrix multiplication"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2018-q2",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2018,
+    "series": "May 2018",
+    "examDate": "2018-05-14",
+    "question": "2",
+    "marks": 3,
+    "topic": "Vectors",
+    "topics": [
+      "Vectors"
+    ],
+    "subtopic": "Angle between vectors",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/vectors/ocr-y410-01-2018-q2.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2018.pdf",
+    "subtopics": [
+      "Angle between vectors"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2018-q3",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2018,
+    "series": "May 2018",
+    "examDate": "2018-05-14",
+    "question": "3",
+    "marks": 5,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers"
+    ],
+    "subtopic": "Arithmetic with complex numbers",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2018-q3.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2018.pdf",
+    "subtopics": [
+      "Arithmetic with complex numbers"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2018-q4",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2018,
+    "series": "May 2018",
+    "examDate": "2018-05-14",
+    "question": "4",
+    "marks": 5,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers",
+      "Roots of Polynomials"
+    ],
+    "subtopic": "Polynomial roots with complex roots",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2018-q4.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2018.pdf",
+    "subtopics": [
+      "Polynomial roots with complex roots"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2018-q5",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2018,
+    "series": "May 2018",
+    "examDate": "2018-05-14",
+    "question": "5",
+    "marks": 7,
+    "topic": "Matrices",
+    "topics": [
+      "Matrices"
+    ],
+    "subtopic": "Matrix transformations",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/matrices/ocr-y410-01-2018-q5.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2018.pdf",
+    "subtopics": [
+      "Matrix transformations"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2018-q6",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2018,
+    "series": "May 2018",
+    "examDate": "2018-05-14",
+    "question": "6",
+    "marks": 4,
+    "topic": "Matrices",
+    "topics": [
+      "Matrices"
+    ],
+    "subtopic": "Invariant lines",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/matrices/ocr-y410-01-2018-q6.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2018.pdf",
+    "subtopics": [
+      "Invariant lines"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2018-q7",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2018,
+    "series": "May 2018",
+    "examDate": "2018-05-14",
+    "question": "7",
+    "marks": 9,
+    "topic": "Series",
+    "topics": [
+      "Series"
+    ],
+    "subtopic": "Series and partial fractions",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/series/ocr-y410-01-2018-q7.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2018.pdf",
+    "subtopics": [
+      "Series and partial fractions"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2018-q8",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2018,
+    "series": "May 2018",
+    "examDate": "2018-05-14",
+    "question": "8",
+    "marks": 6,
+    "topic": "Proof by Induction",
+    "topics": [
+      "Proof by Induction",
+      "Matrices"
+    ],
+    "subtopic": "Matrix powers",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/proof-by-induction/ocr-y410-01-2018-q8.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2018.pdf",
+    "subtopics": [
+      "Matrix powers"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2018-q9",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2018,
+    "series": "May 2018",
+    "examDate": "2018-05-14",
+    "question": "9",
+    "marks": 9,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers"
+    ],
+    "subtopic": "Argand diagrams and loci",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2018-q9.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2018.pdf",
+    "subtopics": [
+      "Argand diagrams and loci"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2018-q10",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2018,
+    "series": "May 2018",
+    "examDate": "2018-05-14",
+    "question": "10",
+    "marks": 8,
+    "topic": "Vectors",
+    "topics": [
+      "Vectors"
+    ],
+    "subtopic": "Planes and position vectors",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/vectors/ocr-y410-01-2018-q10.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2018.pdf",
+    "subtopics": [
+      "Planes and position vectors"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2019-q1",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2019,
+    "series": "May 2019",
+    "examDate": "2019-05-13",
+    "question": "1",
+    "marks": 3,
+    "topic": "Series",
+    "topics": [
+      "Series"
+    ],
+    "subtopic": "Finite series",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/series/ocr-y410-01-2019-q1.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2019.pdf",
+    "subtopics": [
+      "Finite series"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2019-q2",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2019,
+    "series": "May 2019",
+    "examDate": "2019-05-13",
+    "question": "2",
+    "marks": 3,
+    "topic": "Roots of Polynomials",
+    "topics": [
+      "Roots of Polynomials"
+    ],
+    "subtopic": "Transformed roots",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/roots-of-polynomials/ocr-y410-01-2019-q2.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2019.pdf",
+    "subtopics": [
+      "Transformed roots"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2019-q3",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2019,
+    "series": "May 2019",
+    "examDate": "2019-05-13",
+    "question": "3",
+    "marks": 6,
+    "topic": "Matrices",
+    "topics": [
+      "Matrices"
+    ],
+    "subtopic": "Matrix multiplication and inverse",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/matrices/ocr-y410-01-2019-q3.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2019.pdf",
+    "subtopics": [
+      "Matrix multiplication and inverse"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2019-q4",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2019,
+    "series": "May 2019",
+    "examDate": "2019-05-13",
+    "question": "4",
+    "marks": 8,
+    "topic": "Matrices",
+    "topics": [
+      "Matrices",
+      "Vectors"
+    ],
+    "subtopic": "Inverse matrices and planes",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/matrices/ocr-y410-01-2019-q4.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2019.pdf",
+    "subtopics": [
+      "Inverse matrices and planes"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2019-q5",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2019,
+    "series": "May 2019",
+    "examDate": "2019-05-13",
+    "question": "5",
+    "marks": 6,
+    "topic": "Proof by Induction",
+    "topics": [
+      "Proof by Induction",
+      "Series"
+    ],
+    "subtopic": "Series formula",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/proof-by-induction/ocr-y410-01-2019-q5.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2019.pdf",
+    "subtopics": [
+      "Series formula"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2019-q6",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2019,
+    "series": "May 2019",
+    "examDate": "2019-05-13",
+    "question": "6",
+    "marks": 11,
+    "topic": "Matrices",
+    "topics": [
+      "Matrices"
+    ],
+    "subtopic": "Transformations, determinants and invariant lines",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/matrices/ocr-y410-01-2019-q6.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2019.pdf",
+    "subtopics": [
+      "Transformations, determinants and invariant lines"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2019-q7",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2019,
+    "series": "May 2019",
+    "examDate": "2019-05-13",
+    "question": "7",
+    "marks": 12,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers"
+    ],
+    "subtopic": "Argand diagrams and loci",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2019-q7.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2019.pdf",
+    "subtopics": [
+      "Argand diagrams and loci"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2019-q8",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2019,
+    "series": "May 2019",
+    "examDate": "2019-05-13",
+    "question": "8",
+    "marks": 11,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers",
+      "Roots of Polynomials"
+    ],
+    "subtopic": "Complex roots of a polynomial",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2019-q8.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2019.pdf",
+    "subtopics": [
+      "Complex roots of a polynomial"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2020-q1",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2020,
+    "series": "October 2020",
+    "examDate": "2020-10-05",
+    "question": "1",
+    "marks": 3,
+    "topic": "Series",
+    "topics": [
+      "Series"
+    ],
+    "subtopic": "Exact finite series",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/series/ocr-y410-01-2020-q1.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2020.pdf",
+    "subtopics": [
+      "Exact finite series"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2020-q2",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2020,
+    "series": "October 2020",
+    "examDate": "2020-10-05",
+    "question": "2",
+    "marks": 4,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers"
+    ],
+    "subtopic": "Argand diagrams and complex arithmetic",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2020-q2.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2020.pdf",
+    "subtopics": [
+      "Argand diagrams and complex arithmetic"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2020-q3",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2020,
+    "series": "October 2020",
+    "examDate": "2020-10-05",
+    "question": "3",
+    "marks": 7,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers"
+    ],
+    "subtopic": "Modulus-argument form and powers",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2020-q3.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2020.pdf",
+    "subtopics": [
+      "Modulus-argument form and powers"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2020-q4",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2020,
+    "series": "October 2020",
+    "examDate": "2020-10-05",
+    "question": "4",
+    "marks": 4,
+    "topic": "Matrices",
+    "topics": [
+      "Matrices"
+    ],
+    "subtopic": "Matrix transformations and determinant",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/matrices/ocr-y410-01-2020-q4.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2020.pdf",
+    "subtopics": [
+      "Matrix transformations and determinant"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2020-q5",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2020,
+    "series": "October 2020",
+    "examDate": "2020-10-05",
+    "question": "5",
+    "marks": 6,
+    "topic": "Proof by Induction",
+    "topics": [
+      "Proof by Induction"
+    ],
+    "subtopic": "Sequences",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/proof-by-induction/ocr-y410-01-2020-q5.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2020.pdf",
+    "subtopics": [
+      "Sequences"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2020-q6",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2020,
+    "series": "October 2020",
+    "examDate": "2020-10-05",
+    "question": "6",
+    "marks": 8,
+    "topic": "Matrices",
+    "topics": [
+      "Matrices"
+    ],
+    "subtopic": "Matrix multiplication, determinants and inverse",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/matrices/ocr-y410-01-2020-q6.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2020.pdf",
+    "subtopics": [
+      "Matrix multiplication, determinants and inverse"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2020-q7",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2020,
+    "series": "October 2020",
+    "examDate": "2020-10-05",
+    "question": "7",
+    "marks": 7,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers",
+      "Roots of Polynomials"
+    ],
+    "subtopic": "Complex roots of a quartic",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2020-q7.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2020.pdf",
+    "subtopics": [
+      "Complex roots of a quartic"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2020-q8",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2020,
+    "series": "October 2020",
+    "examDate": "2020-10-05",
+    "question": "8",
+    "marks": 7,
+    "topic": "Matrices",
+    "topics": [
+      "Matrices"
+    ],
+    "subtopic": "Matrix powers and transformations",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/matrices/ocr-y410-01-2020-q8.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2020.pdf",
+    "subtopics": [
+      "Matrix powers and transformations"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2020-q9",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2020,
+    "series": "October 2020",
+    "examDate": "2020-10-05",
+    "question": "9",
+    "marks": 7,
+    "topic": "Vectors",
+    "topics": [
+      "Vectors"
+    ],
+    "subtopic": "Arrangement of planes",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/vectors/ocr-y410-01-2020-q9.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2020.pdf",
+    "subtopics": [
+      "Arrangement of planes"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2020-q10",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2020,
+    "series": "October 2020",
+    "examDate": "2020-10-05",
+    "question": "10",
+    "marks": 7,
+    "topic": "Vectors",
+    "topics": [
+      "Vectors"
+    ],
+    "subtopic": "Vector geometry in three dimensions",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/vectors/ocr-y410-01-2020-q10.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2020.pdf",
+    "subtopics": [
+      "Vector geometry in three dimensions"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2021-q1",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2021,
+    "series": "October 2021",
+    "examDate": "2021-10-04",
+    "question": "1",
+    "marks": 3,
+    "topic": "Series",
+    "topics": [
+      "Series"
+    ],
+    "subtopic": "Summation formulae",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/series/ocr-y410-01-2021-q1.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2021.pdf",
+    "subtopics": [
+      "Summation formulae"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2021-q2",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2021,
+    "series": "October 2021",
+    "examDate": "2021-10-04",
+    "question": "2",
+    "marks": 3,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers",
+      "Roots of Polynomials"
+    ],
+    "subtopic": "Transformed roots of a quadratic",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2021-q2.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2021.pdf",
+    "subtopics": [
+      "Transformed roots of a quadratic"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2021-q3",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2021,
+    "series": "October 2021",
+    "examDate": "2021-10-04",
+    "question": "3",
+    "marks": 7,
+    "topic": "Vectors",
+    "topics": [
+      "Vectors",
+      "Matrices"
+    ],
+    "subtopic": "Planes, matrices and angles",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/vectors/ocr-y410-01-2021-q3.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2021.pdf",
+    "subtopics": [
+      "Planes, matrices and angles"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2021-q4",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2021,
+    "series": "October 2021",
+    "examDate": "2021-10-04",
+    "question": "4",
+    "marks": 5,
+    "topic": "Matrices",
+    "topics": [
+      "Matrices"
+    ],
+    "subtopic": "Inverse of a product of matrices",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/matrices/ocr-y410-01-2021-q4.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2021.pdf",
+    "subtopics": [
+      "Inverse of a product of matrices"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2021-q5",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2021,
+    "series": "October 2021",
+    "examDate": "2021-10-04",
+    "question": "5",
+    "marks": 5,
+    "topic": "Proof by Induction",
+    "topics": [
+      "Proof by Induction",
+      "Series"
+    ],
+    "subtopic": "Series formula",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/proof-by-induction/ocr-y410-01-2021-q5.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2021.pdf",
+    "subtopics": [
+      "Series formula"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2021-q6",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2021,
+    "series": "October 2021",
+    "examDate": "2021-10-04",
+    "question": "6",
+    "marks": 12,
+    "topic": "Matrices",
+    "topics": [
+      "Matrices"
+    ],
+    "subtopic": "Transformations and matrix powers",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/matrices/ocr-y410-01-2021-q6.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2021.pdf",
+    "subtopics": [
+      "Transformations and matrix powers"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2021-q7",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2021,
+    "series": "October 2021",
+    "examDate": "2021-10-04",
+    "question": "7",
+    "marks": 9,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers"
+    ],
+    "subtopic": "Modulus, argument and exact trigonometric values",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2021-q7.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2021.pdf",
+    "subtopics": [
+      "Modulus, argument and exact trigonometric values"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2021-q8",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2021,
+    "series": "October 2021",
+    "examDate": "2021-10-04",
+    "question": "8",
+    "marks": 7,
+    "topic": "Roots of Polynomials",
+    "topics": [
+      "Roots of Polynomials"
+    ],
+    "subtopic": "Relations between roots",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/roots-of-polynomials/ocr-y410-01-2021-q8.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2021.pdf",
+    "subtopics": [
+      "Relations between roots"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2021-q9",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2021,
+    "series": "October 2021",
+    "examDate": "2021-10-04",
+    "question": "9",
+    "marks": 9,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers"
+    ],
+    "subtopic": "Argand loci and intersections",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2021-q9.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2021.pdf",
+    "subtopics": [
+      "Argand loci and intersections"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2022-q1",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2022,
+    "series": "May 2022",
+    "examDate": "2022-05-16",
+    "question": "1",
+    "marks": 6,
+    "topic": "Matrices",
+    "topics": [
+      "Matrices"
+    ],
+    "subtopic": "Matrix equations and unique solutions",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/matrices/ocr-y410-01-2022-q1.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2022.pdf",
+    "subtopics": [
+      "Matrix equations and unique solutions"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2022-q2",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2022,
+    "series": "May 2022",
+    "examDate": "2022-05-16",
+    "question": "2",
+    "marks": 7,
+    "topic": "Vectors",
+    "topics": [
+      "Vectors"
+    ],
+    "subtopic": "Vectors and planes",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/vectors/ocr-y410-01-2022-q2.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2022.pdf",
+    "subtopics": [
+      "Vectors and planes"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2022-q3",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2022,
+    "series": "May 2022",
+    "examDate": "2022-05-16",
+    "question": "3",
+    "marks": 5,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers"
+    ],
+    "subtopic": "Solving a complex equation",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2022-q3.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2022.pdf",
+    "subtopics": [
+      "Solving a complex equation"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2022-q4",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2022,
+    "series": "May 2022",
+    "examDate": "2022-05-16",
+    "question": "4",
+    "marks": 6,
+    "topic": "Roots of Polynomials",
+    "topics": [
+      "Roots of Polynomials"
+    ],
+    "subtopic": "Relations between roots",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/roots-of-polynomials/ocr-y410-01-2022-q4.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2022.pdf",
+    "subtopics": [
+      "Relations between roots"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2022-q5",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2022,
+    "series": "May 2022",
+    "examDate": "2022-05-16",
+    "question": "5",
+    "marks": 5,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers"
+    ],
+    "subtopic": "Argand diagram regions",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2022-q5.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2022.pdf",
+    "subtopics": [
+      "Argand diagram regions"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2022-q6",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2022,
+    "series": "May 2022",
+    "examDate": "2022-05-16",
+    "question": "6",
+    "marks": 10,
+    "topic": "Proof by Induction",
+    "topics": [
+      "Proof by Induction",
+      "Series"
+    ],
+    "subtopic": "Summation formula and induction",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/proof-by-induction/ocr-y410-01-2022-q6.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2022.pdf",
+    "subtopics": [
+      "Summation formula and induction"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2022-q7",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2022,
+    "series": "May 2022",
+    "examDate": "2022-05-16",
+    "question": "7",
+    "marks": 9,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers"
+    ],
+    "subtopic": "Modulus, argument and parallelograms",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2022-q7.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2022.pdf",
+    "subtopics": [
+      "Modulus, argument and parallelograms"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2022-q8",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2022,
+    "series": "May 2022",
+    "examDate": "2022-05-16",
+    "question": "8",
+    "marks": 12,
+    "topic": "Matrices",
+    "topics": [
+      "Matrices"
+    ],
+    "subtopic": "Transformations and invariant lines",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/matrices/ocr-y410-01-2022-q8.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2022.pdf",
+    "subtopics": [
+      "Transformations and invariant lines"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2023-q1",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2023,
+    "series": "May 2023",
+    "examDate": "2023-05-15",
+    "question": "1",
+    "marks": 3,
+    "topic": "Matrices",
+    "topics": [
+      "Matrices"
+    ],
+    "subtopic": "Reflection matrices and powers",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/matrices/ocr-y410-01-2023-q1.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2023.pdf",
+    "subtopics": [
+      "Reflection matrices and powers"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2023-q2",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2023,
+    "series": "May 2023",
+    "examDate": "2023-05-15",
+    "question": "2",
+    "marks": 4,
+    "topic": "Roots of Polynomials",
+    "topics": [
+      "Roots of Polynomials"
+    ],
+    "subtopic": "Relations between roots",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/roots-of-polynomials/ocr-y410-01-2023-q2.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2023.pdf",
+    "subtopics": [
+      "Relations between roots"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2023-q3",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2023,
+    "series": "May 2023",
+    "examDate": "2023-05-15",
+    "question": "3",
+    "marks": 6,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers",
+      "Roots of Polynomials"
+    ],
+    "subtopic": "Complex roots of a cubic",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2023-q3.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2023.pdf",
+    "subtopics": [
+      "Complex roots of a cubic"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2023-q4",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2023,
+    "series": "May 2023",
+    "examDate": "2023-05-15",
+    "question": "4",
+    "marks": 6,
+    "topic": "Series",
+    "topics": [
+      "Series"
+    ],
+    "subtopic": "Finite sums",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/series/ocr-y410-01-2023-q4.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2023.pdf",
+    "subtopics": [
+      "Finite sums"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2023-q5",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2023,
+    "series": "May 2023",
+    "examDate": "2023-05-15",
+    "question": "5",
+    "marks": 4,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers"
+    ],
+    "subtopic": "Complex transformations on an Argand diagram",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2023-q5.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2023.pdf",
+    "subtopics": [
+      "Complex transformations on an Argand diagram"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2023-q6",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2023,
+    "series": "May 2023",
+    "examDate": "2023-05-15",
+    "question": "6",
+    "marks": 8,
+    "topic": "Matrices",
+    "topics": [
+      "Matrices",
+      "Proof by Induction"
+    ],
+    "subtopic": "Powers of a matrix and proof",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/matrices/ocr-y410-01-2023-q6.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2023.pdf",
+    "subtopics": [
+      "Powers of a matrix and proof"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2023-q7",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2023,
+    "series": "May 2023",
+    "examDate": "2023-05-15",
+    "question": "7",
+    "marks": 10,
+    "topic": "Complex Numbers",
+    "topics": [
+      "Complex Numbers"
+    ],
+    "subtopic": "Powers using modulus-argument form",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/complex-numbers/ocr-y410-01-2023-q7.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2023.pdf",
+    "subtopics": [
+      "Powers using modulus-argument form"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2023-q8",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2023,
+    "series": "May 2023",
+    "examDate": "2023-05-15",
+    "question": "8",
+    "marks": 6,
+    "topic": "Vectors",
+    "topics": [
+      "Vectors",
+      "Matrices"
+    ],
+    "subtopic": "Planes and determinants",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/vectors/ocr-y410-01-2023-q8.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2023.pdf",
+    "subtopics": [
+      "Planes and determinants"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2023-q9",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2023,
+    "series": "May 2023",
+    "examDate": "2023-05-15",
+    "question": "9",
+    "marks": 6,
+    "topic": "Matrices",
+    "topics": [
+      "Matrices"
+    ],
+    "subtopic": "Invariant lines",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/matrices/ocr-y410-01-2023-q9.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2023.pdf",
+    "subtopics": [
+      "Invariant lines"
+    ]
+  },
+  {
+    "id": "ocr-y410-01-2023-q10",
+    "qualification": "A-Level Further Maths",
+    "yearGroup": "Year 1",
+    "component": "Pure",
+    "tier": "",
+    "examBoard": "OCR",
+    "qualificationName": "AS Level Further Mathematics B (MEI)",
+    "paperCode": "Y410/01",
+    "paperName": "Core Pure",
+    "examYear": 2023,
+    "series": "May 2023",
+    "examDate": "2023-05-15",
+    "question": "10",
+    "marks": 7,
+    "topic": "Vectors",
+    "topics": [
+      "Vectors"
+    ],
+    "subtopic": "Angles between planes",
+    "questionFile": "exams/questions/a-level-further-maths/year-1/pure/vectors/ocr-y410-01-2023-q10.pdf",
+    "sourceFile": "exams/source/a-level-further-maths/year-1/pure/ocr-y410-01-2023.pdf",
+    "subtopics": [
+      "Angles between planes"
+    ]
+  }
+]
