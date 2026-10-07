@@ -2,7 +2,7 @@
 'use strict';
 const hierarchy={'GCSE Maths':{tiers:['Foundation','Higher']},'A-Level Maths':{years:['Year 1','Year 2'],components:['Core','Statistics','Mechanics']},'A-Level Further Maths':{years:['Year 1','Year 2'],components:['Pure','Numerical Methods']}};
 const slug=s=>String(s).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-const unique=a=>[...new Set(a)].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
+const unique=a=>[...new Set(a)].sort((a,b)=>String(a).localeCompare(String(b),undefined,{numeric:true}));
 function validateMeta(m){const h=hierarchy[m.qualification];if(!h)throw Error('Choose a qualification.');if(h.tiers&&!h.tiers.includes(m.tier))throw Error('Choose Foundation or Higher.');if(h.years&&(!h.years.includes(m.yearGroup)||!h.components.includes(m.component)))throw Error('Choose a valid year and component.');if(!slug(m.examBoard)||!slug(m.paperCode))throw Error('Enter exam board and paper code.');if(!Number.isInteger(+m.examYear)||+m.examYear<1900||+m.examYear>2100)throw Error('Enter an exam year from 1900 to 2100.');}
 function branch(m){validateMeta(m);return m.qualification==='GCSE Maths'?'gcse/'+slug(m.tier):slug(m.qualification)+'/'+slug(m.yearGroup)+'/'+slug(m.component);}
 function safePath(s,prefix){return typeof s==='string'&&s.startsWith(prefix)&&/\.pdf$/i.test(s)&&s.split('/').every(x=>x&&x!=='.'&&x!=='..')&&!/[\\:?#%\x00-\x20]/.test(s);}
