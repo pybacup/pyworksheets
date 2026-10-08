@@ -10,7 +10,7 @@ class Basket{
  get marks(){return this.items.reduce((sum,e)=>sum+e.marks,0);}
 }
 function series(e){const label=String(e.examSeries||e.series||e.session||'').trim();return label?(label.includes(String(e.examYear))?label:label+' '+e.examYear):String(e.examYear);}
-function sourceLines(e){return [e.examBoard+' · '+e.qualification+' · '+e.paperCode,series(e)+' · Question '+e.question+' · '+e.marks+' marks'];}
+function sourceLines(e){const C=root.ExamCore||(typeof require==='function'?require('./core.js'):null),paper=C?C.paper(e):'',course=e.qualification+(e.qualification==='GCSE Maths'&&e.tier?' '+e.tier:'');return [[e.examBoard,course,paper?'Paper '+paper.slice(1):'',e.paperCode].filter(Boolean).join(' \u00b7 '),series(e)+' \u00b7 Question '+e.question+' \u00b7 '+e.marks+' marks'];}
 function filename(title){const clean=String(title).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,120).replace(/-$/,'');return 'PY-Maths-'+(clean||'Practice')+'.pdf';}
 function wrap(text,font,size,width){const lines=[];let line='';for(const word of String(text).replace(/[\r\n\t]+/g,' ').split(/\s+/)){const trial=line?line+' '+word:word;if(font.widthOfTextAtSize(trial,size)<=width){line=trial;continue;}if(line)lines.push(line);line='';for(const ch of word){if(font.widthOfTextAtSize(line+ch,size)>width&&line){lines.push(line);line='';}line+=ch;}}if(line)lines.push(line);return lines;}
 // Embed the full CropBox as vector content; never crop to make a question fit.

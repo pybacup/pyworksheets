@@ -1,0 +1,11 @@
+const test=require('node:test'),assert=require('node:assert/strict'),C=require('../assets/exams/core.js'),P=require('../assets/exams/practice.js');
+const entries=[1,2,3].map(n=>({id:'p'+n,qualification:'GCSE Maths',tier:'Higher',topic:'Algebra',subtopics:['Quadratics'],examBoard:'Pearson Edexcel',paperCode:'1MA1/'+n+'H',examYear:2024,series:'June 2024',question:'12',marks:5,...(n===2?{paperNumber:2}:{paper:'P'+n})}));
+test('GCSE paper filters compose with existing filters and support paperNumber and legacy records',()=>{for(const n of [1,2,3])assert.deepEqual(C.filter(entries,{qualification:'GCSE Maths',tier:'Higher',topic:'Algebra',paper:'P'+n,examYear:'2024',minMarks:'5',maxMarks:'5'}),[entries[n-1]]);const old={...entries[0],paper:undefined};assert.equal(C.paper(old),'');assert.equal(C.filter([old],{}).length,1);assert.equal(C.filter([old],{paper:'P1'}).length,0);assert.equal(C.filter(entries,{paper:'P1',tier:'Foundation'}).length,0);assert.equal(C.paper({...old,paperNumber:3}),'P3');const a={...old,qualification:'A-Level Maths'};assert.equal(C.filter([a],{paper:'P1'}).length,1);});
+test('GCSE source headers contain tier, actual paper and paper code while legacy records omit unknown paper',()=>{assert.deepEqual(P.sourceLines(entries[0]),['Pearson Edexcel · GCSE Maths Higher · Paper 1 · 1MA1/1H','June 2024 · Question 12 · 5 marks']);assert.match(P.sourceLines(entries[1])[0],/Paper 2/);assert.doesNotMatch(P.sourceLines({...entries[0],paper:undefined})[0],/Paper \d/);});
+
+test('both tiers combine with series, year, paper, topic and marks; legacy missing fields remain usable',()=>{
+ const a={...entries[0],series:'November 2024'},b={...a,id:'foundation',tier:'Foundation'},legacy={...a,id:'legacy',paper:undefined,series:undefined};
+ assert.deepEqual(C.filter([a,b,legacy],{paper:'P1',series:'November',examYear:2024,topic:'Algebra',minMarks:5,maxMarks:5}),[a,b]);
+ assert.deepEqual(C.filter([a,b],{tier:'Foundation',series:'November'}),[b]);assert.deepEqual(C.filter([a,b],{series:'June'}),[]);assert.equal(C.filter([legacy],{}).length,1);
+ const record={...a,subtopics:undefined,subtopic:'Quadratics',questionFile:'exams/questions/test.pdf',sourceFile:'exams/source/test.pdf'};assert.deepEqual(C.validateIndex([record])[0].subtopics,['Quadratics']);
+});

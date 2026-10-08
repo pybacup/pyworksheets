@@ -25,3 +25,9 @@ These changes are local until committed and deployed. If an importer was previou
 Run `node --test tests/*.test.cjs`. Public tests cover index validation, filtering, paths and the deployment separation. Existing worksheet and game functionality is independent of the exam browser.
 
 Optional browser checks: run `node tests/exams-practice.browser.cjs` with Playwright installed (or set `PLAYWRIGHT_MODULE` to its module path) and Chrome available. This tests mixed-topic/year selections, ordering, downloads, failure handling and responsive layouts using temporary PDFs.
+
+## GCSE metadata and filters
+
+GCSE Maths supports Higher and Foundation, each with P1, P2 and P3. The tier, paper, year, series (June/November), topic, board and marks filters combine; All includes older records whose optional paper or series metadata is missing. No questions are fabricated for empty tiers.
+
+Records retain qualification, tier, examBoard, paper, paperNumber, paperCode, examYear, series, question, marks, topic and subtopic, plus their unique id and source/question PDF paths. Use tier Higher for Higher imports and Foundation for Foundation imports. The browser accepts a singular subtopic and converts it to its internal subtopics array when loading. Paper uses P1/P2/P3, falling back to paperNumber 1/2/3 when absent. Missing paper numbers are never guessed from the code. Series may contain the year, such as June 2024. Existing A-Level metadata and filtering remain independent.
