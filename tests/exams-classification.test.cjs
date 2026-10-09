@@ -8,9 +8,10 @@ const gcse = all.filter(q => q.qualification === 'GCSE Maths');
 
 test('classification audit preserves every protected field and all non-GCSE records', () => {
   const protectedRecords = all.map(q => q.qualification === 'GCSE Maths'
-    ? Object.fromEntries(Object.entries(q).filter(([k]) => !['topic', 'topics', 'subtopic', 'subtopics'].includes(k)))
+    ? Object.fromEntries(Object.entries(q).filter(([k]) => !['topic', 'topics', 'subtopic', 'subtopics', 'workingQuestionFile'].includes(k)))
     : q);
   // Recorded from the pre-audit 1,069-record index, including its ordering.
+  // The subsequently added workingQuestionFile is separately validated by working-space tests.
   const hash = crypto.createHash('sha256').update(JSON.stringify(protectedRecords)).digest('hex');
   assert.equal(hash, '80bc2f74f9cc1042670fa9c37d438e3c460e0d4937dad5f2c316b805fb42b17f');
 });

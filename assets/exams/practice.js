@@ -14,7 +14,13 @@ function sourceLines(e){const C=root.ExamCore||(typeof require==='function'?requ
 function filename(title){const clean=String(title).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-zA-Z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,120).replace(/-$/,'');return 'PY-Maths-'+(clean||'Practice')+'.pdf';}
 function wrap(text,font,size,width){const lines=[];let line='';for(const word of String(text).replace(/[\r\n\t]+/g,' ').split(/\s+/)){const trial=line?line+' '+word:word;if(font.widthOfTextAtSize(trial,size)<=width){line=trial;continue;}if(line)lines.push(line);line='';for(const ch of word){if(font.widthOfTextAtSize(line+ch,size)>width&&line){lines.push(line);line='';}line+=ch;}}if(line)lines.push(line);return lines;}
 // Embed the full CropBox as vector content; never crop to make a question fit.
-async function build(questions,{title='Maths Practice',lib,load,onProgress=()=>{}}){
+function fileFor(q,includeWorkingSpace=false){
+ if(!includeWorkingSpace)return q.questionFile;
+ if(q.workingQuestionFile)return q.workingQuestionFile;
+ if(q.qualification==='GCSE Maths')throw Error('Original working-space PDF is not available for this question. Choose compact mode.');
+ return q.questionFile;
+}
+async function build(questions,{title='Maths Practice',lib,load,includeWorkingSpace=false,onProgress=()=>{}}){
  if(!questions.length)throw Error('Select at least one question.');
  const width=595.28,height=841.89,margin=32,gap=28,usable=width-2*margin;
  const out=await lib.PDFDocument.create(),font=await out.embedFont(lib.StandardFonts.Helvetica),bold=await out.embedFont(lib.StandardFonts.HelveticaBold);
@@ -25,7 +31,7 @@ async function build(questions,{title='Maths Practice',lib,load,onProgress=()=>{
   if(first){const lines=wrap('PY Maths – '+title,bold,12,usable);if(lines.length>8)throw Error('Practice title is too long.');for(const text of lines){page.drawText(text,{x:margin,y:cursor-12,font:bold,size:12,color:lib.rgb(.075,.306,.29)});cursor-=15;}cursor-=12;}
  }
  for(let i=0;i<questions.length;i++){const q=questions[i];try{
-  onProgress(i,questions.length,q);const src=await lib.PDFDocument.load(await load(q));const count=src.getPageCount();if(!count)throw Error('PDF has no pages.');
+  onProgress(i,questions.length,q);const selectedFile=fileFor(q,includeWorkingSpace);const src=await lib.PDFDocument.load(await load({...q,questionFile:selectedFile}));const count=src.getPageCount();if(!count)throw Error('PDF has no pages.');
   for(let n=0;n<count;n++){
    const original=src.getPage(n),box=original.getCropBox(),rotation=((original.getRotation().angle%360)+360)%360;
    if(![0,90,180,270].includes(rotation))throw Error('Unsupported page rotation.');
@@ -55,5 +61,5 @@ async function build(questions,{title='Maths Practice',lib,load,onProgress=()=>{
  return out.save();
 }
 async function loadQuestion(q){if(!root.ExamCore.safePath(q.questionFile,'exams/questions/'))throw Error('Invalid question PDF path.');const url=new URL(q.questionFile,document.baseURI);if(url.origin!==location.origin)throw Error('Question PDF must be hosted on this site.');const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),30000);try{const response=await fetch(url,{signal:controller.signal,redirect:'error'});if(!response.ok)throw Error('PDF request returned HTTP '+response.status+'.');const data=new Uint8Array(await response.arrayBuffer());if(data.length>80*1024*1024)throw Error('Question PDF exceeds 80 MB.');return data;}finally{clearTimeout(timer);}}
-const api={Basket,series,sourceLines,filename,wrap,build,loadQuestion};if(typeof module!=='undefined')module.exports=api;else root.ExamPractice=api;
+const api={Basket,series,sourceLines,filename,wrap,fileFor,build,loadQuestion};if(typeof module!=='undefined')module.exports=api;else root.ExamPractice=api;
 })(globalThis);
