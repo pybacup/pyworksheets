@@ -1,7 +1,7 @@
 (()=>{
 'use strict';
 const $=id=>document.getElementById(id),C=ExamCore,U=ExamUI,P=ExamPractice,basket=new P.Basket();
-let entries=[],visible=[],busy=false,downloadURL=null;
+let entries=[],visible=[],busy=false,downloadURL=null,answersURL=null;
 const ids=['topic','examBoard','examYear','paper','series','subtopic','minMarks','maxMarks'];
 function node(tag,text,className){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(className)e.className=className;return e;}
 function render(){
@@ -39,17 +39,35 @@ $('reset').addEventListener('click',()=>{for(const id of ids.filter(k=>k!=='topi
 function clearSelection(){if(busy)return;basket.clear();renderBasket();render();}
 $('clearAll').addEventListener('click',clearSelection);$('clearSelection').addEventListener('click',clearSelection);
 $('selectVisible').addEventListener('click',()=>{if(busy)return;for(const e of visible)basket.add(e);renderBasket();render();});
-$('createPractice').addEventListener('click',()=>{if(busy||!basket.items.length)return;const topics=C.unique(basket.items.map(e=>e.topic));$('paperTitle').value=topics.length===1?topics[0]+' Practice':$('topic').value?$('topic').value+' and Mixed Questions Practice':'Mixed Topics Practice';$('exportStatus').textContent='Source details are included on every page.';const available=basket.items.filter(e=>e.workingQuestionFile).length;$('includeWorkingSpace').checked=false;$('includeWorkingSpace').disabled=!available;$('workingSpaceHelp').textContent=available===basket.items.length?'Off: compact questions. On: retain the original exam answer space.':available?'Original working space is available for '+available+' of '+basket.items.length+' selected questions. Other courses keep their existing PDFs.':'Original working-space versions are not available for this selection. Existing question PDFs will be used.';$('exportDialog').showModal();$('paperTitle').focus();});
+$('createPractice').addEventListener('click',()=>{if(busy||!basket.items.length)return;const topics=C.unique(basket.items.map(e=>e.topic));$('paperTitle').value=topics.length===1?topics[0]+' Practice':$('topic').value?$('topic').value+' and Mixed Questions Practice':'Mixed Topics Practice';$('exportStatus').textContent='Source details are included on every page.';const available=basket.items.filter(e=>e.workingQuestionFile).length;$('includeWorkingSpace').checked=false;$('includeAnswers').checked=false;$('includeWorkingSpace').disabled=!available;$('workingSpaceHelp').textContent=available===basket.items.length?'Off: compact questions. On: retain the original exam answer space.':available?'Original working space is available for '+available+' of '+basket.items.length+' selected questions. Other courses keep their existing PDFs.':'Original working-space versions are not available for this selection. Existing question PDFs will be used.';$('exportDialog').showModal();$('paperTitle').focus();});
 $('cancelExport').addEventListener('click',()=>{if(!busy)$('exportDialog').close();});$('exportDialog').addEventListener('cancel',e=>{if(busy)e.preventDefault();});
 $('exportForm').addEventListener('submit',async event=>{
  event.preventDefault();if(busy||!basket.items.length)return;
  const title=$('paperTitle').value.trim();if(!title){$('exportStatus').textContent='Enter a practice paper title.';$('paperTitle').focus();return;}
- const includeWorkingSpace=$('includeWorkingSpace').checked;busy=true;$('includeWorkingSpace').disabled=true;$('buildPDF').disabled=true;$('cancelExport').disabled=true;$('paperTitle').disabled=true;$('exportDialog').setAttribute('aria-busy','true');$('exportStatus').textContent='Creating PDF…';$('downloadResult').replaceChildren();if(downloadURL){URL.revokeObjectURL(downloadURL);downloadURL=null;}renderBasket();render();
+ const includeWorkingSpace=$('includeWorkingSpace').checked,includeAnswers=$('includeAnswers').checked;busy=true;$('includeAnswers').disabled=true;$('includeWorkingSpace').disabled=true;$('buildPDF').disabled=true;$('cancelExport').disabled=true;$('paperTitle').disabled=true;$('exportDialog').setAttribute('aria-busy','true');$('exportStatus').textContent='Creating PDF…';$('downloadResult').replaceChildren();if(downloadURL){URL.revokeObjectURL(downloadURL);downloadURL=null;}if(answersURL){URL.revokeObjectURL(answersURL);answersURL=null;}renderBasket();render();
  const selected=basket.items.slice();
- try{if(!window.PDFLib)throw Error('The PDF library did not load. Reload the page and try again.');const bytes=await P.build(selected,{title,lib:PDFLib,load:P.loadQuestion,includeWorkingSpace,onProgress:(i,total)=>{$('exportStatus').textContent='Creating PDF… question '+(i+1)+' of '+total;}});downloadURL=URL.createObjectURL(new Blob([bytes],{type:'application/pdf'}));const a=node('a','Download practice PDF','primary-link');a.href=downloadURL;a.download=P.filename(title);const open=node('a','Open PDF in a new tab');open.href=downloadURL;open.target='_blank';open.rel='noopener';$('downloadResult').append(node('p','Ready: '+selected.length+' questions · '+selected.reduce((sum,e)=>sum+e.marks,0)+' marks'),a,open);a.click();$('exportDialog').close();$('downloadResult').focus();}
+ try{
+  if(!window.PDFLib)throw Error('The PDF library did not load. Reload the page and try again.');
+  if(includeAnswers)P.requireAnswers(selected);
+  const bytes=await P.build(selected,{title,lib:PDFLib,load:P.loadQuestion,includeWorkingSpace,onProgress:(i,total)=>{$('exportStatus').textContent='Creating PDF… question '+(i+1)+' of '+total;}});
+  const answerBytes=includeAnswers?await P.buildAnswers(selected,{title,lib:PDFLib,load:P.loadAnswer,onProgress:(i,total)=>{$('exportStatus').textContent='Creating answers… question '+(i+1)+' of '+total;}}):null;
+  // Make downloads available only after both requested booklets have completed.
+  downloadURL=URL.createObjectURL(new Blob([bytes],{type:'application/pdf'}));
+  const a=node('a','Download practice PDF','primary-link');a.href=downloadURL;a.download=P.filename(title);
+  const open=node('a','Open PDF in a new tab');open.href=downloadURL;open.target='_blank';open.rel='noopener';
+  $('downloadResult').append(node('p','Ready: '+selected.length+' questions · '+selected.reduce((sum,e)=>sum+e.marks,0)+' marks'),a,open);
+  if(answerBytes){
+   answersURL=URL.createObjectURL(new Blob([answerBytes],{type:'application/pdf'}));
+   const answers=node('a','Download answers / mark scheme','primary-link');answers.href=answersURL;answers.download=P.answerFilename(title);
+   const preview=node('a','Open answers in a new tab');preview.href=answersURL;preview.target='_blank';preview.rel='noopener';
+   $('downloadResult').append(node('p','Your matching official answers PDF is also ready.'),answers,preview);
+  }
+  // Keep an explicit answer download link: mobile browsers may block a second automatic download.
+  a.click();$('exportDialog').close();$('downloadResult').focus();
+ }
  catch(error){$('exportStatus').textContent=error.message+' No practice paper was created. Your selections have been kept.';}
- finally{busy=false;$('includeWorkingSpace').disabled=!basket.items.some(e=>e.workingQuestionFile);$('buildPDF').disabled=false;$('cancelExport').disabled=false;$('paperTitle').disabled=false;$('exportDialog').setAttribute('aria-busy','false');renderBasket();render();}
+ finally{busy=false;$('includeAnswers').disabled=false;$('includeWorkingSpace').disabled=!basket.items.some(e=>e.workingQuestionFile);$('buildPDF').disabled=false;$('cancelExport').disabled=false;$('paperTitle').disabled=false;$('exportDialog').setAttribute('aria-busy','false');renderBasket();render();}
 });
 renderBasket();U.index().then(data=>{entries=data;course();}).catch(e=>{$('status').textContent=e.message+' Serve this site over HTTP/HTTPS and check exams/data/exam-index.json.';});
-window.addEventListener('pagehide',()=>{if(downloadURL){URL.revokeObjectURL(downloadURL);downloadURL=null;$('downloadResult').replaceChildren();}});
+window.addEventListener('pagehide',()=>{for(const url of [downloadURL,answersURL])if(url)URL.revokeObjectURL(url);downloadURL=answersURL=null;$('downloadResult').replaceChildren();});
 })();

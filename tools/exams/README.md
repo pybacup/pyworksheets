@@ -57,3 +57,35 @@ question), November 2018 P2 Q13 and November 2022 P3 Q26. It produces four compa
 A4 pages or six A4 pages with original working space. The compact sample was
 pixel-identical at 72 dpi to the exporter before this feature. The individual
 variant tests validate all 997 PDFs and all 1,046 continuation/source regions.
+
+
+## Official GCSE Higher answer extracts
+
+`gcse-answer-plan.json` is the reviewed extraction plan for all 997 questions.
+It records source hashes, question identities, crop regions and answer hashes.
+The 23 approved June 2024 P1 pilot extracts are preserved by the full generator.
+
+To reproduce the remaining extracts from the stored official mark schemes:
+
+```sh
+node tools/exams/generate-gcse-answers.cjs
+```
+
+The generator validates source identities/hashes and adds only `answerFile` to
+the question index. It normalizes rotated source pages before vector cropping.
+Do not rerun the planning/trim scripts on the audited plan without reviewing
+new boundaries; those scripts use inspection caches from the import workflow.
+
+Verification and mixed review sample:
+
+```sh
+node --test tests/*.test.cjs
+node tests/exams-answers.browser.cjs
+python tools/exams/verify-gcse-answer-rendering.py --report /path/to/rendering-audit.json
+node tools/exams/create-answers-review-sample.cjs /path/to/output/pdf
+```
+
+The browser suite requires `PLAYWRIGHT_MODULE` to point to an installed
+Playwright package. PDF rendering verification requires pypdfium2, Pillow
+and NumPy. See `exams/gcse-answers-processing-report.md` for coverage,
+manual mark-allocation reviews and the final validation results.

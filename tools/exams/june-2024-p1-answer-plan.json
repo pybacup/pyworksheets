@@ -1,0 +1,376 @@
+{
+  "sourceFile": "exams/source/gcse/higher/mark-schemes/p1/edexcel-1ma1-1h-2024-june-ms.pdf",
+  "sourceSHA256": "023f4c58a05aa0624a998f4593bbadbe551d35f8e6e2294fd8a7bc7aab8ef7a7",
+  "questions": [
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q1",
+      "question": 1,
+      "marks": 2,
+      "sourcePage": 6,
+      "left": 63,
+      "right": 779,
+      "top": 98.78,
+      "bottom": 152.4046,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        2
+      ],
+      "additionalGuidance": true
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q2",
+      "question": 2,
+      "marks": 3,
+      "sourcePage": 7,
+      "left": 63,
+      "right": 779,
+      "top": 98.78,
+      "bottom": 517.9605,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        3
+      ],
+      "additionalGuidance": true
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q3",
+      "question": 3,
+      "marks": 5,
+      "sourcePage": 8,
+      "left": 63,
+      "right": 779,
+      "top": 98.78,
+      "bottom": 519.2006,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        5
+      ],
+      "additionalGuidance": true
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q4",
+      "question": 4,
+      "marks": 3,
+      "sourcePage": 9,
+      "left": 63,
+      "right": 779,
+      "top": 98.78,
+      "bottom": 270.1546,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        3
+      ],
+      "additionalGuidance": true
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q5",
+      "question": 5,
+      "marks": 4,
+      "sourcePage": 10,
+      "left": 63,
+      "right": 779,
+      "top": 98.78,
+      "bottom": 392.6946,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        4
+      ],
+      "additionalGuidance": true
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q6",
+      "question": 6,
+      "marks": 4,
+      "sourcePage": 11,
+      "left": 63,
+      "right": 779,
+      "top": 98.78,
+      "bottom": 374.5746,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        4
+      ],
+      "additionalGuidance": true
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q7",
+      "question": 7,
+      "marks": 5,
+      "sourcePage": 12,
+      "left": 63,
+      "right": 555.8,
+      "top": 98.78,
+      "bottom": 521.8805,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        5,
+        5
+      ],
+      "additionalGuidance": false
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q8",
+      "question": 8,
+      "marks": 3,
+      "sourcePage": 13,
+      "left": 63,
+      "right": 555.8,
+      "top": 98.78,
+      "bottom": 194.5305,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        3
+      ],
+      "additionalGuidance": false
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q9",
+      "question": 9,
+      "marks": 1,
+      "sourcePage": 13,
+      "left": 63,
+      "right": 555.8,
+      "top": 204.53,
+      "bottom": 221.282,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        1
+      ],
+      "additionalGuidance": false
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q10",
+      "question": 10,
+      "marks": 4,
+      "sourcePage": 13,
+      "left": 63,
+      "right": 555.8,
+      "top": 231.41,
+      "bottom": 411.5346,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        4
+      ],
+      "additionalGuidance": false
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q11",
+      "question": 11,
+      "marks": 3,
+      "sourcePage": 14,
+      "left": 63,
+      "right": 779,
+      "top": 98.78,
+      "bottom": 291.5146,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        3
+      ],
+      "additionalGuidance": true
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q12",
+      "question": 12,
+      "marks": 3,
+      "sourcePage": 14,
+      "left": 63,
+      "right": 555.8,
+      "top": 301.73,
+      "bottom": 367.9746,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        3
+      ],
+      "additionalGuidance": false
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q13",
+      "question": 13,
+      "marks": 5,
+      "sourcePage": 15,
+      "left": 63,
+      "right": 779,
+      "top": 98.78,
+      "bottom": 341.6605,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        5
+      ],
+      "additionalGuidance": true
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q14",
+      "question": 14,
+      "marks": 3,
+      "sourcePage": 15,
+      "left": 63,
+      "right": 779,
+      "top": 351.55,
+      "bottom": 513.528,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        3
+      ],
+      "additionalGuidance": true
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q15",
+      "question": 15,
+      "marks": 4,
+      "sourcePage": 16,
+      "left": 63,
+      "right": 555.8,
+      "top": 98.78,
+      "bottom": 321.242,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        4
+      ],
+      "additionalGuidance": false
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q16",
+      "question": 16,
+      "marks": 2,
+      "sourcePage": 16,
+      "left": 63,
+      "right": 779,
+      "top": 330.19,
+      "bottom": 408.146,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        2
+      ],
+      "additionalGuidance": true
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q17",
+      "question": 17,
+      "marks": 3,
+      "sourcePage": 16,
+      "left": 63,
+      "right": 555.8,
+      "top": 418.03,
+      "bottom": 509.0006,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        3
+      ],
+      "additionalGuidance": false
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q18",
+      "question": 18,
+      "marks": 3,
+      "sourcePage": 17,
+      "left": 63,
+      "right": 779,
+      "top": 98.78,
+      "bottom": 490.4605,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        3,
+        3
+      ],
+      "additionalGuidance": true
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q19",
+      "question": 19,
+      "marks": 3,
+      "sourcePage": 18,
+      "left": 63,
+      "right": 779,
+      "top": 98.78,
+      "bottom": 367.0146,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        3
+      ],
+      "additionalGuidance": true
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q20",
+      "question": 20,
+      "marks": 3,
+      "sourcePage": 18,
+      "left": 63,
+      "right": 555.8,
+      "top": 377.23,
+      "bottom": 525.0101,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        3
+      ],
+      "additionalGuidance": false
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q21",
+      "question": 21,
+      "marks": 5,
+      "sourcePage": 19,
+      "left": 63,
+      "right": 779,
+      "top": 98.78,
+      "bottom": 427.0146,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        5
+      ],
+      "additionalGuidance": true
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q22",
+      "question": 22,
+      "marks": 4,
+      "sourcePage": 20,
+      "left": 63,
+      "right": 779,
+      "top": 98.78,
+      "bottom": 209.882,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        4
+      ],
+      "additionalGuidance": true
+    },
+    {
+      "id": "edexcel-1ma1-1h-2024-june-q23",
+      "question": 23,
+      "marks": 5,
+      "sourcePage": 20,
+      "left": 63,
+      "right": 779,
+      "top": 221.21,
+      "bottom": 495.8046,
+      "headerTop": 85.2,
+      "headerBottom": 98.8,
+      "markBranches": [
+        5
+      ],
+      "additionalGuidance": true
+    }
+  ]
+}
