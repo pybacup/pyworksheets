@@ -7,14 +7,14 @@ try{
  await p.route('**/*',r=>{const relative=new URL(r.request().url()).pathname.slice(1),file=path.resolve(root,relative);if(!file.startsWith(root+path.sep)||!fs.existsSync(file))return r.fulfill({status:404});if(relative.endsWith('.pdf'))requested.push(relative);return r.fulfill({body:fs.readFileSync(file),contentType:({'.js':'application/javascript','.json':'application/json','.css':'text/css','.pdf':'application/pdf','.png':'image/png'})[path.extname(file)]||'text/html'});});
  await p.goto('http://alevel.test/pyexams.html');await p.selectOption('#qualification','GCSE Maths');for(const [tier,count] of [['Higher',997],['Foundation',1260]]){await p.selectOption('#tier',tier);assert.equal(await p.locator('.question-row').count(),count);}
  await p.selectOption('#qualification','A-Level Maths');await p.selectOption('#yearGroup','Year 1');
- for(const component of ['Pure Mathematics and Mechanics','Pure Mathematics and Statistics']){
-  await p.selectOption('#component',component);for(const topic of component.endsWith('Mechanics')?['Pure','Mechanics']:['Pure','Statistics']){
+ for(const component of ['Core','Statistics','Mechanics']){
+  await p.selectOption('#component',component);for(const topic of [component==='Core'?'Pure':component]){
    await p.selectOption('#topic',topic);const expected=C.filter(all,{qualification:'A-Level Maths',yearGroup:'Year 1',component,topic});assert.equal(await p.locator('.question-row').count(),expected.length);
    await p.selectOption('#examYear','2024');const scoped=expected.filter(q=>q.examYear===2024);assert.equal(await p.locator('#selectVisible').textContent(),'Select All ('+scoped.length+')');
    await p.locator('#selectVisible').tap();await p.locator('#selectVisible').tap();assert.equal(await p.locator('#selectedList li').count(),scoped.length);await p.locator('#clearSelection').tap();await p.selectOption('#examYear','');
   }
  }
- for(const q of samples){await p.selectOption('#component',q.component);await p.selectOption('#topic',q.topic);await p.selectOption('#examYear',String(q.examYear));
+ for(const q of samples){await p.selectOption('#component',C.pupilComponent(q));await p.selectOption('#topic',q.topic);await p.selectOption('#examYear',String(q.examYear));
   const row=p.locator('.question-row').filter({has:p.locator(`a[href="${q.questionFile}"]`)});await row.locator('input').check();const popup=p.waitForEvent('popup');await row.locator('a').click();await(await popup).close();
  }
  assert.equal(await p.locator('#selectedList li').count(),samples.length);
