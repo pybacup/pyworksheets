@@ -33,14 +33,16 @@ async function build(questions,{title='Maths Practice',lib,load,includeWorkingSp
   const first=out.getPageCount()===0;page=out.addPage([width,height]);cursor=height-margin;hasContent=false;
   if(first){const lines=wrap('PY Maths – '+title,bold,12,usable);if(lines.length>8)throw Error('Practice title is too long.');for(const text of lines){page.drawText(text,{x:margin,y:cursor-12,font:bold,size:12,color:lib.rgb(.075,.306,.29)});cursor-=15;}cursor-=12;}
  }
- for(let i=0;i<questions.length;i++){const q=questions[i];try{
-  onProgress(i,questions.length,q);const selectedFile=answers?q.answerFile:fileFor(q,includeWorkingSpace);const src=await lib.PDFDocument.load(await load({...q,questionFile:selectedFile}));const count=src.getPageCount();if(!count)throw Error('PDF has no pages.');
+ const C=root.ExamCore||(typeof require==='function'?require('./core.js'):null),materials=answers?[]:C.requiredMaterials(questions);
+ const jobs=[...questions.map(q=>({q})),...materials.map(material=>({q:material.question,material}))];
+ for(let i=0;i<jobs.length;i++){const {q,material}=jobs[i];try{
+  onProgress(i,questions.length,q,material);if(material)newPage();const selectedFile=material?material.file:answers?q.answerFile:fileFor(q,includeWorkingSpace);const src=await lib.PDFDocument.load(await load({...q,questionFile:selectedFile}));const count=src.getPageCount();if(!count)throw Error('PDF has no pages.');
   for(let n=0;n<count;n++){
    const original=src.getPage(n),box=original.getCropBox(),rotation=((original.getRotation().angle%360)+360)%360;
    if(![0,90,180,270].includes(rotation))throw Error('Unsupported page rotation.');
    const rotated=rotation===90||rotation===270,dw=rotated?box.height:box.width,dh=rotated?box.width:box.height;
    if(!(dw>0&&dh>0))throw Error('Invalid PDF page dimensions.');
-   const label=sourceLines(q).join(' · ')+(count>1?' · Page '+(n+1)+' of '+count:'');
+   const label=(material?[q.examBoard,q.qualification+' '+(q.yearGroup||''),q.paperCode,series(q),'Reading Insert – '+q.paperCode+' · '+material.title].join(' · '):sourceLines(q).join(' · ')+(!answers&&q.requiredMaterials?.length?' · Uses reading insert at end':''))+(count>1?' · Page '+(n+1)+' of '+count:'');
    const headers=wrap(label,font,8,usable),headerHeight=headers.length*11+10;
    if(headerHeight>150)throw Error('Source metadata is too long to fit the header.');
    if(!page||(!answers&&count>1&&hasContent))newPage();
@@ -60,7 +62,7 @@ async function build(questions,{title='Maths Practice',lib,load,includeWorkingSp
    page.drawPage(embedded,{x,y:y0,width:w,height:h,rotate:lib.degrees(-rotation)});
    cursor=bottom-gap;hasContent=true;
   }
- }catch(error){throw Error('Could not include '+q.examBoard+' '+q.paperCode+' · '+series(q)+' · Question '+q.question+': '+error.message);}}
+ }catch(error){throw Error('Could not include '+(material?'required reading insert '+material.title+' for ':'')+q.examBoard+' '+q.paperCode+' · '+series(q)+' · Question '+q.question+': '+error.message);}}
  return out.save();
 }
 async function loadPDF(file,prefix){if(!root.ExamCore.safePath(file,prefix))throw Error('Invalid PDF path.');const url=new URL(file,document.baseURI);if(url.origin!==location.origin)throw Error('PDF must be hosted on this site.');const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),30000);try{const response=await fetch(url,{signal:controller.signal,redirect:'error'});if(!response.ok)throw Error('PDF request returned HTTP '+response.status+'.');const data=new Uint8Array(await response.arrayBuffer());if(data.length>80*1024*1024)throw Error('PDF exceeds 80 MB.');return data;}finally{clearTimeout(timer);}}

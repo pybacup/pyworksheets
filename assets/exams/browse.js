@@ -24,7 +24,7 @@ function render(){
  for(const field of [source,topic,subtopic])field.title=field.textContent;
  label.append(input,number,source,topic,marks,subtopic);
  const a=node('a','Preview ↗','question-preview');a.href=e.questionFile;a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('aria-label','Preview question '+e.question+' '+P.series(e));
- card.append(label,a);$('questions').append(card);
+ const links=node('div',undefined,'question-links');links.append(a);for(const material of e.requiredMaterials||[]){const link=node('a','Reading insert','question-preview');link.href=material.file;link.target='_blank';link.rel='noopener noreferrer';link.setAttribute('aria-label','Reading insert for question '+e.question);links.append(link);}card.append(label,links);$('questions').append(card);
  }
 }
 function renderBasket(focus){
@@ -39,7 +39,7 @@ $('reset').addEventListener('click',()=>{for(const id of ids.filter(k=>k!=='topi
 function clearSelection(){if(busy)return;basket.clear();renderBasket();render();}
 $('clearAll').addEventListener('click',clearSelection);$('clearSelection').addEventListener('click',clearSelection);
 $('selectVisible').addEventListener('click',()=>{if(busy)return;for(const e of visible)basket.add(e);renderBasket();render();});
-$('createPractice').addEventListener('click',()=>{if(busy||!basket.items.length)return;const topics=C.unique(basket.items.map(e=>e.topic));$('paperTitle').value=topics.length===1?topics[0]+' Practice':$('topic').value?$('topic').value+' and Mixed Questions Practice':'Mixed Topics Practice';$('exportStatus').textContent='Source details are included on every page.';const available=basket.items.filter(e=>e.workingQuestionFile).length;$('includeWorkingSpace').checked=false;$('includeAnswers').checked=false;$('includeWorkingSpace').disabled=!available;$('workingSpaceHelp').textContent=available===basket.items.length?'Off: compact questions. On: retain the original exam answer space.':available?'Original working space is available for '+available+' of '+basket.items.length+' selected questions. Other courses keep their existing PDFs.':'Original working-space versions are not available for this selection. Existing question PDFs will be used.';$('exportDialog').showModal();$('paperTitle').focus();});
+$('createPractice').addEventListener('click',()=>{if(busy||!basket.items.length)return;const topics=C.unique(basket.items.map(e=>e.topic));$('paperTitle').value=topics.length===1?topics[0]+' Practice':$('topic').value?$('topic').value+' and Mixed Questions Practice':'Mixed Topics Practice';$('exportStatus').textContent='Source details are included on every page.'+(C.requiredMaterials(basket.items).length?' Required reading inserts are included once at the end.':'');const available=basket.items.filter(e=>e.workingQuestionFile).length;$('includeWorkingSpace').checked=false;$('includeAnswers').checked=false;$('includeWorkingSpace').disabled=!available;$('workingSpaceHelp').textContent=available===basket.items.length?'Off: compact questions. On: retain the original exam answer space.':available?'Original working space is available for '+available+' of '+basket.items.length+' selected questions. Other courses keep their existing PDFs.':'Original working-space versions are not available for this selection. Existing question PDFs will be used.';$('exportDialog').showModal();$('paperTitle').focus();});
 $('cancelExport').addEventListener('click',()=>{if(!busy)$('exportDialog').close();});$('exportDialog').addEventListener('cancel',e=>{if(busy)e.preventDefault();});
 $('exportForm').addEventListener('submit',async event=>{
  event.preventDefault();if(busy||!basket.items.length)return;
@@ -49,7 +49,7 @@ $('exportForm').addEventListener('submit',async event=>{
  try{
   if(!window.PDFLib)throw Error('The PDF library did not load. Reload the page and try again.');
   if(includeAnswers)P.requireAnswers(selected);
-  const bytes=await P.build(selected,{title,lib:PDFLib,load:P.loadQuestion,includeWorkingSpace,onProgress:(i,total)=>{$('exportStatus').textContent='Creating PDF… question '+(i+1)+' of '+total;}});
+  const bytes=await P.build(selected,{title,lib:PDFLib,load:P.loadQuestion,includeWorkingSpace,onProgress:(i,total,q,material)=>{$('exportStatus').textContent=material?'Including required reading insert...':'Creating PDF… question '+(i+1)+' of '+total;}});
   const answerBytes=includeAnswers?await P.buildAnswers(selected,{title,lib:PDFLib,load:P.loadAnswer,onProgress:(i,total)=>{$('exportStatus').textContent='Creating answers… question '+(i+1)+' of '+total;}}):null;
   // Make downloads available only after both requested booklets have completed.
   downloadURL=URL.createObjectURL(new Blob([bytes],{type:'application/pdf'}));
