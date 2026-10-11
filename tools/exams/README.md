@@ -151,3 +151,28 @@ ordered mixed-year exports in both question modes, official answers and an
 reconcile all 45 question-paper totals and protect the required thin lines.
 See `exams/gcse-foundation-processing-report.md` and
 `exams/gcse-foundation-classification-report.md` for the final review.
+
+## OCR MEI Year 1 (2018–2025)
+
+`alevel-y1-bank-plan.json` records original source hashes, crop coordinates,
+metadata and output hashes for the 15 papers following the approved pilot.
+`alevel-y1-classifications.json` records primary and secondary skills.
+`inspect-alevel-y1-boundaries.py` and `plan-alevel-y1-bank.py` consume a
+pdfplumber geometry cache (sources.json and inspection/*.json); reviewed
+booklet-only figure coordinates are explicit in the planner. The generator
+embeds original PDF regions and refuses to overwrite unaudited files. It
+does not merge the public index or publish anything.
+
+Focused verification (no whole-repository render audit):
+
+```sh
+node --test tests/exams-alevel-y1-bank.test.cjs tests/exams-alevel-y1-pilot.test.cjs
+python -m unittest discover -s tests -p 'test_alevel_y1*.py'
+node tests/exams-alevel-y1-bank.browser.cjs
+node tests/exams-alevel-y1-pilot.browser.cjs
+node tools/exams/create-alevel-y1-review-sample.cjs /path/to/output/pdf
+```
+
+Chrome browser checks require Playwright (or PLAYWRIGHT_MODULE pointing to
+the installed module). See `alevel-y1-processing-report.md` for counts,
+preservation checks and the official mark-scheme subtotal inconsistency.

@@ -1,0 +1,1321 @@
+{
+  "sourceFile": "exams/source/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june.pdf",
+  "markSchemeFile": "exams/source/a-level-maths/year-1/ocr-mei/mark-schemes/p1/ocr-mei-h630-01-2025-june-ms.pdf",
+  "answerBookletFile": "exams/source/a-level-maths/year-1/ocr-mei/answer-booklets/p1/ocr-mei-h630-01-2025-june-ab.pdf",
+  "answerBookletURL": "https://www.ocr.org.uk/Images/752683-question-paper-pure-mathematics-and-mechanics-answer-book.pdf",
+  "baselineCount": 2329,
+  "baselineSHA256": "b83ac5da6c3ae4ea3ccb19116a008039315143323a2698b72bd158fb55d15355",
+  "questions": [
+    {
+      "record": {
+        "id": "ocr-mei-h630-01-2025-june-q1",
+        "qualification": "A-Level Maths",
+        "yearGroup": "Year 1",
+        "examBoard": "OCR MEI",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "H630/01",
+        "component": "Pure Mathematics and Mechanics",
+        "examYear": 2025,
+        "series": "June",
+        "question": "1",
+        "marks": 3,
+        "topic": "Pure",
+        "subtopic": "Binomial expansion",
+        "subtopics": [
+          "Binomial expansion"
+        ],
+        "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q1.pdf",
+        "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2025-june-q1.pdf",
+        "answerFile": "exams/answers/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q1.pdf",
+        "sourceFile": "exams/source/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june.pdf",
+        "sourcePages": [
+          3
+        ],
+        "answerBookletFile": "exams/source/a-level-maths/year-1/ocr-mei/answer-booklets/p1/ocr-mei-h630-01-2025-june-ab.pdf",
+        "answerBookletPages": [
+          2
+        ],
+        "answerSourceFile": "exams/source/a-level-maths/year-1/ocr-mei/mark-schemes/p1/ocr-mei-h630-01-2025-june-ms.pdf",
+        "answerSourcePages": [
+          11
+        ]
+      },
+      "compact": [
+        [
+          {
+            "source": "question",
+            "page": 3,
+            "top": 60,
+            "bottom": 82,
+            "left": 44,
+            "right": 551
+          }
+        ]
+      ],
+      "working": [
+        [
+          {
+            "source": "question",
+            "page": 3,
+            "top": 60,
+            "bottom": 82,
+            "left": 44,
+            "right": 551
+          },
+          {
+            "source": "answerBooklet",
+            "page": 2,
+            "top": 63,
+            "bottom": 405.5,
+            "left": 48,
+            "right": 550
+          }
+        ]
+      ],
+      "answers": [
+        [
+          {
+            "source": "markScheme",
+            "page": 11,
+            "top": 62,
+            "bottom": 273,
+            "left": 40,
+            "right": 782
+          }
+        ]
+      ],
+      "compactSHA256": "4f2ec6c303821221743115c99259411bd3c666d4c4faca86a520fe0aba135508",
+      "workingSHA256": "2360423a2f1708c38549487c714c6fd188a8bf3c481ae58f4bd5a7af8bc445b9",
+      "answersSHA256": "6a4d6e2f224303557e1b6ab38d1c79ce0d1ffd1602d1e1dfee8287a1257b69b5"
+    },
+    {
+      "record": {
+        "id": "ocr-mei-h630-01-2025-june-q2",
+        "qualification": "A-Level Maths",
+        "yearGroup": "Year 1",
+        "examBoard": "OCR MEI",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "H630/01",
+        "component": "Pure Mathematics and Mechanics",
+        "examYear": 2025,
+        "series": "June",
+        "question": "2",
+        "marks": 2,
+        "topic": "Pure",
+        "subtopic": "Trigonometry",
+        "subtopics": [
+          "Trigonometry",
+          "Sine rule"
+        ],
+        "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q2.pdf",
+        "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2025-june-q2.pdf",
+        "answerFile": "exams/answers/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q2.pdf",
+        "sourceFile": "exams/source/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june.pdf",
+        "sourcePages": [
+          3
+        ],
+        "answerBookletFile": "exams/source/a-level-maths/year-1/ocr-mei/answer-booklets/p1/ocr-mei-h630-01-2025-june-ab.pdf",
+        "answerBookletPages": [
+          2
+        ],
+        "answerSourceFile": "exams/source/a-level-maths/year-1/ocr-mei/mark-schemes/p1/ocr-mei-h630-01-2025-june-ms.pdf",
+        "answerSourcePages": [
+          11
+        ]
+      },
+      "compact": [
+        [
+          {
+            "source": "question",
+            "page": 3,
+            "top": 132,
+            "bottom": 310,
+            "left": 44,
+            "right": 551
+          }
+        ]
+      ],
+      "working": [
+        [
+          {
+            "source": "question",
+            "page": 3,
+            "top": 132,
+            "bottom": 310,
+            "left": 44,
+            "right": 551
+          },
+          {
+            "source": "answerBooklet",
+            "page": 2,
+            "top": 405.5,
+            "bottom": 770,
+            "left": 48,
+            "right": 550
+          }
+        ]
+      ],
+      "answers": [
+        [
+          {
+            "source": "markScheme",
+            "page": 11,
+            "top": 339,
+            "bottom": 452,
+            "left": 40,
+            "right": 782
+          }
+        ]
+      ],
+      "compactSHA256": "2b12337cde8c25f8a7ea682d9612d18b175dad3432a36022e3e250485652c23b",
+      "workingSHA256": "29b0dabc3b70cf858c7eda07a62ff2069d10e4311d8ae8a8fed249b7275ec8d1",
+      "answersSHA256": "c2b5bf7d5831dc4755ee795df0ce334f663e7f1efdfb259316851bd33b2e1213"
+    },
+    {
+      "record": {
+        "id": "ocr-mei-h630-01-2025-june-q3",
+        "qualification": "A-Level Maths",
+        "yearGroup": "Year 1",
+        "examBoard": "OCR MEI",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "H630/01",
+        "component": "Pure Mathematics and Mechanics",
+        "examYear": 2025,
+        "series": "June",
+        "question": "3",
+        "marks": 4,
+        "topic": "Pure",
+        "subtopic": "Straight line graphs",
+        "subtopics": [
+          "Straight line graphs",
+          "Simultaneous equations"
+        ],
+        "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q3.pdf",
+        "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2025-june-q3.pdf",
+        "answerFile": "exams/answers/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q3.pdf",
+        "sourceFile": "exams/source/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june.pdf",
+        "sourcePages": [
+          3
+        ],
+        "answerBookletFile": "exams/source/a-level-maths/year-1/ocr-mei/answer-booklets/p1/ocr-mei-h630-01-2025-june-ab.pdf",
+        "answerBookletPages": [
+          3
+        ],
+        "answerSourceFile": "exams/source/a-level-maths/year-1/ocr-mei/mark-schemes/p1/ocr-mei-h630-01-2025-june-ms.pdf",
+        "answerSourcePages": [
+          12
+        ]
+      },
+      "compact": [
+        [
+          {
+            "source": "question",
+            "page": 3,
+            "top": 359,
+            "bottom": 698,
+            "left": 44,
+            "right": 551
+          }
+        ]
+      ],
+      "working": [
+        [
+          {
+            "source": "question",
+            "page": 3,
+            "top": 359,
+            "bottom": 698,
+            "left": 44,
+            "right": 551
+          }
+        ],
+        [
+          {
+            "source": "answerBooklet",
+            "page": 3,
+            "top": 63,
+            "bottom": 518.9,
+            "left": 48,
+            "right": 550
+          }
+        ]
+      ],
+      "answers": [
+        [
+          {
+            "source": "markScheme",
+            "page": 12,
+            "top": 76,
+            "bottom": 389,
+            "left": 40,
+            "right": 782
+          }
+        ]
+      ],
+      "compactSHA256": "743533cde8683173bd7c4092c4c57b405e232d8c9ea1599549c630bf7e598780",
+      "workingSHA256": "a14c19b8c438e9a650d0905c7fcee3e7fd24cf67d44426a4b9d9c45643fa4a2a",
+      "answersSHA256": "13a03aa1925f8eab5c136a22c5975eda13fb6824a4f50581f1339842f339669e"
+    },
+    {
+      "record": {
+        "id": "ocr-mei-h630-01-2025-june-q4",
+        "qualification": "A-Level Maths",
+        "yearGroup": "Year 1",
+        "examBoard": "OCR MEI",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "H630/01",
+        "component": "Pure Mathematics and Mechanics",
+        "examYear": 2025,
+        "series": "June",
+        "question": "4",
+        "marks": 4,
+        "topic": "Pure",
+        "subtopic": "Quadratic equations",
+        "subtopics": [
+          "Quadratic equations"
+        ],
+        "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q4.pdf",
+        "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2025-june-q4.pdf",
+        "answerFile": "exams/answers/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q4.pdf",
+        "sourceFile": "exams/source/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june.pdf",
+        "sourcePages": [
+          4
+        ],
+        "answerBookletFile": "exams/source/a-level-maths/year-1/ocr-mei/answer-booklets/p1/ocr-mei-h630-01-2025-june-ab.pdf",
+        "answerBookletPages": [
+          3,
+          4
+        ],
+        "answerSourceFile": "exams/source/a-level-maths/year-1/ocr-mei/mark-schemes/p1/ocr-mei-h630-01-2025-june-ms.pdf",
+        "answerSourcePages": [
+          13
+        ]
+      },
+      "compact": [
+        [
+          {
+            "source": "question",
+            "page": 4,
+            "top": 59,
+            "bottom": 119,
+            "left": 44,
+            "right": 551
+          }
+        ]
+      ],
+      "working": [
+        [
+          {
+            "source": "question",
+            "page": 4,
+            "top": 59,
+            "bottom": 119,
+            "left": 44,
+            "right": 551
+          },
+          {
+            "source": "answerBooklet",
+            "page": 3,
+            "top": 518.9,
+            "bottom": 770,
+            "left": 48,
+            "right": 550
+          },
+          {
+            "source": "answerBooklet",
+            "page": 4,
+            "top": 63,
+            "bottom": 246.8,
+            "left": 48,
+            "right": 550
+          }
+        ]
+      ],
+      "answers": [
+        [
+          {
+            "source": "markScheme",
+            "page": 13,
+            "top": 76,
+            "bottom": 302,
+            "left": 40,
+            "right": 782
+          }
+        ]
+      ],
+      "compactSHA256": "32b90bba72eddea4f57d3e8ba38607d1cb2bde92337d9825d1d94254b641b54e",
+      "workingSHA256": "d3449b749ec90465a9efd8e21bd5152816930ba60deab76e6e7a6ffa40629d1e",
+      "answersSHA256": "4c29057a31bcf86fdd487d8bee605bdb827c9b53f58204a572259683b301461d"
+    },
+    {
+      "record": {
+        "id": "ocr-mei-h630-01-2025-june-q5",
+        "qualification": "A-Level Maths",
+        "yearGroup": "Year 1",
+        "examBoard": "OCR MEI",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "H630/01",
+        "component": "Pure Mathematics and Mechanics",
+        "examYear": 2025,
+        "series": "June",
+        "question": "5",
+        "marks": 4,
+        "topic": "Mechanics",
+        "subtopic": "Forces and Newton's laws",
+        "subtopics": [
+          "Forces and Newton's laws",
+          "Modelling"
+        ],
+        "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q5.pdf",
+        "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2025-june-q5.pdf",
+        "answerFile": "exams/answers/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q5.pdf",
+        "sourceFile": "exams/source/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june.pdf",
+        "sourcePages": [
+          4
+        ],
+        "answerBookletFile": "exams/source/a-level-maths/year-1/ocr-mei/answer-booklets/p1/ocr-mei-h630-01-2025-june-ab.pdf",
+        "answerBookletPages": [
+          4
+        ],
+        "answerSourceFile": "exams/source/a-level-maths/year-1/ocr-mei/mark-schemes/p1/ocr-mei-h630-01-2025-june-ms.pdf",
+        "answerSourcePages": [
+          14
+        ]
+      },
+      "compact": [
+        [
+          {
+            "source": "question",
+            "page": 4,
+            "top": 160,
+            "bottom": 278,
+            "left": 44,
+            "right": 551
+          }
+        ]
+      ],
+      "working": [
+        [
+          {
+            "source": "question",
+            "page": 4,
+            "top": 160,
+            "bottom": 278,
+            "left": 44,
+            "right": 551
+          },
+          {
+            "source": "answerBooklet",
+            "page": 4,
+            "top": 246.8,
+            "bottom": 770,
+            "left": 48,
+            "right": 550
+          }
+        ]
+      ],
+      "answers": [
+        [
+          {
+            "source": "markScheme",
+            "page": 14,
+            "top": 76,
+            "bottom": 336,
+            "left": 40,
+            "right": 782
+          }
+        ]
+      ],
+      "compactSHA256": "4529b3f19c45cf94f5e099f05c7dfbec6b17a0c11ab648958ebfb9b62ed6832f",
+      "workingSHA256": "da72a8a81e282947898560c6f843005e21fb0880ad6cea0392b8b7c232ebb73e",
+      "answersSHA256": "01dc122c3a081913511aae922d81b569b9c1589f7f2af5c6b9f1b6dfab00ba37"
+    },
+    {
+      "record": {
+        "id": "ocr-mei-h630-01-2025-june-q6",
+        "qualification": "A-Level Maths",
+        "yearGroup": "Year 1",
+        "examBoard": "OCR MEI",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "H630/01",
+        "component": "Pure Mathematics and Mechanics",
+        "examYear": 2025,
+        "series": "June",
+        "question": "6",
+        "marks": 4,
+        "topic": "Pure",
+        "subtopic": "Trigonometric equations",
+        "subtopics": [
+          "Trigonometric equations",
+          "Quadratic equations"
+        ],
+        "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q6.pdf",
+        "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2025-june-q6.pdf",
+        "answerFile": "exams/answers/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q6.pdf",
+        "sourceFile": "exams/source/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june.pdf",
+        "sourcePages": [
+          4
+        ],
+        "answerBookletFile": "exams/source/a-level-maths/year-1/ocr-mei/answer-booklets/p1/ocr-mei-h630-01-2025-june-ab.pdf",
+        "answerBookletPages": [
+          5
+        ],
+        "answerSourceFile": "exams/source/a-level-maths/year-1/ocr-mei/mark-schemes/p1/ocr-mei-h630-01-2025-june-ms.pdf",
+        "answerSourcePages": [
+          15
+        ]
+      },
+      "compact": [
+        [
+          {
+            "source": "question",
+            "page": 4,
+            "top": 356,
+            "bottom": 404,
+            "left": 44,
+            "right": 551
+          }
+        ]
+      ],
+      "working": [
+        [
+          {
+            "source": "question",
+            "page": 4,
+            "top": 356,
+            "bottom": 404,
+            "left": 44,
+            "right": 551
+          }
+        ],
+        [
+          {
+            "source": "answerBooklet",
+            "page": 5,
+            "top": 63,
+            "bottom": 770,
+            "left": 48,
+            "right": 550
+          }
+        ]
+      ],
+      "answers": [
+        [
+          {
+            "source": "markScheme",
+            "page": 15,
+            "top": 77,
+            "bottom": 259,
+            "left": 40,
+            "right": 782
+          }
+        ]
+      ],
+      "compactSHA256": "3a59e9e0e7212e3919ddf6ade58439d3de9fc71e8f418e764367642233bc55e0",
+      "workingSHA256": "fc9a831a9ec98ebe9b3d4dcd6bcec07d86e25e473f0eab075a3df58f575ab78a",
+      "answersSHA256": "c56fed63f6b7bb06c7e76b434139a3a2b5c4e9932bbce249878a4fbafbfeaa60"
+    },
+    {
+      "record": {
+        "id": "ocr-mei-h630-01-2025-june-q7",
+        "qualification": "A-Level Maths",
+        "yearGroup": "Year 1",
+        "examBoard": "OCR MEI",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "H630/01",
+        "component": "Pure Mathematics and Mechanics",
+        "examYear": 2025,
+        "series": "June",
+        "question": "7",
+        "marks": 5,
+        "topic": "Pure",
+        "subtopic": "Vectors",
+        "subtopics": [
+          "Vectors",
+          "Straight line graphs"
+        ],
+        "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q7.pdf",
+        "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2025-june-q7.pdf",
+        "answerFile": "exams/answers/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q7.pdf",
+        "sourceFile": "exams/source/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june.pdf",
+        "sourcePages": [
+          4
+        ],
+        "answerBookletFile": "exams/source/a-level-maths/year-1/ocr-mei/answer-booklets/p1/ocr-mei-h630-01-2025-june-ab.pdf",
+        "answerBookletPages": [
+          6
+        ],
+        "answerSourceFile": "exams/source/a-level-maths/year-1/ocr-mei/mark-schemes/p1/ocr-mei-h630-01-2025-june-ms.pdf",
+        "answerSourcePages": [
+          16
+        ]
+      },
+      "compact": [
+        [
+          {
+            "source": "question",
+            "page": 4,
+            "top": 477,
+            "bottom": 530,
+            "left": 44,
+            "right": 551
+          },
+          {
+            "source": "answerBooklet",
+            "page": 6,
+            "top": 80,
+            "bottom": 392,
+            "left": 180,
+            "right": 490
+          },
+          {
+            "source": "question",
+            "page": 4,
+            "top": 539,
+            "bottom": 587,
+            "left": 44,
+            "right": 551
+          }
+        ]
+      ],
+      "working": [
+        [
+          {
+            "source": "question",
+            "page": 4,
+            "top": 477,
+            "bottom": 530,
+            "left": 44,
+            "right": 551
+          },
+          {
+            "source": "question",
+            "page": 4,
+            "top": 539,
+            "bottom": 587,
+            "left": 44,
+            "right": 551
+          }
+        ],
+        [
+          {
+            "source": "answerBooklet",
+            "page": 6,
+            "top": 63,
+            "bottom": 770,
+            "left": 48,
+            "right": 550
+          }
+        ]
+      ],
+      "answers": [
+        [
+          {
+            "source": "markScheme",
+            "page": 16,
+            "top": 76,
+            "bottom": 367,
+            "left": 40,
+            "right": 782
+          }
+        ]
+      ],
+      "compactSHA256": "d2b81efe1094cea244139eca0e4c03bf754cbe228854fb9454ec4dc3b909d0bb",
+      "workingSHA256": "6d1e32712ad0ec0cfbd75705ed906b257212bbef69e9f159dd7018ed19286d1a",
+      "answersSHA256": "31109126b63549f4fde1293f7471c43a6d6b251534466826122659d71adcaacd"
+    },
+    {
+      "record": {
+        "id": "ocr-mei-h630-01-2025-june-q8",
+        "qualification": "A-Level Maths",
+        "yearGroup": "Year 1",
+        "examBoard": "OCR MEI",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "H630/01",
+        "component": "Pure Mathematics and Mechanics",
+        "examYear": 2025,
+        "series": "June",
+        "question": "8",
+        "marks": 3,
+        "topic": "Mechanics",
+        "subtopic": "Kinematics",
+        "subtopics": [
+          "Kinematics",
+          "Forces and Newton's laws"
+        ],
+        "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q8.pdf",
+        "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2025-june-q8.pdf",
+        "answerFile": "exams/answers/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q8.pdf",
+        "sourceFile": "exams/source/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june.pdf",
+        "sourcePages": [
+          4
+        ],
+        "answerBookletFile": "exams/source/a-level-maths/year-1/ocr-mei/answer-booklets/p1/ocr-mei-h630-01-2025-june-ab.pdf",
+        "answerBookletPages": [
+          7
+        ],
+        "answerSourceFile": "exams/source/a-level-maths/year-1/ocr-mei/mark-schemes/p1/ocr-mei-h630-01-2025-june-ms.pdf",
+        "answerSourcePages": [
+          17
+        ]
+      },
+      "compact": [
+        [
+          {
+            "source": "question",
+            "page": 4,
+            "top": 634,
+            "bottom": 768,
+            "left": 44,
+            "right": 551
+          }
+        ]
+      ],
+      "working": [
+        [
+          {
+            "source": "question",
+            "page": 4,
+            "top": 634,
+            "bottom": 768,
+            "left": 44,
+            "right": 551
+          }
+        ],
+        [
+          {
+            "source": "answerBooklet",
+            "page": 7,
+            "top": 63,
+            "bottom": 770,
+            "left": 48,
+            "right": 550
+          }
+        ]
+      ],
+      "answers": [
+        [
+          {
+            "source": "markScheme",
+            "page": 17,
+            "top": 90,
+            "bottom": 246,
+            "left": 40,
+            "right": 782
+          }
+        ]
+      ],
+      "compactSHA256": "2768a1483706c987fd8c40d6155dcd64e26b00e6e03dcb014142acffee426c66",
+      "workingSHA256": "a095e7694eba7723a5fbe6f4891b48a4dd3c686498911ba35bb7a82e514785c8",
+      "answersSHA256": "8b06a0a7c4a773df105d1d1cbcab91039b9368c40a2532285f41038c360fb2db"
+    },
+    {
+      "record": {
+        "id": "ocr-mei-h630-01-2025-june-q9",
+        "qualification": "A-Level Maths",
+        "yearGroup": "Year 1",
+        "examBoard": "OCR MEI",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "H630/01",
+        "component": "Pure Mathematics and Mechanics",
+        "examYear": 2025,
+        "series": "June",
+        "question": "9",
+        "marks": 5,
+        "topic": "Pure",
+        "subtopic": "Integration",
+        "subtopics": [
+          "Integration",
+          "Indices"
+        ],
+        "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q9.pdf",
+        "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2025-june-q9.pdf",
+        "answerFile": "exams/answers/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q9.pdf",
+        "sourceFile": "exams/source/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june.pdf",
+        "sourcePages": [
+          5
+        ],
+        "answerBookletFile": "exams/source/a-level-maths/year-1/ocr-mei/answer-booklets/p1/ocr-mei-h630-01-2025-june-ab.pdf",
+        "answerBookletPages": [
+          8
+        ],
+        "answerSourceFile": "exams/source/a-level-maths/year-1/ocr-mei/mark-schemes/p1/ocr-mei-h630-01-2025-june-ms.pdf",
+        "answerSourcePages": [
+          18
+        ]
+      },
+      "compact": [
+        [
+          {
+            "source": "question",
+            "page": 5,
+            "top": 60,
+            "bottom": 171,
+            "left": 44,
+            "right": 551
+          }
+        ]
+      ],
+      "working": [
+        [
+          {
+            "source": "question",
+            "page": 5,
+            "top": 60,
+            "bottom": 171,
+            "left": 44,
+            "right": 551
+          }
+        ],
+        [
+          {
+            "source": "answerBooklet",
+            "page": 8,
+            "top": 63,
+            "bottom": 770,
+            "left": 48,
+            "right": 550
+          }
+        ]
+      ],
+      "answers": [
+        [
+          {
+            "source": "markScheme",
+            "page": 18,
+            "top": 90,
+            "bottom": 340,
+            "left": 40,
+            "right": 782
+          }
+        ]
+      ],
+      "compactSHA256": "355f5bf70a6dc912409a1fbe4f45a62970a2a62cdd9bca0e8c84f64040ca58b4",
+      "workingSHA256": "fc4997039bf0c1debc1e58b98f8dc5e8c0ba4c153d716283063ea3314351d3f7",
+      "answersSHA256": "0bdae30eb392ecd1bf17c2a9485db4e0c9e61a2cf96e66403d0d12abc435b4fb"
+    },
+    {
+      "record": {
+        "id": "ocr-mei-h630-01-2025-june-q10",
+        "qualification": "A-Level Maths",
+        "yearGroup": "Year 1",
+        "examBoard": "OCR MEI",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "H630/01",
+        "component": "Pure Mathematics and Mechanics",
+        "examYear": 2025,
+        "series": "June",
+        "question": "10",
+        "marks": 5,
+        "topic": "Mechanics",
+        "subtopic": "Equilibrium",
+        "subtopics": [
+          "Equilibrium",
+          "Forces and Newton's laws",
+          "Vectors",
+          "Modelling"
+        ],
+        "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q10.pdf",
+        "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2025-june-q10.pdf",
+        "answerFile": "exams/answers/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q10.pdf",
+        "sourceFile": "exams/source/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june.pdf",
+        "sourcePages": [
+          1,
+          5
+        ],
+        "answerBookletFile": "exams/source/a-level-maths/year-1/ocr-mei/answer-booklets/p1/ocr-mei-h630-01-2025-june-ab.pdf",
+        "answerBookletPages": [
+          9
+        ],
+        "answerSourceFile": "exams/source/a-level-maths/year-1/ocr-mei/mark-schemes/p1/ocr-mei-h630-01-2025-june-ms.pdf",
+        "answerSourcePages": [
+          19
+        ]
+      },
+      "compact": [
+        [
+          {
+            "source": "question",
+            "page": 5,
+            "top": 221,
+            "bottom": 296,
+            "left": 44,
+            "right": 551
+          },
+          {
+            "source": "question",
+            "page": 5,
+            "top": 319,
+            "bottom": 465,
+            "left": 44,
+            "right": 551
+          },
+          {
+            "source": "question",
+            "page": 1,
+            "top": 482,
+            "bottom": 521,
+            "left": 44,
+            "right": 551
+          }
+        ]
+      ],
+      "working": [
+        [
+          {
+            "source": "question",
+            "page": 5,
+            "top": 221,
+            "bottom": 296,
+            "left": 44,
+            "right": 551
+          },
+          {
+            "source": "question",
+            "page": 5,
+            "top": 319,
+            "bottom": 465,
+            "left": 44,
+            "right": 551
+          },
+          {
+            "source": "question",
+            "page": 1,
+            "top": 482,
+            "bottom": 521,
+            "left": 44,
+            "right": 551
+          }
+        ],
+        [
+          {
+            "source": "answerBooklet",
+            "page": 9,
+            "top": 63,
+            "bottom": 770,
+            "left": 48,
+            "right": 550
+          }
+        ]
+      ],
+      "answers": [
+        [
+          {
+            "source": "markScheme",
+            "page": 19,
+            "top": 90,
+            "bottom": 401,
+            "left": 40,
+            "right": 782
+          }
+        ]
+      ],
+      "compactSHA256": "103a9d503baa9ab54c45451d527aa745a4b2e60ddf14e0b9128537a4539a0dbe",
+      "workingSHA256": "76c8a364977b6cb77e1f53fbe50b13a2f015fa9ea532e8bf11eefcf08f18a558",
+      "answersSHA256": "0c935c43ef0ace7404764043c1172a9f946779360b54615b535955b5b5568640"
+    },
+    {
+      "record": {
+        "id": "ocr-mei-h630-01-2025-june-q11",
+        "qualification": "A-Level Maths",
+        "yearGroup": "Year 1",
+        "examBoard": "OCR MEI",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "H630/01",
+        "component": "Pure Mathematics and Mechanics",
+        "examYear": 2025,
+        "series": "June",
+        "question": "11",
+        "marks": 9,
+        "topic": "Pure",
+        "subtopic": "Differentiation",
+        "subtopics": [
+          "Differentiation",
+          "Quadratic equations"
+        ],
+        "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q11.pdf",
+        "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2025-june-q11.pdf",
+        "answerFile": "exams/answers/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q11.pdf",
+        "sourceFile": "exams/source/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june.pdf",
+        "sourcePages": [
+          5
+        ],
+        "answerBookletFile": "exams/source/a-level-maths/year-1/ocr-mei/answer-booklets/p1/ocr-mei-h630-01-2025-june-ab.pdf",
+        "answerBookletPages": [
+          10,
+          11
+        ],
+        "answerSourceFile": "exams/source/a-level-maths/year-1/ocr-mei/mark-schemes/p1/ocr-mei-h630-01-2025-june-ms.pdf",
+        "answerSourcePages": [
+          20,
+          21
+        ]
+      },
+      "compact": [
+        [
+          {
+            "source": "question",
+            "page": 5,
+            "top": 515,
+            "bottom": 647,
+            "left": 44,
+            "right": 551
+          }
+        ]
+      ],
+      "working": [
+        [
+          {
+            "source": "question",
+            "page": 5,
+            "top": 515,
+            "bottom": 647,
+            "left": 44,
+            "right": 551
+          }
+        ],
+        [
+          {
+            "source": "answerBooklet",
+            "page": 10,
+            "top": 63,
+            "bottom": 770,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        [
+          {
+            "source": "answerBooklet",
+            "page": 11,
+            "top": 63,
+            "bottom": 339,
+            "left": 48,
+            "right": 550
+          }
+        ]
+      ],
+      "answers": [
+        [
+          {
+            "source": "markScheme",
+            "page": 20,
+            "top": 62,
+            "bottom": 529,
+            "left": 40,
+            "right": 782
+          }
+        ],
+        [
+          {
+            "source": "markScheme",
+            "page": 21,
+            "top": 62,
+            "bottom": 201,
+            "left": 40,
+            "right": 782
+          }
+        ]
+      ],
+      "compactSHA256": "fc6b9f4210686a4f68d6dcb65760d6ad1657784046a82707b9aba5cdf975ea8c",
+      "workingSHA256": "0834f5e6341110648b1607f0a035e0171a41d2dfa56d764f7231ec68ad5868a2",
+      "answersSHA256": "992a00c4e137d505ab2c5571ba4e4ca271efdabe66ab90eba207b3e7891a9392"
+    },
+    {
+      "record": {
+        "id": "ocr-mei-h630-01-2025-june-q12",
+        "qualification": "A-Level Maths",
+        "yearGroup": "Year 1",
+        "examBoard": "OCR MEI",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "H630/01",
+        "component": "Pure Mathematics and Mechanics",
+        "examYear": 2025,
+        "series": "June",
+        "question": "12",
+        "marks": 13,
+        "topic": "Pure",
+        "subtopic": "Exponentials and logarithms",
+        "subtopics": [
+          "Exponentials and logarithms",
+          "Modelling",
+          "Differentiation"
+        ],
+        "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q12.pdf",
+        "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2025-june-q12.pdf",
+        "answerFile": "exams/answers/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q12.pdf",
+        "sourceFile": "exams/source/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june.pdf",
+        "sourcePages": [
+          6
+        ],
+        "answerBookletFile": "exams/source/a-level-maths/year-1/ocr-mei/answer-booklets/p1/ocr-mei-h630-01-2025-june-ab.pdf",
+        "answerBookletPages": [
+          12,
+          13
+        ],
+        "answerSourceFile": "exams/source/a-level-maths/year-1/ocr-mei/mark-schemes/p1/ocr-mei-h630-01-2025-june-ms.pdf",
+        "answerSourcePages": [
+          22,
+          23
+        ]
+      },
+      "compact": [
+        [
+          {
+            "source": "question",
+            "page": 6,
+            "top": 59,
+            "bottom": 207,
+            "left": 44,
+            "right": 551
+          },
+          {
+            "source": "question",
+            "page": 6,
+            "top": 227,
+            "bottom": 316,
+            "left": 44,
+            "right": 551
+          },
+          {
+            "source": "question",
+            "page": 6,
+            "top": 325,
+            "bottom": 558,
+            "left": 44,
+            "right": 551
+          }
+        ]
+      ],
+      "working": [
+        [
+          {
+            "source": "question",
+            "page": 6,
+            "top": 59,
+            "bottom": 207,
+            "left": 44,
+            "right": 551
+          },
+          {
+            "source": "question",
+            "page": 6,
+            "top": 227,
+            "bottom": 316,
+            "left": 44,
+            "right": 551
+          },
+          {
+            "source": "question",
+            "page": 6,
+            "top": 325,
+            "bottom": 558,
+            "left": 44,
+            "right": 551
+          }
+        ],
+        [
+          {
+            "source": "answerBooklet",
+            "page": 12,
+            "top": 63,
+            "bottom": 770,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        [
+          {
+            "source": "answerBooklet",
+            "page": 13,
+            "top": 63,
+            "bottom": 770,
+            "left": 48,
+            "right": 550
+          }
+        ]
+      ],
+      "answers": [
+        [
+          {
+            "source": "markScheme",
+            "page": 22,
+            "top": 62,
+            "bottom": 473,
+            "left": 40,
+            "right": 782
+          }
+        ],
+        [
+          {
+            "source": "markScheme",
+            "page": 22,
+            "top": 62,
+            "bottom": 83,
+            "left": 40,
+            "right": 782
+          },
+          {
+            "source": "markScheme",
+            "page": 23,
+            "top": 62,
+            "bottom": 532,
+            "left": 40,
+            "right": 782
+          }
+        ]
+      ],
+      "compactSHA256": "043e5b201a094bfbbedb6311713ce3a4ad62e99f5dd9feb11b5037b27fea7145",
+      "workingSHA256": "f8f2e71a85f9f0a97582c7af73f64c1f10cbb630bd65c1a936df4ce11be23948",
+      "answersSHA256": "81963d185f04bbea74f98645f5c8d7c4839b5adb278e95fc852970d4da429613"
+    },
+    {
+      "record": {
+        "id": "ocr-mei-h630-01-2025-june-q13",
+        "qualification": "A-Level Maths",
+        "yearGroup": "Year 1",
+        "examBoard": "OCR MEI",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "H630/01",
+        "component": "Pure Mathematics and Mechanics",
+        "examYear": 2025,
+        "series": "June",
+        "question": "13",
+        "marks": 9,
+        "topic": "Mechanics",
+        "subtopic": "Kinematics",
+        "subtopics": [
+          "Kinematics",
+          "Integration",
+          "Quadratic equations"
+        ],
+        "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q13.pdf",
+        "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2025-june-q13.pdf",
+        "answerFile": "exams/answers/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q13.pdf",
+        "sourceFile": "exams/source/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june.pdf",
+        "sourcePages": [
+          7
+        ],
+        "answerBookletFile": "exams/source/a-level-maths/year-1/ocr-mei/answer-booklets/p1/ocr-mei-h630-01-2025-june-ab.pdf",
+        "answerBookletPages": [
+          14,
+          15
+        ],
+        "answerSourceFile": "exams/source/a-level-maths/year-1/ocr-mei/mark-schemes/p1/ocr-mei-h630-01-2025-june-ms.pdf",
+        "answerSourcePages": [
+          24,
+          25
+        ]
+      },
+      "compact": [
+        [
+          {
+            "source": "question",
+            "page": 7,
+            "top": 60,
+            "bottom": 388,
+            "left": 44,
+            "right": 551
+          },
+          {
+            "source": "question",
+            "page": 7,
+            "top": 395,
+            "bottom": 459,
+            "left": 44,
+            "right": 551
+          }
+        ]
+      ],
+      "working": [
+        [
+          {
+            "source": "question",
+            "page": 7,
+            "top": 60,
+            "bottom": 388,
+            "left": 44,
+            "right": 551
+          },
+          {
+            "source": "question",
+            "page": 7,
+            "top": 395,
+            "bottom": 459,
+            "left": 44,
+            "right": 551
+          }
+        ],
+        [
+          {
+            "source": "answerBooklet",
+            "page": 14,
+            "top": 63,
+            "bottom": 770,
+            "left": 48,
+            "right": 550
+          }
+        ],
+        [
+          {
+            "source": "answerBooklet",
+            "page": 15,
+            "top": 63,
+            "bottom": 770,
+            "left": 48,
+            "right": 550
+          }
+        ]
+      ],
+      "answers": [
+        [
+          {
+            "source": "markScheme",
+            "page": 24,
+            "top": 90,
+            "bottom": 309,
+            "left": 40,
+            "right": 782
+          }
+        ],
+        [
+          {
+            "source": "markScheme",
+            "page": 24,
+            "top": 90,
+            "bottom": 111,
+            "left": 40,
+            "right": 782
+          },
+          {
+            "source": "markScheme",
+            "page": 25,
+            "top": 62,
+            "bottom": 435,
+            "left": 40,
+            "right": 782
+          }
+        ]
+      ],
+      "compactSHA256": "3f3838ca4e25844155b96e2b1bb936676b0d3df271263ca22bcf19732cdfbe33",
+      "workingSHA256": "53db86de0841969bd11fa5dd7a50f8305888f0ac7779bbd4ad88e6f90cc32885",
+      "answersSHA256": "53e6a38ab09ba36f94f825d29d7a098de55418a1e4b83f8da7fa7b1f2326567f"
+    }
+  ],
+  "sourceSHA256": "33fb9c0a614aca09401b6d82c2dd58ea8dea82bf53861a5884468a064102b856",
+  "markSchemeSHA256": "ed7d17436c5e16f1d050c8239edcc44971c01554aeb3267b7119ec8e4a6cbb5a",
+  "answerBookletSHA256": "e9ec4a9f430e1352b71bc28704a7b1d918c7116d930d97ab1beb4a539f0c6fb7"
+}
