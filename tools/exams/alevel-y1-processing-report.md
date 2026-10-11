@@ -120,6 +120,10 @@ Differentiation and Modelling as secondary skills. `Kinematics` is not added.
 The documented June 2024 H630/02 Q9(b) official subtotal discrepancy above
 is unchanged.
 
-## Local status
+## Publication
 
-No commit or push. All three import ZIPs retained. Sources and generated PDFs are local pending review.
+The approved Year 1 implementation was committed as `35e71e3` and pushed to
+`main`. All 48 PDFs in the three import archives were checked byte-for-byte
+against the extracted question papers, printed answer booklets and mark schemes.
+The three temporary ZIPs were then removed from the repository in a separate
+cleanup commit. The documented official Q9(b) discrepancy remains unchanged.
