@@ -1,0 +1,2223 @@
+{
+  "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+  "markSchemeFile": "exams/source/gcse/foundation/mark-schemes/p1/edexcel-1ma1-1f-2024-june-ms.pdf",
+  "sourceSHA256": "0ab46c50e07d226c1090e24ea2ec0890c7dfb121c5de7aa4b7635e46a6290b56",
+  "markSchemeSHA256": "65d9b9bdb83cb0830af8f3bd22cec96bef757c1227c54d571a4d21521c68ff9a",
+  "questions": [
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q1",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "1",
+        "marks": 1,
+        "topic": "Number",
+        "topics": [
+          "Number"
+        ],
+        "subtopic": "Rounding",
+        "subtopics": [
+          "Rounding"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q1.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          2
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q1.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q1.pdf"
+      },
+      "compact": [
+        {
+          "page": 2,
+          "left": 68,
+          "right": 585,
+          "top": 178,
+          "bottom": 196
+        },
+        {
+          "page": 2,
+          "left": 68,
+          "right": 585,
+          "top": 246.226,
+          "bottom": 261.226
+        }
+      ],
+      "working": [
+        {
+          "page": 2,
+          "left": 68,
+          "right": 585,
+          "top": 178,
+          "bottom": 261.226
+        }
+      ],
+      "answers": [
+        {
+          "page": 6,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 98.46,
+          "bottom": 115.365,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "594a21f68150f5221924c177e28fecc693ec085fc5852b89afe3c24c905aaa32",
+      "workingSHA256": "5225cce98059cfc0e0ac27fa75e6b979a7c9314ae95063ab23b18fc5f5dee246",
+      "answersSHA256": "176d4c0f336d6b43c874c4ce893316461ee0e52aa6eaef69c0d962b3838d3c39"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q2",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "2",
+        "marks": 1,
+        "topic": "Number",
+        "topics": [
+          "Number"
+        ],
+        "subtopic": "Percentages",
+        "subtopics": [
+          "Percentages"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q2.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          2
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q2.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q2.pdf"
+      },
+      "compact": [
+        {
+          "page": 2,
+          "left": 68,
+          "right": 585,
+          "top": 279,
+          "bottom": 298
+        },
+        {
+          "page": 2,
+          "left": 68,
+          "right": 585,
+          "top": 346.331,
+          "bottom": 361.331
+        }
+      ],
+      "working": [
+        {
+          "page": 2,
+          "left": 68,
+          "right": 585,
+          "top": 279,
+          "bottom": 361.331
+        }
+      ],
+      "answers": [
+        {
+          "page": 6,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 124.34,
+          "bottom": 141.165,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "409c49656ae76f6e63b27a6295fb9d1788dd6e4139a914ef8c726b5765cc279e",
+      "workingSHA256": "ff4fe156fa8f9959b27b5a4dde6161fa2c9bd27c870f2c44d90fb7935e56b55d",
+      "answersSHA256": "a25013e4cca97946d91b692910fbd22fd8982dcba974f0bb10315d202667e9aa"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q3",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "3",
+        "marks": 1,
+        "topic": "Geometry and Measures",
+        "topics": [
+          "Geometry and Measures"
+        ],
+        "subtopic": "Angle facts",
+        "subtopics": [
+          "Angle facts"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q3.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          2
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q3.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q3.pdf"
+      },
+      "compact": [
+        {
+          "page": 2,
+          "left": 68,
+          "right": 585,
+          "top": 379,
+          "bottom": 489
+        },
+        {
+          "page": 2,
+          "left": 68,
+          "right": 585,
+          "top": 531.648,
+          "bottom": 546.648
+        }
+      ],
+      "working": [
+        {
+          "page": 2,
+          "left": 68,
+          "right": 585,
+          "top": 379,
+          "bottom": 546.648
+        }
+      ],
+      "answers": [
+        {
+          "page": 6,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 150.14,
+          "bottom": 166.965,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "ea30b36c3886ca241f84ad537f1dadd54f57caecd68f6de44395e1a84648cc56",
+      "workingSHA256": "0ad45c80313868cfb3b0c75c2554762286dbeae43e7af03f922b487339ffb34d",
+      "answersSHA256": "51327a4c3b935fca751ed81fcd7bc8fb0689d6b670a777002028d24057396ef6"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q4",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "4",
+        "marks": 1,
+        "topic": "Number",
+        "topics": [
+          "Number"
+        ],
+        "subtopic": "Ordering fractions, decimals and percentages",
+        "subtopics": [
+          "Ordering fractions, decimals and percentages"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q4.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          2
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q4.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q4.pdf"
+      },
+      "compact": [
+        {
+          "page": 2,
+          "left": 68,
+          "right": 585,
+          "top": 563,
+          "bottom": 625
+        },
+        {
+          "page": 2,
+          "left": 68,
+          "right": 585,
+          "top": 674.328,
+          "bottom": 689.328
+        }
+      ],
+      "working": [
+        {
+          "page": 2,
+          "left": 68,
+          "right": 585,
+          "top": 563,
+          "bottom": 689.328
+        }
+      ],
+      "answers": [
+        {
+          "page": 6,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 175.94,
+          "bottom": 205.515,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "306a7c0b9cd05a6dacfdc82528dba7438fe2be89ccecc2f62c1a35d2e7d90f60",
+      "workingSHA256": "0bbc352b675fa496eddda98e0cd685c379d4e655f201cf780c1d5eddd96e07bb",
+      "answersSHA256": "9c51cec044a72a865218445003af9ae527520b9916f81d5d5bea1bcaf85336a0"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q5",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "5",
+        "marks": 1,
+        "topic": "Number",
+        "topics": [
+          "Number"
+        ],
+        "subtopic": "Powers and roots",
+        "subtopics": [
+          "Powers and roots"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q5.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          2
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q5.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q5.pdf"
+      },
+      "compact": [
+        {
+          "page": 2,
+          "left": 68,
+          "right": 585,
+          "top": 706,
+          "bottom": 725
+        },
+        {
+          "page": 2,
+          "left": 68,
+          "right": 585,
+          "top": 788.435,
+          "bottom": 803.435
+        }
+      ],
+      "working": [
+        {
+          "page": 2,
+          "left": 68,
+          "right": 585,
+          "top": 706,
+          "bottom": 803.435
+        }
+      ],
+      "answers": [
+        {
+          "page": 6,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 214.37,
+          "bottom": 231.349,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "8a3c9aa131f615b221b0b24e3491b132c92cfb4d1827c27d824b32c52ff2c9f5",
+      "workingSHA256": "5bca71f0af0bba4bcfdc75d508eb63a4ada50369709b45e8878071a8f25af77c",
+      "answersSHA256": "b802f665d267b725c6fb977a657c8a62774f2c2a232663acfb11476fc96ddd1b"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q6",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "6",
+        "marks": 4,
+        "topic": "Number",
+        "topics": [
+          "Number"
+        ],
+        "subtopic": "Four operations",
+        "subtopics": [
+          "Four operations"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q6.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          3
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q6.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q6.pdf"
+      },
+      "compact": [
+        {
+          "page": 3,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 207
+        },
+        {
+          "page": 3,
+          "left": 68,
+          "right": 585,
+          "top": 452.05,
+          "bottom": 467.05
+        }
+      ],
+      "working": [
+        {
+          "page": 3,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 467.05
+        }
+      ],
+      "answers": [
+        {
+          "page": 6,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 240.17,
+          "bottom": 370.895,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "2e6f87d7c2a1703c6c52d04c840cbb87fbb3daeafd65251c6fd858d5b302861c",
+      "workingSHA256": "57386b7deb0801c891391153b8241f45016a28a6d33d442da1c6d204a836ffcb",
+      "answersSHA256": "4abdc44e0003bd94d517c577977b352bbdbcba3509375020ca8fe837cc7bd7ad"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q7",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "7",
+        "marks": 4,
+        "topic": "Statistics",
+        "topics": [
+          "Statistics"
+        ],
+        "subtopic": "Bar charts",
+        "subtopics": [
+          "Bar charts"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q7.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          4
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q7.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q7.pdf"
+      },
+      "compact": [
+        {
+          "page": 4,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 715
+        },
+        {
+          "page": 4,
+          "left": 68,
+          "right": 585,
+          "top": 796.142,
+          "bottom": 811.142
+        }
+      ],
+      "working": [
+        {
+          "page": 4,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 811.142
+        }
+      ],
+      "answers": [
+        {
+          "page": 7,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 98.46,
+          "bottom": 419.015,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "4eaead7c8371d3cb3413553ec2161434ee755e2b9e078df9e6be5d562c8a55d4",
+      "workingSHA256": "9ca735c2dd6361ce10296371ab1d2082343aa5ac213ff33eb27fd11e2f7ae36b",
+      "answersSHA256": "ed91dadabecc1f4f3174bca2806843d24c4b4237b4065d32ed19efd24ee780ca"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q8",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "8",
+        "marks": 3,
+        "topic": "Geometry and Measures",
+        "topics": [
+          "Geometry and Measures"
+        ],
+        "subtopic": "Angle facts",
+        "subtopics": [
+          "Angle facts"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q8.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          5
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q8.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q8.pdf"
+      },
+      "compact": [
+        {
+          "page": 5,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 279
+        },
+        {
+          "page": 5,
+          "left": 68,
+          "right": 585,
+          "top": 376.152,
+          "bottom": 391.152
+        },
+        {
+          "page": 5,
+          "left": 68,
+          "right": 585,
+          "top": 399,
+          "bottom": 417
+        },
+        {
+          "page": 5,
+          "left": 68,
+          "right": 585,
+          "top": 498.646,
+          "bottom": 513.646
+        },
+        {
+          "page": 5,
+          "left": 68,
+          "right": 585,
+          "top": 522.622,
+          "bottom": 537.622
+        }
+      ],
+      "working": [
+        {
+          "page": 5,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 537.622
+        }
+      ],
+      "answers": [
+        {
+          "page": 8,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 98.46,
+          "bottom": 335.102,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "b4f9e292c6a6beae167dd9592f19da2bcecefa58fad9a16240a975c39f887731",
+      "workingSHA256": "bb62bd5066a298283a074f90d3f60695072c0db0a97df6581f1eedf8be65eca3",
+      "answersSHA256": "2a96fadb8068681b37a7f3493aefc78735e7bb935b3848d03aa99b46a2cb467f"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q9",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "9",
+        "marks": 5,
+        "topic": "Algebra",
+        "topics": [
+          "Algebra"
+        ],
+        "subtopic": "Function machines",
+        "subtopics": [
+          "Function machines"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q9.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          6
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q9.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q9.pdf"
+      },
+      "compact": [
+        {
+          "page": 6,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 185
+        },
+        {
+          "page": 6,
+          "left": 68,
+          "right": 585,
+          "top": 251.096,
+          "bottom": 266.096
+        },
+        {
+          "page": 6,
+          "left": 68,
+          "right": 585,
+          "top": 274,
+          "bottom": 291
+        },
+        {
+          "page": 6,
+          "left": 68,
+          "right": 585,
+          "top": 387.247,
+          "bottom": 402.247
+        },
+        {
+          "page": 6,
+          "left": 68,
+          "right": 585,
+          "top": 409,
+          "bottom": 426
+        },
+        {
+          "page": 6,
+          "left": 68,
+          "right": 585,
+          "top": 649.219,
+          "bottom": 664.219
+        },
+        {
+          "page": 6,
+          "left": 68,
+          "right": 585,
+          "top": 673.195,
+          "bottom": 688.195
+        }
+      ],
+      "working": [
+        {
+          "page": 6,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 688.195
+        }
+      ],
+      "answers": [
+        {
+          "page": 9,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 98.46,
+          "bottom": 305.421,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "ee98e5c2e0f91183fd4ece62854f0fff87225be0ac58e222ed59154e151e5151",
+      "workingSHA256": "b20863b725968926b6528ce8dac9d58199ab46cf1ce666bf4bd9837e681e734d",
+      "answersSHA256": "a3326b5817f0ff3da115dcb947e09f5701ce1d2e45cc3134aac73bb3aeacfe36"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q10",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "10",
+        "marks": 2,
+        "topic": "Ratio, Proportion and Rates of Change",
+        "topics": [
+          "Ratio, Proportion and Rates of Change"
+        ],
+        "subtopic": "Simplifying ratios",
+        "subtopics": [
+          "Simplifying ratios"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q10.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          7
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q10.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q10.pdf"
+      },
+      "compact": [
+        {
+          "page": 7,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 144
+        },
+        {
+          "page": 7,
+          "left": 68,
+          "right": 585,
+          "top": 334.094,
+          "bottom": 349.094
+        }
+      ],
+      "working": [
+        {
+          "page": 7,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 349.094
+        }
+      ],
+      "answers": [
+        {
+          "page": 9,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 326.83,
+          "bottom": 368.975,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "74c9367e51761ffcc66a79aa2c5289995fe3c2ebc38d126b58caac0fa24ba6c2",
+      "workingSHA256": "7563108eccca1f8289e6d60d24212efe9998a4bb2113a366fabea1268ce98f2a",
+      "answersSHA256": "723c2bbd74eb1f42b5c8e55d0be0eff364ee6f9b32eede8d80e9ea850aabc5c8"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q11",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "11",
+        "marks": 3,
+        "topic": "Number",
+        "topics": [
+          "Number"
+        ],
+        "subtopic": "Four operations",
+        "subtopics": [
+          "Four operations",
+          "Laws of indices",
+          "Order of operations"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q11.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          7
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q11.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q11.pdf"
+      },
+      "compact": [
+        {
+          "page": 7,
+          "left": 68,
+          "right": 585,
+          "top": 365,
+          "bottom": 385
+        },
+        {
+          "page": 7,
+          "left": 68,
+          "right": 585,
+          "top": 424.224,
+          "bottom": 466
+        },
+        {
+          "page": 7,
+          "left": 68,
+          "right": 585,
+          "top": 546.375,
+          "bottom": 561.375
+        },
+        {
+          "page": 7,
+          "left": 68,
+          "right": 585,
+          "top": 568,
+          "bottom": 617
+        },
+        {
+          "page": 7,
+          "left": 68,
+          "right": 585,
+          "top": 626.919,
+          "bottom": 641.919
+        },
+        {
+          "page": 7,
+          "left": 68,
+          "right": 585,
+          "top": 650.895,
+          "bottom": 665.895
+        }
+      ],
+      "working": [
+        {
+          "page": 7,
+          "left": 68,
+          "right": 585,
+          "top": 365,
+          "bottom": 665.895
+        }
+      ],
+      "answers": [
+        {
+          "page": 9,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 390.55,
+          "bottom": 470.645,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "0ee97ceb8c4b77f75a62b3f847e4bdcbb892a7577a596485072cd27e2d5a8740",
+      "workingSHA256": "488eca0c435a1d9381fbc87e9a6684ba3387c62a489edd408934fd76fd3a385a",
+      "answersSHA256": "5df9a5d6728093c234efab069b273a65c299f67ae299997b861976c08865dff0"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q12",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "12",
+        "marks": 4,
+        "topic": "Geometry and Measures",
+        "topics": [
+          "Geometry and Measures"
+        ],
+        "subtopic": "Perimeter",
+        "subtopics": [
+          "Perimeter"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q12.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          8
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q12.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q12.pdf"
+      },
+      "compact": [
+        {
+          "page": 8,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 261
+        },
+        {
+          "page": 8,
+          "left": 68,
+          "right": 585,
+          "top": 563.626,
+          "bottom": 578.626
+        }
+      ],
+      "working": [
+        {
+          "page": 8,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 578.626
+        }
+      ],
+      "answers": [
+        {
+          "page": 10,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 98.46,
+          "bottom": 216.915,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "9d459460ac540670e04db73c9186ce900ae9f538e1fb36ea54a0415d15599bdf",
+      "workingSHA256": "650f436e9eaaf4e7fd92ed9a2b5d331af90961243e4bef0c7f8d203c7def5c31",
+      "answersSHA256": "b98cb7aaf5b95faf23d0deb55952caedc945eff0bd0b79e8d3d56285e1253256"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q13",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "13",
+        "marks": 3,
+        "topic": "Probability",
+        "topics": [
+          "Probability"
+        ],
+        "subtopic": "Basic probability",
+        "subtopics": [
+          "Basic probability"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q13.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          9
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q13.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q13.pdf"
+      },
+      "compact": [
+        {
+          "page": 9,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 153
+        },
+        {
+          "page": 9,
+          "left": 68,
+          "right": 585,
+          "top": 208.094,
+          "bottom": 223.094
+        },
+        {
+          "page": 9,
+          "left": 68,
+          "right": 585,
+          "top": 231,
+          "bottom": 334
+        },
+        {
+          "page": 9,
+          "left": 68,
+          "right": 585,
+          "top": 528.179,
+          "bottom": 543.179
+        },
+        {
+          "page": 9,
+          "left": 68,
+          "right": 585,
+          "top": 552.155,
+          "bottom": 567.155
+        }
+      ],
+      "working": [
+        {
+          "page": 9,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 567.155
+        }
+      ],
+      "answers": [
+        {
+          "page": 10,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 238.49,
+          "bottom": 458.525,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "818955e6c31a1b75f256ff934fd9da527d63cc3316e6cb4510f9b23c5a45b4e7",
+      "workingSHA256": "9b8df5595d634b65b7ad290abaaeb6273acc9e00cf09b4ebf7af5e147d7ec9dc",
+      "answersSHA256": "9bc2bae1a6f9d2fff53c82c3cb2db91f0a7db13cb2c286dd615d50e7cf5fbc7a"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q14",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "14",
+        "marks": 3,
+        "topic": "Number",
+        "topics": [
+          "Number"
+        ],
+        "subtopic": "Four operations",
+        "subtopics": [
+          "Four operations"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q14.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          10
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q14.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q14.pdf"
+      },
+      "compact": [
+        {
+          "page": 10,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 108
+        },
+        {
+          "page": 10,
+          "left": 68,
+          "right": 585,
+          "top": 646.116,
+          "bottom": 661.116
+        }
+      ],
+      "working": [
+        {
+          "page": 10,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 661.116
+        }
+      ],
+      "answers": [
+        {
+          "page": 11,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 98.46,
+          "bottom": 382.655,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "45c952bae18c12b3b3562a442409dd6036fb012e80149812199f84c75018f55d",
+      "workingSHA256": "6f4274e11dff659321ba156f948a5c2069fd06635dbfa3257586f49b5e5be130",
+      "answersSHA256": "dc0f85eb0338266f49dac0af24488e3c7ead663616a203d8eae6d8528a7e8c15"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q15",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "15",
+        "marks": 4,
+        "topic": "Statistics",
+        "topics": [
+          "Statistics"
+        ],
+        "subtopic": "Stem-and-leaf diagrams",
+        "subtopics": [
+          "Stem-and-leaf diagrams",
+          "Median",
+          "Range"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q15.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          11
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q15.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q15.pdf"
+      },
+      "compact": [
+        {
+          "page": 11,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 256
+        },
+        {
+          "page": 11,
+          "left": 68,
+          "right": 585,
+          "top": 310.547,
+          "bottom": 325.547
+        },
+        {
+          "page": 11,
+          "left": 68,
+          "right": 585,
+          "top": 333,
+          "bottom": 352
+        },
+        {
+          "page": 11,
+          "left": 68,
+          "right": 585,
+          "top": 432.698,
+          "bottom": 447.698
+        },
+        {
+          "page": 11,
+          "left": 68,
+          "right": 585,
+          "top": 453,
+          "bottom": 521
+        },
+        {
+          "page": 11,
+          "left": 68,
+          "right": 585,
+          "top": 603.148,
+          "bottom": 618.148
+        },
+        {
+          "page": 11,
+          "left": 68,
+          "right": 585,
+          "top": 627.124,
+          "bottom": 642.124
+        }
+      ],
+      "working": [
+        {
+          "page": 11,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 642.124
+        }
+      ],
+      "answers": [
+        {
+          "page": 12,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 98.46,
+          "bottom": 419.255,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "ef5f8b763f28ca24f953d65630e99ccc0353d4ec51f16404c8810d38a9761878",
+      "workingSHA256": "4158e687d31d268b3c832b537ef791933d58f8797e392fc47431f7f9daccd076",
+      "answersSHA256": "0ff96b32ea7c14b3690e3d64d4b2d4550299f6e5de4035d4b53ec50a7152d19c"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q16",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "16",
+        "marks": 3,
+        "topic": "Ratio, Proportion and Rates of Change",
+        "topics": [
+          "Ratio, Proportion and Rates of Change"
+        ],
+        "subtopic": "Best buys",
+        "subtopics": [
+          "Best buys"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q16.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          12
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q16.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q16.pdf"
+      },
+      "compact": [
+        {
+          "page": 12,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 297
+        },
+        {
+          "page": 12,
+          "left": 68,
+          "right": 585,
+          "top": 669.688,
+          "bottom": 684.688
+        }
+      ],
+      "working": [
+        {
+          "page": 12,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 684.688
+        }
+      ],
+      "answers": [
+        {
+          "page": 13,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 98.46,
+          "bottom": 489.245,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "17d1f3445f59ec4628ce948fc48225e9386a054a3689a556cefa4ea7b2331597",
+      "workingSHA256": "789af14fc3eff5979044946d4d446b2dd5ff40762ffc327c85effd3fecf5586c",
+      "answersSHA256": "c1383fad7e68371863a0970df828119570cc5b86b8ec3a71008544ddc66df69e"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q17",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "17",
+        "marks": 3,
+        "topic": "Algebra",
+        "topics": [
+          "Algebra"
+        ],
+        "subtopic": "Linear equations with brackets",
+        "subtopics": [
+          "Linear equations with brackets"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q17.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          13
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q17.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q17.pdf"
+      },
+      "compact": [
+        {
+          "page": 13,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 108
+        },
+        {
+          "page": 13,
+          "left": 68,
+          "right": 585,
+          "top": 352.128,
+          "bottom": 367.128
+        }
+      ],
+      "working": [
+        {
+          "page": 13,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 367.128
+        }
+      ],
+      "answers": [
+        {
+          "page": 14,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 98.46,
+          "bottom": 332.35,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "38592ede871f560f67abec5d8a630d8cec011d06856255e07970b5565f61adc1",
+      "workingSHA256": "9ea61d8372a9393b294380769c5330f36339095a859709a3292e3403b8108eea",
+      "answersSHA256": "08ec19010f4a9733cde00d50112bdb89c15e06be7d1696a8694e8c51ab239afe"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q18",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "18",
+        "marks": 1,
+        "topic": "Number",
+        "topics": [
+          "Number"
+        ],
+        "subtopic": "Laws of indices",
+        "subtopics": [
+          "Laws of indices"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q18.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          13
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q18.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q18.pdf"
+      },
+      "compact": [
+        {
+          "page": 13,
+          "left": 68,
+          "right": 585,
+          "top": 380,
+          "bottom": 403
+        },
+        {
+          "page": 13,
+          "left": 68,
+          "right": 585,
+          "top": 480.235,
+          "bottom": 495.235
+        }
+      ],
+      "working": [
+        {
+          "page": 13,
+          "left": 68,
+          "right": 585,
+          "top": 380,
+          "bottom": 495.235
+        }
+      ],
+      "answers": [
+        {
+          "page": 14,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 332.35,
+          "bottom": 349.175,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "2663ae16143c5c4df0141594fccbab6604d4d2c46a4703f1a0d5c0ab0b592b43",
+      "workingSHA256": "65d3ad82ef3d02c1decaeada0a6da3540b51bae8903564d8f641f7b9c8ba6488",
+      "answersSHA256": "2d8ce16fa173f72999fe571d86485a890f2fbabb513e65c70c8203ad66b6115f"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q19",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "19",
+        "marks": 2,
+        "topic": "Geometry and Measures",
+        "topics": [
+          "Geometry and Measures"
+        ],
+        "subtopic": "Translations",
+        "subtopics": [
+          "Translations"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q19.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          14
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q19.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q19.pdf"
+      },
+      "compact": [
+        {
+          "page": 14,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 458
+        },
+        {
+          "page": 14,
+          "left": 68,
+          "right": 585,
+          "top": 548.805,
+          "bottom": 563.805
+        }
+      ],
+      "working": [
+        {
+          "page": 14,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 563.805
+        }
+      ],
+      "answers": [
+        {
+          "page": 14,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 359.23,
+          "bottom": 452.525,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "196dd7ef3bb7f5ec375a8375ac63b9b7259f421005929f63f3eb3ee3034b9ef8",
+      "workingSHA256": "648dbbf1883722b8bfb3c22b31a8a20a7059ee691d38cac5720f08d52b16b66b",
+      "answersSHA256": "001614e1dc7d8690d47c1c74483e09441cb5db6f379ae63141160a60b014f52c"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q20",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "20",
+        "marks": 2,
+        "topic": "Algebra",
+        "topics": [
+          "Algebra"
+        ],
+        "subtopic": "Arithmetic sequences",
+        "subtopics": [
+          "Arithmetic sequences"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q20.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          14
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q20.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q20.pdf"
+      },
+      "compact": [
+        {
+          "page": 14,
+          "left": 68,
+          "right": 585,
+          "top": 581,
+          "bottom": 655
+        },
+        {
+          "page": 14,
+          "left": 68,
+          "right": 585,
+          "top": 789.715,
+          "bottom": 804.715
+        }
+      ],
+      "working": [
+        {
+          "page": 14,
+          "left": 68,
+          "right": 585,
+          "top": 581,
+          "bottom": 804.715
+        }
+      ],
+      "answers": [
+        {
+          "page": 14,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 461.5,
+          "bottom": 513.096,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "3c6e85e97bf49c33f85e91abfb4e43acf6568302a86f50399b2638d8e009ff4c",
+      "workingSHA256": "dc6de070bd8c1242f8e7f9dbbef9432792a8ff17bf0f04f1eb0263c1df134ddf",
+      "answersSHA256": "ef8bce9e8147495f2beda8551f4ae9d7912ca1a0601f14f62dea1463dd0d992a"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q21",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "21",
+        "marks": 3,
+        "topic": "Number",
+        "topics": [
+          "Number"
+        ],
+        "subtopic": "Mixed numbers",
+        "subtopics": [
+          "Mixed numbers"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q21.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          15
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q21.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q21.pdf"
+      },
+      "compact": [
+        {
+          "page": 15,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 127
+        },
+        {
+          "page": 15,
+          "left": 68,
+          "right": 585,
+          "top": 380.771,
+          "bottom": 640
+        },
+        {
+          "page": 15,
+          "left": 68,
+          "right": 585,
+          "top": 722.136,
+          "bottom": 737.136
+        },
+        {
+          "page": 15,
+          "left": 68,
+          "right": 585,
+          "top": 746.112,
+          "bottom": 761.112
+        }
+      ],
+      "working": [
+        {
+          "page": 15,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 761.112
+        }
+      ],
+      "answers": [
+        {
+          "page": 15,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 98.46,
+          "bottom": 488.525,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "b3eabc1d235ecd9494f334b18285ef05edcb6e26c454393d802a87703adf2042",
+      "workingSHA256": "30b4bd9e07397d764ebf5158712ab9201555b5678c635e5655916d8884fcd9fe",
+      "answersSHA256": "51cb154f54e55700839e8a4ce2568ff0577d95ab7e07e57d24541b6e73d5e42a"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q22",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "22",
+        "marks": 5,
+        "topic": "Geometry and Measures",
+        "topics": [
+          "Geometry and Measures",
+          "Ratio, Proportion and Rates of Change"
+        ],
+        "subtopic": "Area",
+        "subtopics": [
+          "Area",
+          "Unit rates"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q22.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          16,
+          17
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q22.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q22.pdf"
+      },
+      "compact": [
+        {
+          "page": 16,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 393
+        },
+        {
+          "page": 16,
+          "left": 68,
+          "right": 585,
+          "top": 767.685,
+          "bottom": 782.685
+        },
+        {
+          "page": 17,
+          "left": 68,
+          "right": 585,
+          "top": 86,
+          "bottom": 145
+        },
+        {
+          "page": 17,
+          "left": 68,
+          "right": 585,
+          "top": 226.463,
+          "bottom": 241.463
+        },
+        {
+          "page": 17,
+          "left": 68,
+          "right": 585,
+          "top": 250.439,
+          "bottom": 265.439
+        }
+      ],
+      "working": [
+        {
+          "page": 16,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 805
+        },
+        {
+          "page": 17,
+          "left": 68,
+          "right": 585,
+          "top": 86,
+          "bottom": 265.439
+        }
+      ],
+      "answers": [
+        {
+          "page": 16,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 98.46,
+          "bottom": 517.296,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "9cfb448bed56953a1e5a7e272e2de00ba9371eace7a38371d7299fd6c1acf884",
+      "workingSHA256": "da2448c1fd7a680998c72dd1d02502cd2daaba17800d4661f3d7297ec47ec64b",
+      "answersSHA256": "837102681efd301343d29bf556e9f674b77d294c1b160d65b80e932f81d2f88c"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q23",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "23",
+        "marks": 3,
+        "topic": "Probability",
+        "topics": [
+          "Probability"
+        ],
+        "subtopic": "Venn diagrams",
+        "subtopics": [
+          "Venn diagrams"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q23.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          18
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q23.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q23.pdf"
+      },
+      "compact": [
+        {
+          "page": 18,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 307
+        },
+        {
+          "page": 18,
+          "left": 68,
+          "right": 585,
+          "top": 385.038,
+          "bottom": 400.038
+        },
+        {
+          "page": 18,
+          "left": 68,
+          "right": 585,
+          "top": 405,
+          "bottom": 452
+        },
+        {
+          "page": 18,
+          "left": 68,
+          "right": 585,
+          "top": 587.168,
+          "bottom": 602.168
+        },
+        {
+          "page": 18,
+          "left": 68,
+          "right": 585,
+          "top": 611.144,
+          "bottom": 626.144
+        }
+      ],
+      "working": [
+        {
+          "page": 18,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 626.144
+        }
+      ],
+      "answers": [
+        {
+          "page": 17,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 98.46,
+          "bottom": 271.035,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "941b15b3e365e8086446d69f2e5cba60ca4a68208da29a649cebbd78998a1165",
+      "workingSHA256": "fb06e22684bf10bafac748b807de89ae6751361241f80e7919cbbcdf2d31555f",
+      "answersSHA256": "9e673920b6b52652068339c366a364bc97cedcc3bfd30bb68554e6cd1c39659c"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q24",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "24",
+        "marks": 4,
+        "topic": "Number",
+        "topics": [
+          "Number"
+        ],
+        "subtopic": "Estimation",
+        "subtopics": [
+          "Estimation"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q24.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          19
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q24.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q24.pdf"
+      },
+      "compact": [
+        {
+          "page": 19,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 146
+        },
+        {
+          "page": 19,
+          "left": 68,
+          "right": 585,
+          "top": 366.12,
+          "bottom": 381.12
+        },
+        {
+          "page": 19,
+          "left": 68,
+          "right": 585,
+          "top": 387,
+          "bottom": 421
+        },
+        {
+          "page": 19,
+          "left": 68,
+          "right": 585,
+          "top": 502.614,
+          "bottom": 517.614
+        },
+        {
+          "page": 19,
+          "left": 68,
+          "right": 585,
+          "top": 526.59,
+          "bottom": 541.59
+        }
+      ],
+      "working": [
+        {
+          "page": 19,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 541.59
+        }
+      ],
+      "answers": [
+        {
+          "page": 18,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 98.46,
+          "bottom": 393.935,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "e5ced3dde6199a6438c9aeb1e9e532e4d332f5b7ef63cc1008d7ffa91676e995",
+      "workingSHA256": "404e4b7e142d37cb004d9576bb1f1d519640e330eaa69355dd2c871d10c09206",
+      "answersSHA256": "acc9e9e57e34779f57ea635d1df12197a848766811ab994f709e16d917c457b5"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q25",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "25",
+        "marks": 4,
+        "topic": "Algebra",
+        "topics": [
+          "Algebra"
+        ],
+        "subtopic": "Equation of a straight line",
+        "subtopics": [
+          "Equation of a straight line",
+          "Parallel and perpendicular lines"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q25.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          20
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q25.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q25.pdf"
+      },
+      "compact": [
+        {
+          "page": 20,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 471
+        },
+        {
+          "page": 20,
+          "left": 68,
+          "right": 585,
+          "top": 579.259,
+          "bottom": 594.259
+        },
+        {
+          "page": 20,
+          "left": 68,
+          "right": 585,
+          "top": 601,
+          "bottom": 645
+        },
+        {
+          "page": 20,
+          "left": 68,
+          "right": 585,
+          "top": 711.388,
+          "bottom": 726.388
+        },
+        {
+          "page": 20,
+          "left": 68,
+          "right": 585,
+          "top": 735.364,
+          "bottom": 750.364
+        }
+      ],
+      "working": [
+        {
+          "page": 20,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 750.364
+        }
+      ],
+      "answers": [
+        {
+          "page": 19,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 98.46,
+          "bottom": 368.735,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "09db7d401e2cd8bcb18d3e70ca93d1b9594030ea8fc39ab717438dd275f011bf",
+      "workingSHA256": "7ca2dff5f66d0df2ea2353e4b6397e23404d94cf15f9b1fc6953c99618b07766",
+      "answersSHA256": "e12f7c3456cc87a20ceb9556da7827984b9a835fe6b67d9a03759455b726b2da"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q26",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "26",
+        "marks": 5,
+        "topic": "Ratio, Proportion and Rates of Change",
+        "topics": [
+          "Ratio, Proportion and Rates of Change",
+          "Number"
+        ],
+        "subtopic": "Combining ratios",
+        "subtopics": [
+          "Combining ratios",
+          "Percentages"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q26.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          21
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q26.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q26.pdf"
+      },
+      "compact": [
+        {
+          "page": 21,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 248
+        },
+        {
+          "page": 21,
+          "left": 68,
+          "right": 585,
+          "top": 758.026,
+          "bottom": 773.026
+        }
+      ],
+      "working": [
+        {
+          "page": 21,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 773.026
+        }
+      ],
+      "answers": [
+        {
+          "page": 20,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 98.46,
+          "bottom": 510.481,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "a58cb64e3adb0624647da759ade6439ef51e644d36c811bd45f0f9121b595894",
+      "workingSHA256": "0672729aec4a4a8db110f9025e07ccecb5383ff7841bc745f8d240b8254c5de2",
+      "answersSHA256": "eff077b96c169600d68f511b9cace65c792b94167109ec7b8ef67eb738bfcafd"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q27",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "27",
+        "marks": 2,
+        "topic": "Number",
+        "topics": [
+          "Number"
+        ],
+        "subtopic": "Reverse percentages",
+        "subtopics": [
+          "Reverse percentages"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q27.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          22
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q27.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q27.pdf"
+      },
+      "compact": [
+        {
+          "page": 22,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 154
+        },
+        {
+          "page": 22,
+          "left": 68,
+          "right": 585,
+          "top": 358.072,
+          "bottom": 373.072
+        }
+      ],
+      "working": [
+        {
+          "page": 22,
+          "left": 68,
+          "right": 585,
+          "top": 88,
+          "bottom": 373.072
+        }
+      ],
+      "answers": [
+        {
+          "page": 21,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 98.46,
+          "bottom": 137.06,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "e105c7fa17bfd5ca329cddf2c32a8ec02b9fc3c7b84fd876342f9c0e20ed0d88",
+      "workingSHA256": "efa58c38edbc355e436d9466b79ea091e9cc17cc70df86763a12e08100fcbb6a",
+      "answersSHA256": "bbda6f66dbe2bafe5ab4214dd3621d9ff2dfb2572da1d860d2435e52006ac3d5"
+    },
+    {
+      "record": {
+        "id": "edexcel-1ma1-1f-2024-june-q28",
+        "qualification": "GCSE Maths",
+        "tier": "Foundation",
+        "examBoard": "Pearson Edexcel",
+        "paper": "P1",
+        "paperNumber": 1,
+        "paperCode": "1MA1/1F",
+        "examYear": 2024,
+        "series": "June",
+        "examDate": "2024-05-16",
+        "question": "28",
+        "marks": 3,
+        "topic": "Algebra",
+        "topics": [
+          "Algebra"
+        ],
+        "subtopic": "Linear inequalities",
+        "subtopics": [
+          "Linear inequalities"
+        ],
+        "questionFile": "exams/questions/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q28.pdf",
+        "sourceFile": "exams/source/gcse/foundation/p1/edexcel-1ma1-1f-2024-june.pdf",
+        "sourcePages": [
+          22
+        ],
+        "workingQuestionFile": "exams/questions/gcse/foundation/working/p1/edexcel-1ma1-1f-2024-june-q28.pdf",
+        "answerFile": "exams/answers/gcse/foundation/p1/edexcel-1ma1-1f-2024-june-q28.pdf"
+      },
+      "compact": [
+        {
+          "page": 22,
+          "left": 68,
+          "right": 585,
+          "top": 379,
+          "bottom": 417
+        },
+        {
+          "page": 22,
+          "left": 68,
+          "right": 585,
+          "top": 738.179,
+          "bottom": 753.179
+        }
+      ],
+      "working": [
+        {
+          "page": 22,
+          "left": 68,
+          "right": 585,
+          "top": 379,
+          "bottom": 753.179
+        }
+      ],
+      "answers": [
+        {
+          "page": 21,
+          "left": 75.29,
+          "right": 766.15,
+          "top": 137.06,
+          "bottom": 514.081,
+          "headerTop": 85.46,
+          "headerBottom": 98.46
+        }
+      ],
+      "compactSHA256": "c83ec05d3f8521d9bd7c761e14491d9c3c9ab4a45e10d60600a33baf4d4589d9",
+      "workingSHA256": "c04b022e8390ef9a5b9426c3c5202501665b4fddc7f9215156bd21ef6993e9eb",
+      "answersSHA256": "5d4d6bcfa8b4afd5bd5da3811356c338d87d2e6c67ee58e02675c08d98212ef6"
+    }
+  ]
+}

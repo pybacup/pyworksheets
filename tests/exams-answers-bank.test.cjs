@@ -11,7 +11,7 @@ test('all 997 official GCSE answers have unique identities, correct source prove
    if(item.rawMarkTotal!==q.marks)assert(item.markReview,'Alternative/malformed mark code needs documented review: '+q.id);
   }
  }
- assert.equal(ids.size,997);assert.equal(pages,1015);assert.equal(C.validateIndex(structuredClone(all)).length,1069);assert(all.filter(q=>q.qualification!=='GCSE Maths').every(q=>!q.answerFile));
+ assert.equal(ids.size,997);assert.equal(pages,1015);assert.equal(C.validateIndex(structuredClone(all)).length,all.length);assert(all.filter(q=>q.qualification!=='GCSE Maths').every(q=>!q.answerFile));
 });
 test('mixed years and papers export both booklets in identical basket order with all answer continuations',async()=>{
  const keys=['1h-2017-june-q3','2h-2019-june-q20','3h-2022-november-q26','1h-2024-june-q14','3h-2025-june-q23'];const selected=keys.map(k=>all.find(q=>q.id==='edexcel-1ma1-'+k));const sequences=[];

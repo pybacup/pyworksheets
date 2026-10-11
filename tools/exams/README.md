@@ -89,3 +89,65 @@ The browser suite requires `PLAYWRIGHT_MODULE` to point to an installed
 Playwright package. PDF rendering verification requires pypdfium2, Pillow
 and NumPy. See `exams/gcse-answers-processing-report.md` for coverage,
 manual mark-allocation reviews and the final validation results.
+
+
+## Foundation June 2024 P1 pilot
+
+`foundation-june-2024-p1-plan.json` contains the reviewed compact bands, original
+working-space regions, official answer-table crops and hashes for 28 questions
+worth 80 marks. It uses the same public data model and exporter as Higher.
+
+Run `node tools/exams/generate-foundation-pilot.cjs` to reproduce its 84 PDFs
+from the two stored source files. Existing records are preserved; conflicting
+pilot records cause an error. The generator does not process any other paper
+or read/delete either ZIP. The pilot-specific planning script is only for
+reviewing boundary changes; it should not be treated as an automatic full-bank
+classifier or extraction tool.
+
+Run `node tools/exams/create-foundation-pilot-samples.cjs /path/to/output/pdf`
+for the five-question, 19-mark review set in compact, working-space and answer
+modes. See `exams/gcse-foundation-pilot-report.md` for the classification table
+and tests. `tests/test_foundation_pilot.py` independently reconciles source
+marks and compares all 147 rendered regions with the originals.
+
+## Complete Foundation bank
+
+`foundation-bank-plan.json` is the reviewed plan for the other 44 papers:
+1,232 questions, giving 1,260 Foundation questions including the pilot. It
+records all compact bands, original working-space regions, official answer
+regions, source hashes, final output hashes and classification evidence.
+Required measuring lines, construction space, drawing grids and continuation
+subparts are explicitly preserved in the reviewed bands.
+
+`node tools/exams/generate-foundation-bank.cjs` reproduces missing outputs
+from stored sources and merges only absent records. Existing records must
+match exactly. Existing output files must match their recorded hashes; the
+generator stops on unexplained differences. It never overwrites the pilot,
+Higher files or non-GCSE records and does not delete either import ZIP.
+
+The planning script uses the import inspection cache. Do not rerun it over
+the final audited plan without separately reviewing the proposed changes.
+The checked-in plan is sufficient for generation without that cache.
+
+`optimise-foundation-bank.py --report PATH` prunes redundant PDF resources
+only in these new files. It accepts smaller files only when every page's
+72 dpi render is identical, then updates the plan's output hashes.
+
+Verification and review tools:
+
+```sh
+node --test tests/*.test.cjs
+python -m unittest discover -s tests -p 'test_*.py'
+node tests/exams-foundation-pilot.browser.cjs
+node tests/exams-foundation-bank.browser.cjs
+python tools/exams/verify-foundation-rendering.py --report /path/to/audit.json
+python tools/exams/report-foundation-classification.py
+node tools/exams/create-foundation-review-sample.cjs /path/to/output/pdf
+```
+
+The full-bank browser test exercises all three papers and both series,
+ordered mixed-year exports in both question modes, official answers and an
+85-question filtered export. The two Foundation Python suites independently
+reconcile all 45 question-paper totals and protect the required thin lines.
+See `exams/gcse-foundation-processing-report.md` and
+`exams/gcse-foundation-classification-report.md` for the final review.

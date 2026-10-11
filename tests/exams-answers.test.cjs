@@ -7,7 +7,7 @@ test('pilot has exactly 23 original official answer extracts, matching all 80 ma
  assert.equal(pilot.reduce((n,q)=>n+q.marks,0),80);assert.equal(new Set(all.map(q=>q.id)).size,all.length);
  for(const item of plan.questions){const q=pilot.find(q=>q.id===item.id);assert(q);assert.equal(+q.question,item.question);assert.equal(q.marks,item.marks);assert(item.markBranches.every(m=>m===q.marks));assert.equal(q.answerFile,'exams/answers/gcse/higher/p1/'+q.id+'.pdf');
  const doc=await lib.PDFDocument.load(read(q.answerFile));assert.equal(doc.getPageCount(),1);assert(doc.context.enumerateIndirectObjects().some(([,o])=>String(o).includes('/Subtype /Form')));}
- assert.equal(C.validateIndex(structuredClone(all)).length,1069);
+ assert.equal(C.validateIndex(structuredClone(all)).length,all.length);
 });
 test('answer paths reject external, traversal and duplicate files without requiring answers for legacy records',()=>{
  const q=pilot[0];for(const answerFile of ['https://example.com/a.pdf','exams/answers/../a.pdf','exams/answers/%2e%2e/a.pdf','exams/questions/a.pdf'])assert.throws(()=>C.validateIndex([{...q,answerFile}]),/Invalid answer PDF/);

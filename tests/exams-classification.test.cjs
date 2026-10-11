@@ -4,10 +4,10 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const C = require('../assets/exams/core.js');
 const all = JSON.parse(fs.readFileSync(require('node:path').join(__dirname, '../exams/data/exam-index.json')));
-const gcse = all.filter(q => q.qualification === 'GCSE Maths');
+const gcse = all.filter(q => q.qualification === 'GCSE Maths' && q.tier === 'Higher');
 
 test('classification audit preserves every protected field and all non-GCSE records', () => {
-  const protectedRecords = all.map(q => q.qualification === 'GCSE Maths'
+  const protectedRecords = all.filter(q => q.tier !== 'Foundation').map(q => q.qualification === 'GCSE Maths'
     ? Object.fromEntries(Object.entries(q).filter(([k]) => !['topic', 'topics', 'subtopic', 'subtopics', 'workingQuestionFile', 'answerFile'].includes(k)))
     : q);
   // Recorded from the pre-audit 1,069-record index, including its ordering.
