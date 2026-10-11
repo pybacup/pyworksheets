@@ -74,6 +74,6 @@ Seven questions, 40 marks, from 2018, 2019, 2022, 2023, 2024 and 2025; all three
 
 ## Review state
 
-The PDFs, source matching and classification review are approved for publication. All six Year 2 ZIPs remain pending the first successful import push; all 80 supplied source PDFs were verified byte-for-byte before cleanup. Worksheets, Games and other unrelated site files were not changed.
+The PDFs, source matching and classification review are approved for publication. The implementation was pushed as d60eaf8. All six temporary Year 2 ZIPs were then removed; all 80 supplied source PDFs were verified byte-for-byte and remain preserved in the extracted repository structure. Worksheets, Games and other unrelated site files were not changed.
 
 See `alevel-maths-year-2-classification-review.md` for the one-off labels, intentional label overlaps and seven primary-label judgement calls.
