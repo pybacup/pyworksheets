@@ -65741,7 +65741,8 @@
     "subtopic": "Straight line graphs",
     "subtopics": [
       "Straight line graphs",
-      "Simultaneous equations"
+      "Simultaneous equations",
+      "Coordinate geometry"
     ],
     "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q3.pdf",
     "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2025-june-q3.pdf",
@@ -65846,7 +65847,8 @@
     "subtopic": "Trigonometric equations",
     "subtopics": [
       "Trigonometric equations",
-      "Quadratic equations"
+      "Quadratic equations",
+      "Trigonometry"
     ],
     "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q6.pdf",
     "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2025-june-q6.pdf",
@@ -65881,7 +65883,8 @@
     "subtopic": "Vectors",
     "subtopics": [
       "Vectors",
-      "Straight line graphs"
+      "Straight line graphs",
+      "Coordinate geometry"
     ],
     "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2025-june-q7.pdf",
     "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2025-june-q7.pdf",
@@ -67530,7 +67533,8 @@
       "Box plots",
       "Measures of location and spread",
       "Outliers",
-      "Correlation and regression"
+      "Correlation and regression",
+      "Large data set"
     ],
     "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p2/ocr-mei-h630-02-2019-june-q6.pdf",
     "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p2/working-space/ocr-mei-h630-02-2019-june-q6.pdf",
@@ -68389,7 +68393,8 @@
     "topic": "Pure",
     "subtopic": "Trigonometric equations",
     "subtopics": [
-      "Trigonometric equations"
+      "Trigonometric equations",
+      "Trigonometry"
     ],
     "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p2/ocr-mei-h630-02-2020-november-q8.pdf",
     "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p2/working-space/ocr-mei-h630-02-2020-november-q8.pdf",
@@ -69106,7 +69111,8 @@
     "subtopic": "Discrete probability distributions",
     "subtopics": [
       "Discrete probability distributions",
-      "Quadratic equations"
+      "Quadratic equations",
+      "Probability"
     ],
     "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p2/ocr-mei-h630-02-2021-autumn-q6.pdf",
     "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p2/working-space/ocr-mei-h630-02-2021-autumn-q6.pdf",
@@ -69539,7 +69545,8 @@
     "subtopic": "Trigonometric equations",
     "subtopics": [
       "Trigonometric equations",
-      "Graph transformations"
+      "Graph transformations",
+      "Trigonometry"
     ],
     "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2022-june-q5.pdf",
     "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2022-june-q5.pdf",
@@ -69832,7 +69839,8 @@
     "topic": "Statistics",
     "subtopic": "Discrete probability distributions",
     "subtopics": [
-      "Discrete probability distributions"
+      "Discrete probability distributions",
+      "Probability"
     ],
     "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p2/ocr-mei-h630-02-2022-june-q1.pdf",
     "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p2/working-space/ocr-mei-h630-02-2022-june-q1.pdf",
@@ -70335,7 +70343,8 @@
     "subtopic": "Trigonometric equations",
     "subtopics": [
       "Trigonometric equations",
-      "Quadratic equations"
+      "Quadratic equations",
+      "Trigonometry"
     ],
     "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/ocr-mei-h630-01-2023-june-q4.pdf",
     "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p1/working-space/ocr-mei-h630-01-2023-june-q4.pdf",
@@ -70945,7 +70954,8 @@
     "subtopic": "Discrete probability distributions",
     "subtopics": [
       "Discrete probability distributions",
-      "Binomial distribution"
+      "Binomial distribution",
+      "Probability"
     ],
     "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p2/ocr-mei-h630-02-2023-june-q9.pdf",
     "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p2/working-space/ocr-mei-h630-02-2023-june-q9.pdf",
@@ -72090,7 +72100,8 @@
     "subtopic": "Trigonometric equations",
     "subtopics": [
       "Trigonometric equations",
-      "Quadratic equations"
+      "Quadratic equations",
+      "Trigonometry"
     ],
     "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p2/ocr-mei-h630-02-2024-june-q14.pdf",
     "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p2/working-space/ocr-mei-h630-02-2024-june-q14.pdf",
@@ -72231,7 +72242,8 @@
     "topic": "Pure",
     "subtopic": "Trigonometric equations",
     "subtopics": [
-      "Trigonometric equations"
+      "Trigonometric equations",
+      "Trigonometry"
     ],
     "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p2/ocr-mei-h630-02-2025-june-q3.pdf",
     "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p2/working-space/ocr-mei-h630-02-2025-june-q3.pdf",
@@ -72515,7 +72527,8 @@
     "subtopic": "Circles",
     "subtopics": [
       "Circles",
-      "Straight line graphs"
+      "Straight line graphs",
+      "Coordinate geometry"
     ],
     "questionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p2/ocr-mei-h630-02-2025-june-q11.pdf",
     "workingQuestionFile": "exams/questions/a-level-maths/year-1/ocr-mei/p2/working-space/ocr-mei-h630-02-2025-june-q11.pdf",

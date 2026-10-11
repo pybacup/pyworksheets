@@ -18,7 +18,7 @@ const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright'),all=requir
  await p.selectOption('#qualification','A-Level Maths');assert.equal(await p.locator('#component').inputValue(),'');assert.deepEqual(await p.locator('#component option').evaluateAll(es=>es.filter(e=>e.value).map(e=>e.value)),['Core','Statistics','Mechanics']);
  await p.selectOption('#yearGroup','Year 1');await p.selectOption('#component','Core');await p.selectOption('#topic','Pure');await p.selectOption('#subtopic','Coordinate geometry');
  const coordinate=all.filter(q=>q.qualification==='A-Level Maths'&&q.yearGroup==='Year 1'&&q.topic==='Pure'&&q.subtopics.includes('Coordinate geometry'));
- assert.equal(coordinate.length,12);assert.equal(await p.locator('.question-row').count(),12);assert.equal(await p.locator('#selectVisible').textContent(),'Select All (12)');
+ assert.equal(coordinate.length,15);assert.equal(await p.locator('.question-row').count(),15);assert.equal(await p.locator('#selectVisible').textContent(),'Select All (15)');
  assert.deepEqual((await p.locator('.question-row .question-preview').evaluateAll(es=>es.map(e=>e.getAttribute('href')))).sort(),coordinate.map(q=>q.questionFile).sort());
  assert.deepEqual(errors,[]);console.log('PASS: Year 1/2 Core, Statistics, Mechanics results and Select All counts; qualification/year refresh; other qualifications unchanged.');
  }finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1;});
